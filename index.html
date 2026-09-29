@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>人生階段台灣法務知識庫｜以台灣法律為主的生活法律指南</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232C4A3D'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23E9D8A6' font-family='serif' font-weight='700'%3E法%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap">
+<style>
+:root{
+  --paper:#F6F2E7; --paper-2:#F3EEDF; --card:#FBF9F2; --card-2:#F0EBDB;
+  --ink:#1E332B; --ink-2:#4A5A52; --ink-3:#77837B;
+  --line:#E0D8C2; --line-2:#CFC7AF;
+  --g-900:#14251E; --g-800:#2C4A3D; --g-700:#3A6B58; --g-600:#4E7E67; --g-500:#6B9579; --g-100:#E7EFEA;
+  --gold:#C8953D; --gold-soft:#E9D8A6; --gold-bg:#FBF3DC;
+  --rust:#B0603C; --rust-bg:#F4E0D3;
+  --ok:#3E9D63; --no:#C24B3C;
+  --serif:'Noto Serif TC','Songti TC','PMingLiU',serif;
+  --sans:'Noto Sans TC',-apple-system,BlinkMacSystemFont,'PingFang TC','Microsoft JhengHei','Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.75;font-size:16px}
+a{color:var(--g-600);text-decoration:none}
+a:hover{text-decoration:underline}
+.layout{display:grid;grid-template-columns:280px minmax(0,1fr) 220px;max-width:1640px;margin:0 auto;min-height:100vh}
+[id]{scroll-margin-top:74px}
+/* ===== 側欄 ===== */
+.sidebar{position:sticky;top:0;height:100vh;overflow-y:auto;background:var(--paper-2);border-right:1px solid var(--line);padding:24px 16px 30px}
+.brand{font-family:var(--serif);font-weight:900;font-size:21px;line-height:1.4;color:var(--g-900)}
+.brand small{display:block;font-family:var(--sans);font-weight:600;font-size:10.5px;letter-spacing:.16em;color:var(--gold);margin-top:5px}
+.side-nav{list-style:none;margin-top:16px}
+.side-nav .grp{font-size:11.5px;letter-spacing:.14em;color:var(--ink-3);margin:16px 6px 6px;font-weight:700}
+.side-nav a{display:block;padding:7px 10px;border-radius:9px;color:var(--ink);margin:2px 0;border:1px solid transparent;font-size:14.5px}
+.side-nav a b{font-family:var(--serif);color:var(--g-700);margin-right:8px;font-size:14px}
+.side-nav a small{display:block;color:var(--ink-3);font-size:11.5px;line-height:1.45}
+.side-nav a:hover{background:var(--card);border-color:var(--line-2)}
+.side-nav a.active{background:var(--g-800);color:#fff;border-color:var(--g-800)}
+.side-nav a.active b{color:var(--gold-soft)}
+.side-nav a.active small{color:rgba(255,255,255,.82)}
+.side-nav a.active .stage-prog{background:rgba(255,255,255,.25)}
+.side-nav a.active .stage-prog i{background:var(--gold-soft)}
+.stage-prog{display:block;height:4px;background:var(--line);border-radius:2px;margin-top:6px;overflow:hidden}
+.stage-prog i{display:block;height:100%;background:var(--g-600);width:0;transition:width .3s}
+.side-foot{margin-top:24px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3);line-height:1.7}
+/* ===== 頂欄 ===== */
+.content{min-width:0}
+.topbar{position:sticky;top:0;z-index:60;background:rgba(246,242,231,.96);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 26px}
+.tb-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.search{flex:1 1 240px;display:flex;align-items:center;background:#fff;border:1px solid var(--line-2);border-radius:999px;padding:7px 16px;gap:8px}
+.search svg{flex:0 0 auto;color:var(--ink-3)}
+.search input{border:0;outline:0;flex:1;font-size:14.5px;background:transparent;color:var(--ink);font-family:inherit;min-width:60px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-2);background:#fff;color:var(--ink);border-radius:999px;padding:6px 14px;font-size:13px;cursor:pointer;font-family:inherit;transition:all .15s}
+.btn:hover{border-color:var(--g-600);color:var(--g-700)}
+.btn.primary{background:var(--g-800);border-color:var(--g-800);color:#fff}
+.btn.primary:hover{background:var(--g-700);color:#fff}
+.btn.danger:hover{border-color:var(--no);color:var(--no)}
+.unseen-label{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.unseen-label input{accent-color:var(--g-600)}
+.tb-prog{display:flex;align-items:center;gap:10px;margin-top:9px}
+.tb-prog .bar{flex:1;height:7px;background:var(--line);border-radius:4px;overflow:hidden}
+.tb-prog .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--g-600),var(--g-500));width:0;transition:width .3s}
+.tb-prog span{font-size:12.5px;color:var(--ink-2);white-space:nowrap}
+/* ===== hero ===== */
+.hero{padding:46px 26px 6px}
+.kicker{font-size:12px;letter-spacing:.22em;color:var(--gold);font-weight:700;margin-bottom:8px}
+.hero h1{font-family:var(--serif);font-size:clamp(28px,4vw,42px);font-weight:900;color:var(--g-900);line-height:1.32}
+.hero .sub{color:var(--ink-2);max-width:780px;margin-top:12px;font-size:15.5px}
+/* ===== 怎麼用 ===== */
+.howto{margin:20px 26px 8px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+.howto h2{font-family:var(--serif);font-size:18px;color:var(--g-900);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.howto ol{list-style:none;counter-reset:how}
+.howto li{counter-increment:how;position:relative;padding:6px 0 6px 44px;color:var(--ink-2);font-size:14.5px}
+.howto li::before{content:counter(how,decimal-leading-zero);position:absolute;left:2px;top:7px;width:28px;height:28px;border-radius:50%;background:var(--g-100);color:var(--g-700);font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;font-family:var(--serif)}
+/* ===== 章節 ===== */
+.stage{padding:8px 26px 6px}
+.stage-head{display:flex;align-items:flex-start;gap:16px;margin:36px 0 4px;padding-bottom:12px;border-bottom:2px solid var(--g-800)}
+.stage-num{font-family:var(--serif);font-size:44px;font-weight:900;color:var(--gold);line-height:1;flex:0 0 auto}
+.stage-head .stage-txt{flex:1;min-width:0}
+.stage-title{font-family:var(--serif);font-size:clamp(21px,2.4vw,27px);font-weight:800;color:var(--g-900);line-height:1.35}
+.stage-sub{color:var(--ink-2);font-size:14px;margin-top:4px}
+.stage-actions{flex:0 0 auto;align-self:center}
+.stage-meta{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.chip{font-size:12px;background:var(--g-100);color:var(--g-700);border-radius:999px;padding:3px 12px;font-weight:600}
+.chip.gold{background:var(--gold-bg);color:var(--gold)}
+/* ===== 卡片 ===== */
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px 18px;margin:14px 0;box-shadow:0 1px 2px rgba(20,37,30,.04)}
+.card h3{font-family:var(--serif);font-size:18.5px;color:var(--g-900);margin-bottom:10px;display:flex;align-items:center;gap:10px;width:calc(100% - 78px)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--g-600);flex:0 0 auto}
+.card.learned{opacity:.62}
+.learn-toggle{position:absolute;top:14px;right:16px;display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--ink-3);border:1px solid var(--line-2);border-radius:999px;padding:3px 10px;cursor:pointer;background:#fff;user-select:none;z-index:2}
+.learn-toggle input{accent-color:var(--g-600)}
+.learn-toggle.checked{background:var(--g-800);color:#fff;border-color:var(--g-800)}
+.card p{margin:6px 0}
+.card ul,.card ol{margin:8px 0 8px 2px;padding-left:0;list-style:none}
+.card ul li{position:relative;padding:4px 0 4px 20px}
+.card ul li::before{content:'';position:absolute;left:2px;top:13px;width:6px;height:6px;border-radius:50%;background:var(--g-500)}
+.card ol{counter-reset:stp}
+.card ol li{position:relative;padding:4px 0 4px 26px;counter-increment:stp}
+.card ol li::before{content:counter(stp);position:absolute;left:0;top:6px;width:19px;height:19px;border-radius:50%;background:var(--g-100);color:var(--g-700);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.card b,.card strong{color:var(--g-800)}
+.big{font-weight:800;color:var(--rust)}
+.hl{background:var(--gold-soft);color:var(--g-900);padding:1px 5px;border-radius:4px;font-weight:600}
+/* ===== 表格 ===== */
+.tbl-wrap{overflow-x:auto;margin:10px 0}
+table.tbl{width:100%;table-layout:fixed;border-collapse:collapse;font-size:14px;margin:8px 0}
+.tbl th{background:var(--g-800);color:#fff;text-align:left;padding:9px 12px;font-weight:600;font-size:13.5px;line-height:1.5}
+.tbl td{border-bottom:1px solid var(--line);padding:9px 12px;vertical-align:top;line-height:1.6}
+.tbl tbody tr:nth-child(even){background:var(--paper)}
+.tbl .num{text-align:right;font-variant-numeric:tabular-nums}
+.cap{font-size:12.5px;color:var(--ink-3);margin-top:4px}
+/* ===== 事實／迷思 ===== */
+.fact{display:flex;gap:10px;background:var(--g-100);border-radius:10px;padding:10px 14px;margin:10px 0;font-size:14.5px}
+.fact .mark{flex:0 0 auto;font-weight:800;color:var(--ok)}
+.myth{display:flex;gap:10px;background:var(--rust-bg);border-radius:10px;padding:9px 14px;margin:8px 0;font-size:14.5px}
+.myth .mark{flex:0 0 auto;font-weight:800}
+.myth.ok-myth{background:var(--g-100)}
+.myth.ok-myth .mark{color:var(--ok)}
+.myth.no-myth .mark{color:var(--no)}
+/* ===== 陷阱 ===== */
+.trap{border:1px solid #E4B79E;background:#FBF3EC;border-radius:10px;padding:10px 14px;margin:10px 0;font-size:14px}
+.trap b.tag{color:var(--rust);display:block;font-size:12px;letter-spacing:.1em;margin-bottom:4px}
+.trap ul{margin:0}
+.trap ul li::before{background:var(--rust)!important}
+/* ===== 法條 ===== */
+.law-note{background:var(--g-100);border-radius:10px;padding:10px 14px;margin:12px 0 4px;font-size:13.5px;color:var(--g-800)}
+.law-note .ltag{display:block;font-weight:800;font-size:11.5px;letter-spacing:.12em;color:var(--g-600);margin-bottom:5px}
+.law{display:inline-block;border:1px solid #B9C9BE;background:#fff;color:var(--g-700);border-radius:6px;padding:0 7px;margin:2px 3px 2px 0;font-size:12.5px;font-weight:600;white-space:nowrap}
+/* ===== 一句話帶走 ===== */
+.takeaway{margin-top:12px;background:var(--gold-bg);border:1px solid var(--gold-soft);border-radius:10px;padding:10px 14px;font-size:14.5px;color:var(--g-900)}
+.takeaway b.tag{color:var(--gold);display:block;font-size:11.5px;letter-spacing:.14em;margin-bottom:3px}
+/* ===== 重點摘要 ===== */
+.keybox{background:var(--gold-bg);border:1px solid var(--gold-soft);border-radius:10px;padding:10px 14px;margin:0 0 12px;font-size:14.5px;color:var(--g-900);line-height:1.75}
+.keybox .ktag{display:block;font-weight:800;font-size:11.5px;letter-spacing:.14em;color:var(--gold);margin-bottom:3px}
+.keybox b{color:var(--g-700)}
+.card .lbl{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;color:var(--g-600);margin:12px 0 2px}
+@media(max-width:520px){.keybox{font-size:14px}}
+/* ===== 附件 ===== */
+.attach{border-style:dashed;background:var(--card-2)}
+.attach .atag{display:inline-block;background:var(--gold);color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.1em;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+.tmpl{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-family:'SF Mono',Menlo,Consolas,monospace;font-size:13px;line-height:1.85;white-space:pre-wrap;margin:8px 0;color:var(--ink)}
+.checklist{margin:8px 0!important}
+.checklist li::before{content:''!important;width:14px!important;height:14px!important;border-radius:3px!important;border:2px solid var(--g-600);background:#fff;left:0!important;top:10px!important}
+/* ===== 流程 ===== */
+.flow{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0}
+.flow-step{flex:1 1 130px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;position:relative;font-size:13.5px}
+.flow-step b{display:flex;align-items:center;gap:7px;color:var(--g-800);margin-bottom:3px;font-size:14px}
+.flow-step .fnum{width:22px;height:22px;border-radius:50%;background:var(--g-800);color:#fff;font-size:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}
+.flow-step::after{content:'→';position:absolute;right:-11px;top:50%;transform:translateY(-50%);color:var(--gold);font-weight:800}
+.flow-step:last-child::after{display:none}
+/* ===== 筆記 ===== */
+.card-note{margin-top:12px;font-size:13.5px}
+.card-note summary{cursor:pointer;color:var(--g-600);font-weight:600;font-size:13px;user-select:none;display:inline-block}
+.card-note textarea{width:100%;min-height:70px;border:1px solid var(--line-2);border-radius:8px;padding:8px 10px;font-family:inherit;font-size:13.5px;background:#fff;color:var(--ink);margin-top:6px;resize:vertical}
+/* ===== 右側目錄 ===== */
+.toc-rail{position:sticky;top:0;height:100vh;overflow-y:auto;padding:30px 14px 30px 8px;font-size:12.5px}
+.toc-rail h4{font-size:11px;letter-spacing:.18em;color:var(--ink-3);margin-bottom:10px;font-weight:700}
+.toc-rail a{display:block;color:var(--ink-2);padding:4px 8px;border-radius:6px;margin:1px 0;line-height:1.45}
+.toc-rail a:hover{background:var(--card)}
+.toc-rail a.active{background:var(--g-100);color:var(--g-800);font-weight:600}
+.toc-rail .rail-num{color:var(--gold);font-family:var(--serif);font-weight:700;margin-right:5px}
+/* ===== 筆記抽屜 ===== */
+.notes-drawer{position:fixed;top:0;right:0;width:min(370px,94vw);height:100vh;background:var(--card);border-left:1px solid var(--line);box-shadow:-8px 0 24px rgba(20,37,30,.14);transform:translateX(103%);transition:transform .25s,visibility .25s;z-index:100;display:flex;flex-direction:column;visibility:hidden}
+.notes-drawer.open{transform:translateX(0);visibility:visible}
+.notes-drawer h3{font-family:var(--serif);padding:16px 18px;border-bottom:1px solid var(--line);color:var(--g-900);font-size:17px;display:flex;justify-content:space-between;align-items:center}
+.notes-drawer .nd-close{border:0;background:transparent;font-size:22px;color:var(--ink-3);cursor:pointer;line-height:1;padding:0 4px}
+.notes-drawer .nd-close:hover{color:var(--no)}
+.notes-drawer textarea{flex:1;border:0;outline:0;padding:16px 18px;font-family:inherit;font-size:14.5px;line-height:1.85;background:transparent;color:var(--ink);resize:none}
+.notes-drawer .nd-foot{padding:10px 18px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+/* ===== 總結／免責／頁尾 ===== */
+.summary-box,.disclaimer{background:var(--g-100);border-radius:14px;padding:20px 24px;margin:30px 26px}
+.disclaimer{border:1px dashed var(--line-2);background:var(--card)}
+.summary-box h2,.disclaimer h2{font-family:var(--serif);color:var(--g-900);font-size:18px;margin-bottom:8px}
+.summary-box ul{list-style:none;margin:6px 0}
+.summary-box li{padding:5px 0 5px 22px;position:relative;font-size:14px;color:var(--ink-2)}
+.summary-box li::before{content:'';position:absolute;left:2px;top:15px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
+.disclaimer p{font-size:14px;color:var(--ink-2);margin:6px 0}
+footer{margin:10px 26px 46px;padding-top:16px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;color:var(--ink-3);font-size:12.5px}
+.stage.hidden{display:none}
+.search-info{font-size:12.5px;color:var(--ink-3);padding:6px 4px 0;min-height:0}
+.backtop{position:fixed;right:18px;bottom:18px;width:42px;height:42px;border-radius:50%;background:var(--g-800);color:#fff;border:0;font-size:17px;cursor:pointer;z-index:80;display:none;box-shadow:0 4px 12px rgba(20,37,30,.25)}
+.backtop.show{display:block}
+/* ===== 響應式 ===== */
+@media(max-width:1240px){.layout{grid-template-columns:252px minmax(0,1fr)}.toc-rail{display:none}}
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line)}
+  .side-nav{display:flex;flex-wrap:wrap;gap:4px}
+  .side-nav .grp{display:none}
+  .side-nav a{flex:1 1 44%;margin:2px}
+  .side-foot{display:none}
+  .hero{padding:30px 16px 6px}
+  .stage{padding:8px 0 6px}
+  .howto{margin-left:16px;margin-right:16px}
+  .summary-box,.disclaimer{margin-left:16px;margin-right:16px}
+  .topbar{padding:10px 14px}
+  footer{margin-left:16px;margin-right:16px}
+  input,.search input,textarea{font-size:16px}
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table.tbl.tbl-wide{min-width:540px}
+}
+@media(max-width:520px){body{font-size:15px}.card{padding:16px 16px 14px}.stage-head{gap:10px}.stage-num{font-size:34px}
+  .law{white-space:normal;font-size:13px;line-height:1.55}
+  .chip{font-size:12.5px}
+  .learn-toggle{font-size:13px}
+  .tb-prog span{font-size:13px}
+  .kicker{font-size:12.5px}
+  .law-note .ltag{font-size:12px}
+  table.tbl{font-size:13px}
+  .tbl th,.tbl td{padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<div class="layout">
+
+<!-- ===== 左側側欄導航 ===== -->
+<aside class="sidebar">
+  <div class="brand">人生階段<br>台灣法務知識庫<small>LIFE-STAGE LEGAL GUIDE · TAIWAN</small></div>
+  <ul class="side-nav">
+    <li class="grp">怎麼開始</li>
+    <li><a href="#howto"><b>00</b>怎麼用這份知識庫<small>搜尋・打勾・備份・查法條</small></a></li>
+    <li class="grp">人生八階段</li>
+    <li><a href="#stage-1"><b>01</b>學生與未成年<small>打工・租屋・法律行為</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-2"><b>02</b>上班族勞動權益<small>契約・薪資・離職・職災</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-3"><b>03</b>感情與伴侶<small>同居・婚前協議・結婚</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-4"><b>04</b>婚姻與家庭<small>離婚・監護・扶養</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-5"><b>05</b>買房置產<small>斡旋簽約・貸款・驗屋・租賃</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-6"><b>06</b>投資理財<small>契約審閱・詐騙防範・保險</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-7"><b>07</b>退休與老年<small>退休金・意定監護・醫療決定</small><span class="stage-prog"><i></i></span></a></li>
+    <li><a href="#stage-8"><b>08</b>身後事<small>遺囑・繼承・拋棄繼承・贈與稅</small><span class="stage-prog"><i></i></span></a></li>
+    <li class="grp">附錄與免責</li>
+    <li><a href="#stage-9"><b>09</b>附錄・權利時效總表<small>時效・查詢管道</small></a></li>
+    <li><a href="#disclaimer"><b>※</b>免責聲明<small>重要事務請諮詢專業人士</small></a></li>
+  </ul>
+  <div class="side-foot">內容整理至 2026 年 9 月<br>法規如有異動，以主管機關現行公告為準<br>本頁面資料僅供參考</div>
+</aside>
+
+<!-- ===== 主要內容 ===== -->
+<main class="content">
+
+<!-- ===== 頂欄：搜尋與互動 ===== -->
+<header class="topbar">
+  <div class="tb-row">
+    <div class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="kw" placeholder="搜尋全部章節：輸入「押金」「特休」「遺囑」…" autocomplete="off">
+    </div>
+    <label class="unseen-label"><input type="checkbox" id="unseenCk">只看未學會</label>
+    <button class="btn" id="notesBtn" type="button">筆記</button>
+    <button class="btn" id="exportBtn" type="button">匯出備份</button>
+    <button class="btn" id="importBtn" type="button">匯入備份</button>
+    <button class="btn danger" id="resetBtn" type="button">重設進度</button>
+  </div>
+  <div class="tb-prog">
+    <div class="bar"><i id="globalBar"></i></div>
+    <span id="progTxt">已學會 0 / 0</span>
+  </div>
+  <div class="search-info" id="searchInfo"></div>
+</header>
+
+<!-- ===== Hero ===== -->
+<div class="hero">
+  <div class="kicker">TAIWAN · 以台灣法律為主 · 2026 年整理</div>
+  <h1>人生階段台灣法務知識庫</h1>
+  <p class="sub">從學生打工、第一份工作、感情與婚姻、買房置產，到投資、退休與身後事——八個人生階段會遇到的法律問題，實務做法與具體法條一次整理，附可套用的範本與清單。</p>
+</div>
+
+<!-- ===== 怎麼用 ===== -->
+<section class="howto" id="howto">
+  <h2><span class="dot"></span>怎麼用這份知識庫</h2>
+  <ol>
+    <li><b>照人生階段閱讀</b>：從 01 到 08 依序走，或直接點左側章節跳到你在意的階段；每節最後有「一句話帶走」快速複習。</li>
+    <li><b>搜尋關鍵字</b>：輸入「押金」「特休」「遺囑」「保護令」等，卡片即時過濾，法條與表格內容都會被搜到。</li>
+    <li><b>打勾追蹤進度</b>：每張卡片右上角「學會」打勾後，進度條與本機儲存（localStorage）會自動記錄；可切換「只看未學會」複習。</li>
+    <li><b>筆記與備份</b>：點卡片內的「＋筆記」記下個人重點；右上「筆記」開啟總筆記。用「匯出備份」存成 .json 檔，換電腦可「匯入備份」帶回進度。</li>
+    <li><b>查證法條</b>：每張卡片都有「法條依據」，可至全國法規資料庫（law.moj.gov.tw）查原文；重要金額與費率以主管機關當年度公告為準。</li>
+  </ol>
+</section>
+
+<!-- ===== STAGES ===== -->
+<!-- ===================== 01 學生與未成年 ===================== -->
+<section class="stage" id="stage-1" data-title="學生與未成年">
+  <div class="stage-head">
+    <span class="stage-num">01</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">學生與未成年：先學會保護自己</h2>
+      <p class="stage-sub">打工、租屋、簽任何契約之前，先弄清楚「你能自己決定什麼、需要誰同意」</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">民法</span><span class="chip">勞動基準法</span><span class="chip">租賃住宅市場發展及管理條例</span><span class="chip gold">成年年齡：18 歲（112.1.1 起）</span>
+  </div>
+
+  <article class="card" id="s1-age" data-tags="成年,行為能力,未成年人,法定代理人,簽約">
+    <h3><span class="dot"></span>成年與行為能力：18 歲是法律上的分水嶺</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b><b>成年＝18 歲</b>（民法第 12 條）：滿 18 歲起自己簽約、自己負責；7～18 歲簽的契約，要父母（法定代理人）允許或承認才生效。</div>
+    <p>2023 年 1 月 1 日起，民法成年年齡從 20 歲下修至 <b class="hl">18 歲</b>（民法第 12 條）。滿 18 歲就是完全行為能力人，可以自己簽契約、辦門號、開戶、結婚（另需登記），也要自己為自己的法律行為負責。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:22%"><col style="width:34%"><col style="width:44%"></colgroup>
+      <tr><th>年齡區間</th><th>法律狀態</th><th>重要後果</th></tr>
+      <tr><td>未滿 7 歲</td><td>無行為能力（民法第 13 條第 1 項）</td><td>法律行為由法定代理人（通常是父母）代為、代受</td></tr>
+      <tr><td>7 歲以上、未滿 18 歲</td><td>限制行為能力（民法第 13 條第 2 項）</td><td>契約須經法定代理人允許或事後承認才生效（第 77、79 條）；經允許處分的財產可自行處分（第 84 條）；經允許獨立營業者，關於營業有行為能力（第 85 條）</td></tr>
+      <tr><td>滿 18 歲</td><td>成年・完全行為能力（民法第 12 條）</td><td>所有法律行為自己決定、自己負責</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>舊法「未成年人已結婚者，有行為能力」的例外規定（舊民法第 13 條第 3 項）已隨成年年齡下修刪除——現在結婚年齡也是 18 歲，結婚即成年，不需要這個例外。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 12 條</span><span class="law">第 13 條</span><span class="law">第 77 條</span><span class="law">第 79 條</span><span class="law">第 84 條</span><span class="law">第 85 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>18 歲以前簽的契約，能不能算數取決於父母（法定代理人）允不允許、承不承認；18 歲以後，全部自己扛。</div>
+  </article>
+
+  <article class="card" id="s1-work" data-tags="打工,工讀,童工,基本工資,勞健保,職災,學生">
+    <h3><span class="dot"></span>學生打工：四件事先確認，權益和正職一樣受保障</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>打工四關先檢查：<b>① 年齡</b>（15 歲以下原則不能僱用）<b>② 工時</b>（童工不可深夜上班）<b>③ 投保</b>（受僱即加保，職災保險不分人數全面強制）<b>④ 薪資</b>（不低於 <span class="big">2026 年月薪 29,500 元／時薪 196 元</span>）。</div>
+    <p>只要受僱並有人格從屬、經濟從屬關係，工讀生就是勞動基準法上的勞工，基本工資、加班費、特休假（按比例）、勞健保與勞退都要給，不能因為「只是學生」就打折扣。</p>
+    <ol>
+      <li><b>年齡合法嗎？</b>雇主原則不得僱用未滿 15 歲之人（勞基法第 44 條；國中畢業或經主管機關許可者除外）；15 歲以上未滿 16 歲為童工，雇主應置備<b>法定代理人同意書與年齡證明</b>（第 46 條）。</li>
+      <li><b>工時合法嗎？</b>童工不得於午後 8 時至翌晨 6 時工作，每日不得超過 8 小時、每週不得超過 40 小時（勞基法第 45 條）。</li>
+      <li><b>有投保嗎？</b>受僱即應加保：勞工保險（5 人以上事業單位強制）、<b>勞工職業災害保險（111.5.1 起不分僱用人數全面強制）</b>、全民健保、勞工退休金（適用勞基法者由雇主強制提撥 6%）。</li>
+      <li><b>薪資合法嗎？</b>不得低於基本工資：<span class="big">2026 年 1 月起月薪 29,500 元、時薪 196 元</span>（2027 年 1 月起擬調為月薪 30,900 元、時薪 205 元，以勞動部公告為準）。</li>
+    </ol>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>店家說「工讀生沒有勞健保」「時薪 150 元行情價」——都違法，可向縣市政府勞工局申訴。</li><li>雇主沒投保不代表責任消失：發生職災時，雇主仍負勞基法上的補償責任。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 21 條</span><span class="law">第 44 條</span><span class="law">第 45 條</span><span class="law">第 46 條</span><span class="law">勞工保險條例第 6 條</span><span class="law">勞工職業災害保險及保護法（111.5.1 施行）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>打工 = 受勞基法保障的勞工：年齡、工時、投保、薪資四關先檢查，最低工資與投保是雇主的義務，不是恩惠。</div>
+  </article>
+
+  <article class="card" id="s1-contract" data-tags="勞動契約,口頭約定,試用期,競業禁止,簽約">
+    <h3><span class="dot"></span>簽約必知：口頭承諾算數，但白紙黑字才自保</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>口頭約定也有效，但<b>沒證據等於沒約定</b>；競業禁止<b>最長 2 年</b>、須有合理補償，不是「簽了就永遠綁」。</div>
+    <p>勞動契約不以書面為必要（民法第 153 條），口頭約定也有效，但發生爭議時難以舉證。打工或兼職最好留下書面或至少通訊紀錄，寫清楚：<b>薪資計算方式、工作內容與地點、工作時間、加班與請假規則、離職預告</b>。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「試用期不用付薪水、隨時叫你走」→ 錯。試用期仍屬僱傭關係，工資照給，終止契約也要符合規定。</span></div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「簽了競業禁止，離職後永遠不能做同業」→ 錯。競業禁止有法定要件：雇主須有應受保護的營業秘密、期間最長 <b>2 年</b>、區域與職業活動範圍合理、且須給合理補償，否則約定無效（勞基法第 9 條之 1）。</span></div>
+    <div class="myth ok-myth"><span class="mark">✓</span><span>「工讀生時薪低於基本工資可以檢舉」→ 對。可向縣市政府勞工局申訴或申請勞資爭議調解（免費）。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 153 條</span><span class="law">勞動基準法第 9 條之 1</span><span class="law">第 21 條</span><span class="law">勞資爭議處理法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>口頭約定也有效，但沒留下紀錄等於沒證據；競業禁止不是「隨便簽、永遠綁」。</div>
+  </article>
+
+  <article class="card" id="s1-rent" data-tags="租屋,押金,電費,修繕,轉租,戶籍,租賃">
+    <h3><span class="dot"></span>學生租屋：簽約前把這四條法律紅線記起來</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>租屋四條紅線：<b>押金最多兩個月</b>、<b>電費不得超過台電牌價</b>、租期內不得漲租、不能禁止你遷戶籍或報稅。</div>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:26%"><col style="width:44%"><col style="width:30%"></colgroup>
+      <tr><th>項目</th><th>法定標準</th><th>依據</th></tr>
+      <tr><td>押金</td><td><span class="hl">不得逾二個月租金總額</span></td><td>租賃住宅市場發展及管理條例第 7 條、土地法第 99 條</td></tr>
+      <tr><td>電費</td><td>按度計費不得超過台電「當期每度平均電價」；非按度計費不得超過電費單每期總額；屋外公共設施未申辦分攤者不得另收</td><td>內政部住宅租賃定型化契約應記載及不得記載事項（112.7.15 新制）</td></tr>
+      <tr><td>租金調漲</td><td>租賃期間不得藉任何理由要求調漲租金</td><td>同上應記載事項</td></tr>
+      <tr><td>戶籍與申報</td><td>不得約定「禁止遷入戶籍」「不得申報租賃費用支出」（租屋補貼亦然）</td><td>同上應記載事項（112 年修正）</td></tr>
+    </table>
+    </div>
+    <span class="lbl">簽約前再確認</span>
+    <p>房屋修繕原則由<b>出租人</b>負責（民法第 423、429 條）；未經屋主同意不得擅自轉租（民法第 443 條，二房東契約要確認屋主有同意）；與企業經營者簽的定型化契約，簽約前應有合理審閱期（住宅租賃定型化契約規定審閱期至少 3 日，以現行公告為準）。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「電費一度 7 元是行情」→ 錯。按度計費每度不得超過台電當期每度平均電價，超收可向縣市政府消保官或地政機關申訴。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>被扣押金沒有明細：返還房屋時押金應返還，可抵充欠租、費用或損害，但房東應說明並保留點交照片。</li><li>「屋況瑕疵」進住才發現：簽約前一定要現場點交、拍照存證，寫入租約。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">租賃住宅市場發展及管理條例第 7 條</span><span class="law">土地法第 99 條</span><span class="law">民法第 423 條</span><span class="law">第 429 條</span><span class="law">第 443 條</span><span class="law">內政部住宅租賃定型化契約應記載及不得記載事項</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>押金最多兩個月、電費不能超過台電牌價、不能禁止你遷戶籍——這三條記熟，租屋踩雷機率少一半。</div>
+  </article>
+
+  <article class="card attach" id="s1-rent-checklist" data-tags="租屋清單,檢查表,簽約">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>租約檢查清單（簽約前逐項打勾）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>簽約前逐項打勾；最常出事的就三項：<b>押金、電費、戶籍條款</b>。</div>
+    <ul class="checklist">
+      <li>確認出租人身份：是屋主本人？若不是，有無屋主授權或租賃契約（民法第 443 條轉租規定）</li>
+      <li>押金不超過二個月租金，並寫明返還條件與時點</li>
+      <li>電費計費方式寫清楚：按度不得超過台電當期每度平均電價，或寫明分攤方式</li>
+      <li>租期、租金、繳租日、水電瓦斯管理費誰付，全部白紙黑字</li>
+      <li>修繕責任分配（設備自然耗損與故障由房東負責）</li>
+      <li>提前解約的條件與違約金（過高可請求酌減）</li>
+      <li>無「不得遷入戶籍」「不得申報租賃支出」等違法條款</li>
+      <li>簽約前完成現場點交，拍照存證（牆面、家具、電表度數）</li>
+      <li>契約審閱至少 3 日（定型化契約）</li>
+      <li>保留一式兩份契約與匯款紀錄</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">租賃住宅市場發展及管理條例第 7 條</span><span class="law">民法第 443 條</span><span class="law">內政部住宅租賃定型化契約應記載及不得記載事項</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>把這張清單印出來或存手機，簽約現場一項一項對，比事後後悔划算。</div>
+  </article>
+
+  <article class="card" id="s1-help" data-tags="申訴,救濟,法律扶助,113,調解">
+    <h3><span class="dot"></span>出事了怎麼辦：免費的救濟管道先知道</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>救濟管道大多<b>免費</b>：勞資找縣市勞工局調解、租屋消費找消保官、人身安全打 <b>113／110</b>、沒錢請律師找<b>法律扶助基金會</b>。</div>
+    <ul>
+      <li><b>勞資爭議（欠薪、被扣薪、職災）</b>：向公司所在地縣市政府勞工局申請勞資爭議調解，免費。</li>
+      <li><b>租屋或消費糾紛</b>：向縣市政府消費者服務中心申訴，或請求消保官調處（消費者保護法第 43 條以下）。</li>
+      <li><b>家內或人身安全問題</b>：113 保護專線（24 小時）、110 報警，緊急保護令可深夜聲請。</li>
+      <li><b>需要律師但付不起</b>：法律扶助基金會（符合資力標準者，可打 412-8518 專線），未滿 18 歲的勞資、家庭案件另有擴大扶助。</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞資爭議處理法第 9 條以下</span><span class="law">消費者保護法第 43 條</span><span class="law">家庭暴力防治法（保護令專章）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>調解、申訴、扶助大多是免費的，別因為「好像很麻煩」或「怕對方」而放棄主張權利。</div>
+  </article>
+</section>
+
+<section class="stage" id="stage-2" data-title="上班族勞動權益">
+  <div class="stage-head">
+    <span class="stage-num">02</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">社會新鮮人 → 上班族</h2>
+      <p class="stage-sub">把勞動權益變成常識：從簽第一份契約、領第一張薪資單，到離職、被資遣、遇到職災與性騷擾，知道自己的底線在哪裡</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">勞動基準法</span><span class="chip">勞工退休金條例</span><span class="chip">就業保險法</span><span class="chip">性別平等工作法</span><span class="chip">營業秘密法</span><span class="chip gold">基本工資：月薪 29,500 元・時薪 196 元（2026）</span>
+  </div>
+
+  <article class="card" id="s2-contract" data-tags="勞動契約,定期契約,不定期契約,試用期,簽約,工作規則,勞動條件">
+    <h3><span class="dot"></span>勞動契約與試用期：簽約前先確認這七件事</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>長期工作簽<b>不定期契約</b>；薪資、工時、地點、離職預告務必白紙黑字；試用期<b>工資照給、該保的保險一樣不能少</b>，公司不能一句「不適任」就無預警叫人走。</div>
+    <p>勞動契約分<b>定期契約</b>與<b>不定期契約</b>（勞基法第 9 條）。一般長期性工作應為不定期契約；只有臨時性、短期性、季節性、特定性工作才能約定期限。</p>
+    <span class="lbl">簽約時要寫進契約</span>
+    <ul>
+      <li><b>工資</b>：金額、計算方式、發放日與發放方式（不得低於基本工資）。</li>
+      <li><b>工作時間</b>：起訖時刻、休息時間、出勤輪班、例假與休息日安排。</li>
+      <li><b>工作內容與地點</b>：職稱、部門、地點，避免日後被任意調職。</li>
+      <li><b>加班、值班、出差</b>如何認定與給酬。</li>
+      <li><b>請假規則</b>：特休、事假、病假安排方式。</li>
+      <li><b>離職預告</b>與交接要求。</li>
+      <li><b>假承攬真僱傭</b>：外包廠商卻叫你穿自家制服打卡，你仍是勞工，保障一項都不能少。</li>
+    </ul>
+    <p><b>試用期</b>：勞基法並無「試用期」專條，實務常見約定 3 至 6 個月；期間仍屬僱傭關係，<span class="hl">工資照給、勞健保加保、加班費照算</span>。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「簽了不定期契約就等於鐵飯碗，公司不能叫我走」→ 錯。符合第 11 條（業務緊縮、無法勝任等）事由仍可資遣，但要依法預告、給資遣費。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>要求你先繳服裝費、訓練費、保證金才上班——除法律另有規定，雇主不得向勞工預收費用或要求提供擔保。</li><li>口頭講「月薪 4 萬」，契約寫 29,500、其餘用「獎金」「津貼」發——加班費、資遣費、特休折算都可能被低報，務必逐項問清楚。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 9 條</span><span class="law">第 11 條</span><span class="law">第 13 條</span><span class="law">第 21 條</span><span class="law">勞動基準法施行細則</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>長期工作簽不定期契約；試用期不是免費試用、更不是免職金牌，試用期間該有的錢與保險一毛都不能少。</div>
+  </article>
+
+  <article class="card" id="s2-hours" data-tags="工時,正常工時,一例一休,例假日,休息日,國定假日,雙週84小時,加班上限">
+    <h3><span class="dot"></span>工時制度：8 小時、40 小時、一例一休，一次搞清楚</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>底線是<b>每日 8 小時、每週 40 小時</b>；每週必有<b>例假＋休息日各 1 天</b>（一例一休）；一個月加班上限 <span class="big">46 小時</span>，超過就是違法。</div>
+    <p>正常工作時間，<span class="big">每日不得超過 8 小時、每週不得超過 40 小時</span>（第 30 條）。勞工每 7 日中應有 2 日休息，其中 1 日為<b>例假日</b>、1 日為<b>休息日</b>（第 36 條）。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:22%"><col style="width:48%"><col style="width:30%"></colgroup>
+      <tr><th>名詞</th><th>意思</th><th>能不能上班</th></tr>
+      <tr><td>正常工時</td><td>每日 8 小時、每週 40 小時以內</td><td>標準工時，照平常薪</td></tr>
+      <tr><td>例假日</td><td>每 7 日 1 日，為強制基本休息</td><td><span class="hl">原則不可出勤</span>，出勤要非常事由</td></tr>
+      <tr><td>休息日</td><td>每 7 日 1 日，可在合法條件下出勤並領加班費</td><td>經同意可出勤，加成給薪</td></tr>
+      <tr><td>國定假日</td><td>內政部應放假之紀念日、節日及勞動節，全年約 12 日（第 37 條）</td><td>工資照給；出勤應加倍發給（第 39 條）</td></tr>
+      <tr><td>延長工時（加班）</td><td>超過正常工時的工作</td><td>1 個月最多 <span class="big">46 小時</span>，且須加給</td></tr>
+    </table>
+    </div>
+    <p>加班上限：雇主延長勞工工作時間，<span class="big">1 個月內總延長工時不得超過 46 小時</span>（第 32 條），且須經工會或勞資會議同意並向主管機關備查。休息日出勤、例假日出勤都算在這個上限內。</p>
+    <div class="fact"><span class="mark">✓</span><span>彈性工時：經工會或勞資會議同意，可實施 2 週、8 週或 4 週變形工時，把正常工時彈性分配到其他日，但每 7 日仍要有 1 日例假、每 4 週例假加休息日至少 8 日，不會變相剝削。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 30 條</span><span class="law">第 32 條</span><span class="law">第 36 條</span><span class="law">第 37 條</span><span class="law">第 39 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>每天 8 小時、每週 40 小時是底線，每週必有例假加休息日各 1 天，一個月加班超過 46 小時就是違法。</div>
+  </article>
+
+  <article class="card" id="s2-overtime" data-tags="加班費,延長工時加成,1又1/3,1又2/3,休息日加班,國定假日加班">
+    <h3><span class="dot"></span>加班費：你加班的每一小時都該被加給</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>平日加班前 2 小時 <span class="big">1 又 1/3 倍</span>、之後 <span class="big">1 又 2/3 倍</span>；國定假日加倍發給；<b>補休不能合法抵掉加班費</b>。</div>
+    <p>第 24 條按「平日每小時工資額」加成計給。<b>先算出每小時薪資</b>：月薪 ÷ 30 ÷ 8（或按約定），再依下表乘倍率。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:40%"><col style="width:35%"><col style="width:25%"></colgroup>
+      <tr><th>出勤情形</th><th>每小時工資倍率</th><th>說明</th></tr>
+      <tr><td>平日延長工時，前 2 小時</td><td class="num"><span class="big">1 又 1/3 倍</span>（加給 1/3）</td><td>第 24 條第 1 項</td></tr>
+      <tr><td>平日延長工時，第 3 至 4 小時</td><td class="num"><span class="big">1 又 2/3 倍</span>（再加給 2/3）</td><td>第 24 條第 1 項</td></tr>
+      <tr><td>休息日出勤，前 2 小時</td><td class="num">1 又 1/3 倍</td><td>第 24 條第 2 項</td></tr>
+      <tr><td>休息日出勤，第 3 小時起</td><td class="num">1 又 2/3 倍</td><td>第 24 條第 2 項</td></tr>
+      <tr><td>國定假日出勤</td><td class="num"><span class="hl">工資加倍發給</span></td><td>第 39 條</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「公司說加班換補休就不用給加班費」→ 錯。平日與休息日加班，雇主要麼給加班費、要麼經勞工同意補休；國定假日出勤工資應加倍發給，不能只用補休打發。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>雇主把月薪拆成「本薪很低、全勤或津貼很高」，加班費只按本薪算——加班費計算基礎應包含經常性給予。</li><li>叫你「自己填加班單」但實際加班沒被核計，留下出勤紀錄、打卡紀錄、通訊軟體訊息佐證。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 24 條</span><span class="law">第 39 條</span><span class="law">勞動基準法施行細則第 10 條（工資平均）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>平日加班前 2 小時 1 又 1/3 倍、之後 1 又 2/3 倍，國定假日加倍；用補休不能合法抵掉該給的加班費。</div>
+  </article>
+
+  <article class="card" id="s2-leave" data-tags="特休假,特別休假日,未休特休折算,30日,年度特休,排休">
+    <h3><span class="dot"></span>特休假：做滿半年就有假，沒休完要折錢</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>做滿 <span class="big">6 個月</span>就有 3 天特休；年資 1／2／3／5 年對應 <span class="big">7／10／14／15 日</span>；滿 10 年後每年加 1 天、上限 <span class="big">30 日</span>；沒休完離職要折錢。</div>
+    <p>在同一雇主繼續工作滿一定期間，雇主應給予特別休假（第 38 條）。天數如下表：</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:45%"><col style="width:30%"><col style="width:25%"></colgroup>
+      <tr><th>繼續工作年資</th><th>特別休假期日</th><th>備註</th></tr>
+      <tr><td>6 個月以上、未滿 1 年</td><td class="num"><span class="big">3 日</span></td><td>滿半年即有</td></tr>
+      <tr><td>1 年以上、未滿 2 年</td><td class="num">7 日</td><td></td></tr>
+      <tr><td>2 年以上、未滿 3 年</td><td class="num">10 日</td><td></td></tr>
+      <tr><td>3 年以上、未滿 5 年</td><td class="num">14 日</td><td></td></tr>
+      <tr><td>5 年以上、未滿 10 年</td><td class="num">15 日</td><td></td></tr>
+      <tr><td>滿 10 年</td><td class="num">16 日</td><td>每滿 1 年加 1 日</td></tr>
+      <tr><td>10 年以上</td><td class="num"><span class="big">上限 30 日</span></td><td>加至 30 日為止</td></tr>
+    </table>
+    </div>
+    <ul>
+      <li><b>排休</b>：勞工可以排定特休日期；雇主不同意時應協商。</li>
+      <li><b>未休要折錢</b>：年度終結或契約終止時，未休完的特休日數，雇主應發給工資（第 38 條第 4 項）。</li>
+      <li><b>新鮮人注意</b>：做滿 6 個月就有 3 天特休，不是「滿一年才能休假」。</li>
+    </ul>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「特休當年沒休完就作廢」→ 錯。未休日數雇主應折算發給工資，不能用「年度清零」帶過。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 38 條</span><span class="law">勞動基準法施行細則</span><span class="law">勞資會議實施辦法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>特休是你的有薪假，滿半年就有 3 天；離職或年底還沒休完的假，公司要折現給你。</div>
+  </article>
+
+  <article class="card" id="s2-salary" data-tags="薪資,工資定義,全額給付,預扣,平均工資,薪資單,勞保,健保,勞退6%,二代健保">
+    <h3><span class="dot"></span>薪資結構：什麼算薪、公司能扣什麼、你的保費怎麼跑掉</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>薪要<b>全額給、不能預扣</b>；平均工資用前 <span class="big">6 個月</span>算；勞保約 <span class="big">12.5%</span>、健保 <span class="big">5.17%</span>、勞退雇主替你提 <span class="big">6%</span>；<b>高薪低報等於變相坑你</b>。</div>
+    <p>「工資」是勞工因工作獲得的<b>經常性給予</b>，不論叫薪水、津貼、獎金、車馬費，只要與工作相關、經常性發放都算（第 2 條第 3 款）。</p>
+    <p>工資應<b>全額直接給付</b>勞工（第 22 條），<span class="hl">不得預扣工資作為違約金或賠償費用</span>（第 26 條）。</p>
+    <span class="lbl">每個月被扣的錢怎麼算</span>
+    <ul>
+      <li><b>平均工資</b>（第 2 條第 4 款）：計算事由發生當日前 <span class="big">6 個月</span>內工資總額 ÷ 這 6 個月總日數。資遣費、特休折算、職災補償都用它算。</li>
+      <li><b>勞保</b>：費率合計約 <span class="big">12.5%</span>（普通事故 11.5%＋就業保險 1%，2025 年起）；2026 年投保薪資最高一級為 <span class="big">45,800 元</span>。</li>
+      <li><b>健保</b>：費率 <span class="big">5.17%</span>（自 110 年 1 月 1 日起），勞工自付 3 成。</li>
+      <li><b>勞退新制</b>：雇主每月依工資提繳 <span class="big">6%</span> 到你的個人專戶；你可自願再提繳 6% 以內並自綜所稅扣除；提繳上限 150,000 元。</li>
+      <li><b>二代健保補充保費</b>：高額年終獎金、兼職差額、租金、利息等，會單扣 2%。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:26%"><col style="width:37%"><col style="width:37%"></colgroup>
+      <tr><th>項目</th><th>費率／上限</th><th>勞工角度</th></tr>
+      <tr><td>基本工資（2026）</td><td>月薪 29,500 元、時薪 196 元</td><td>不得低於此數</td></tr>
+      <tr><td>勞保費率</td><td>約 <span class="big">12.5%</span>（含就保 1%）</td><td>投保薪資上限 45,800 元</td></tr>
+      <tr><td>健保費率</td><td><span class="big">5.17%</span></td><td>勞工自付 3 成</td></tr>
+      <tr><td>勞退提撥</td><td>雇主提 <span class="big">6%</span>（強制）</td><td>入個人專戶，領得到</td></tr>
+    </table>
+    </div>
+    <p class="cap">費率與級距以勞動部、衛生福利部中央健保署、勞保局當年度公告為準。</p>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>「高薪低報」：實領 5 萬、勞保卻用 29,500 申報——老年給付、職災、失業給付都跟著被打折，可檢舉。</li><li>沒給薪資單或薪資單只寫「轉帳傳票」：雇主應給勞工繳清各項工資細明。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 2 條</span><span class="law">第 22 條</span><span class="law">第 26 條</span><span class="law">勞工退休金條例第 6 條</span><span class="law">勞工保險條例</span><span class="law">全民健康保險法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>薪要全額給、不能預扣；平均工資用前 6 個月算；勞保 12.5%、健保 5.17%、勞退雇主替你存 6%，高薪低報是變相坑你。</div>
+  </article>
+
+  <article class="card" id="s2-resign" data-tags="自請離職,辭職,預告期,交接,離職證明書,辭職信,非自願離職">
+    <h3><span class="dot"></span>自請離職：提前多久講、交接什麼、證明書一定要拿到</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>主動離職按年資提前 <span class="big">10／20／30 天</span>講；做好交接、拿走<b>離職證明書</b>；<span class="hl">自己提離職就沒有資遣費、不能領失業給付</span>。</div>
+    <p>不定期契約的勞工主動離職，預告期間準用雇主資遣的規定（第 15 條第 2 項準用第 16 條第 1 項）。<b>未滿 3 個月者，法律未訂預告期</b>；3 個月以上則按下表提前講。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:45%"><col style="width:30%"><col style="width:25%"></colgroup>
+      <tr><th>繼續工作年資</th><th>應提前預告</th><th>備註</th></tr>
+      <tr><td>未滿 3 個月</td><td class="num">無法定預告期</td><td>建議仍禮貌告知</td></tr>
+      <tr><td>3 個月以上、未滿 1 年</td><td class="num"><span class="big">10 日前</span></td><td>第 16 條第 1 項第 1 款</td></tr>
+      <tr><td>1 年以上、未滿 3 年</td><td class="num"><span class="big">20 日前</span></td><td>第 16 條第 1 項第 2 款</td></tr>
+      <tr><td>3 年以上</td><td class="num"><span class="big">30 日前</span></td><td>第 16 條第 1 項第 3 款</td></tr>
+    </table>
+    </div>
+    <span class="lbl">遇到時這樣做</span>
+    <ul>
+      <li><b>講清楚最後工作日</b>：用 Email 或書面寫明「預告離職日與最後到職日」，保留紀錄。</li>
+      <li><b>交接</b>：移交工作、文件、客戶、備份、財物與系統權限，列交接清單雙方簽收。</li>
+      <li><b>請求離職證明書</b>：契約終止時你要求發給服務（離職）證明書，雇主不得拒絕（第 19 條）。</li>
+      <li><b>特休結清</b>：未休完的特休記得在離職時折算工資。</li>
+    </ul>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「自請離職也能領失業給付」→ 錯。自願離職不符合就保失業給付條件；只有被資遣、因故被解僱等「非自願離職」才行。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 15 條</span><span class="law">第 16 條</span><span class="law">第 19 條</span><span class="law">就業保險法第 11 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>主動離職要按年資提前 10／20／30 天講、做好交接、拿走離職證明書；自己提離職，就沒有資遣費與失業給付。</div>
+  </article>
+
+  <article class="card" id="s2-layoff" data-tags="資遣,預告,謀職假,資遣費,舊制,新制,非自願離職證明,失業給付">
+    <h3><span class="dot"></span>資遣：公司要你走，該給你什麼</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>被資遣公司要給四樣：<b>預告 <span class="big">10／20／30 天</span>、每週 2 天謀職假、資遣費（新制 1 年算 <span class="big">0.5 個月</span>、上限 6 個月）、非自願離職證明</b>。</div>
+    <p>雇主因第 11 條事由（歇業、轉讓、虧損、業務緊縮、勞工不能勝任等）資遣勞工，必須依法預告、給謀職假、發資遣費、開非自願離職證明。</p>
+    <ul>
+      <li><b>預告期間</b>（第 16 條）：3 個月至 1 年 <span class="big">10 日</span>；1 至 3 年 <span class="big">20 日</span>；3 年以上 <span class="big">30 日</span>。未預告就叫走，要給預告期間工資。</li>
+      <li><b>謀職假</b>：接到預告後為找工作得在工作時間外出，<span class="big">每星期不得超過 2 日</span>，請假期間工資照給（第 16 條第 2 項）。</li>
+      <li><b>非自願離職證明</b>：符合就保非自願離職條件者，雇主應開立，供你申請失業給付。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:30%"><col style="width:35%"><col style="width:35%"></colgroup>
+      <tr><th>制度</th><th>計算標準</th><th>適用對象</th></tr>
+      <tr><td>舊制資遣費（勞基法第 17 條）</td><td>每滿 1 年 <span class="big">1 個月</span>平均工資</td><td>2005 年 7 月前舊制年資</td></tr>
+      <tr><td>新制資遣費（勞退條例第 12 條）</td><td>每滿 1 年 <span class="big">0.5 個月</span>，上限 6 個月</td><td>2005 年 7 月後新制年資</td></tr>
+    </table>
+    </div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>公司叫你「自己簽自請離職」才談條件——一旦簽了自請離職，資遣費與失業給付可能全數飛走，不要輕易簽。</li><li>資遣費應在終止契約後 30 日內發給；拖著不給可申請勞資爭議調解。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 11 條</span><span class="law">第 16 條</span><span class="law">第 17 條</span><span class="law">勞工退休金條例第 12 條</span><span class="law">就業保險法第 11 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>被資遣不是你不好：要預告、要謀職假、要資遣費（新制 1 年算半月、最多 6 個月）、要非自願離職證明才能領失業給付。</div>
+  </article>
+
+  <article class="card" id="s2-noncompete" data-tags="競業禁止,保密條款,營業秘密,離職後就業,補償條款,離職後競業">
+    <h3><span class="dot"></span>競業禁止與保密：簽了不代表你一輩子不能做同業</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>競業禁止要同時符合<b>四要件</b>才有效：公司真有營業秘密、你真的接觸到、期間<b>最長 2 年</b>、雇主給合理補償；<span class="hl">缺一即全部無效</span>。</div>
+    <p>離職後不能去同業的約定，必須同時符合四個法定要件才有效（第 9 條之 1）：</p>
+    <ol>
+      <li>雇主有應受保護的<b>營業秘密、技術或其他正當利益</b>。</li>
+      <li>你在職務上確實接觸該營業秘密。</li>
+      <li>競業禁止的<b>期間、區域、職業活動範圍、就業對象</b>合理；<span class="big">期間最長不得逾 2 年</span>，超過縮為 2 年。</li>
+      <li>雇主對你不從事競業所受損失給予<b>合理補償</b>（實務上常要求按月給）。</li>
+    </ol>
+    <p>另外，<b>保密義務</b>不等於競業禁止：即使沒有競業條款，你仍負有不洩漏雇主營業秘密的義務（營業秘密法）；但「不能去同業上班」是另外一回事，必須符合上面四要件。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「合約寫離職後 3 年不能做同行，違約賠 500 萬」→ 錯。期間超過 2 年部分無效；沒有合理補償的競業禁止約定，全部無效。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 9 條之 1</span><span class="law">營業秘密法第 2 條</span><span class="law">第 9 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>競業禁止最長 2 年、必須給合理補償、且公司真有營業秘密；普通行政人員被要求「不能做同業」，多半是無效條款。</div>
+  </article>
+
+  <article class="card" id="s2-injury" data-tags="職業災害,公傷,職災補償,醫療補償,工資補償,失能補償,死亡補償,職災保險">
+    <h3><span class="dot"></span>職業災害：受傷當下先做對這幾步，補償才不會漏</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>黃金動作：<b>就醫 → 存證 → 叫公司通報職災 → 請公傷假</b>；醫療期間公司<span class="hl">不能資遣你</span>，不能工作期間要補原領工資。</div>
+    <p>上下班或執行職務受傷、罹病就是職業災害。<b>醫療期間雇主不得終止勞動契約</b>（第 13 條），且雇主即使沒有過失也要補償（第 59 條）。</p>
+    <span class="lbl">發生當下這樣做</span>
+    <ul>
+      <li><b>送醫與通報</b>：就醫並告知為職災，請公司向勞保／職災保險提出職災認定。</li>
+      <li><b>請公傷病假</b>：治療休養期間請公傷病假，不得扣全勤獎金。</li>
+      <li><b>第 59 條四項補償</b>：① 必需醫療費用；② 醫療中不能工作按<b>原領工資</b>補償；③ 遺存障害按失能等級給對應日數；④ 死亡給喪葬費與遺屬補償。</li>
+      <li><b>死亡補償標準</b>：喪葬費按平均工資 <span class="big">5 個月</span>；遺屬補償按平均工資 <span class="big">40 個月</span>。</li>
+    </ul>
+    <div class="fact"><span class="mark">✓</span><span>2022 年 5 月 1 日起「勞工職業災害保險及保護法」施行，不分行業、不分人數全面強制投保職災保險；上下班途中事故也在保障範圍。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 13 條</span><span class="law">第 59 條</span><span class="law">勞工職業災害保險及保護法</span><span class="law">勞工請假規則第 6 條、第 9 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>受傷先就醫、請公傷病假、叫公司辦職災認定；醫療期間公司不能叫你走，醫療不能工作期間要補原領工資。</div>
+  </article>
+
+  <article class="card" id="s2-harass" data-tags="職場性騷擾,性別平等工作法,申訴,雇主調查義務,2個月結案,申訴專線">
+    <h3><span class="dot"></span>職場性騷擾：你有權利要求公司在 2 個月內處理</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>向公司申訴後，它有法定 <span class="big">2 個月</span>處理期限（必要時延長 1 個月）；公司不處理、對象是老闆、或你不滿結果，<b>直接找地方勞工局</b>。</div>
+    <p>依性別平等工作法，職場性騷擾分兩類：<b>敵意環境性騷擾</b>（性意味言詞行為讓工作環境令人冒犯）與<b>交換性騷擾</b>（僱用人以性要求作為工作、待遇條件）。</p>
+    <ul>
+      <li>雇主接獲申訴後，應於<b>翌日起 2 個月內調查並結案</b>，必要時得延長 1 個月，並以書面通知雙方。</li>
+      <li>調查期間應採隔離、保護措施，<span class="hl">不得對申訴人為不利的薪資或職務變更</span>。</li>
+      <li>對象是老闆本人、或公司不處理、或你不服結果，可直接向地方勞工局申訴。</li>
+      <li>10 人以上事業單位應設申訴窗口並公開揭示；112 年修正後 10 至 29 人小公司也納入規範。</li>
+    </ul>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>公司叫你「先不要聲張、私下處理」——不依法調查結案，雇主本身會被罰。</li><li>被調職、被給考績評價變差當做「教訓」——這是對申訴人的報復，違法。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">性別平等工作法第 12 條</span><span class="law">第 13 條</span><span class="law">第 27 條（申訴與救濟）</span><span class="law">工作場所性騷擾防治措施申訴及懲戒辦法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>性騷擾不是「私人恩怨」：向公司申訴後它有法定 2 個月處理期限，公司不處理或你不滿意，可直接向地方勞工局申訴。</div>
+  </article>
+
+  <article class="card" id="s2-dispute" data-tags="勞資爭議,調解,勞動檢查,申訴,1955,爭議處理法,免費,訴訟">
+    <h3><span class="dot"></span>爭議救濟：欠薪、資遣、職災去哪裡告，而且大多免費</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>先留證據，再向縣市勞工局申請<b>免費調解</b>；違法可申請勞檢；勞工專線 <span class="big">1955</span>，沒錢請律師找<b>法律扶助基金會</b>。</div>
+    <span class="lbl">遇到時這樣做</span>
+    <ol>
+      <li><b>先內部協商</b>：和部門、人資或雇主反映，留下 Email 與訊息紀錄。</li>
+      <li><b>申請勞資爭議調解</b>：向事業單位所在地縣市政府勞工局提出，<b>免費</b>；調解成立與法院和解有同一效力。</li>
+      <li><b>申請勞動檢查</b>：違反工時、加班費、未投保、低於基本工資，可向勞動部或地方勞工局檢舉。</li>
+      <li><b>進入爭議處理</b>：調解不成立，可逕向法院聲請調解、提起訴訟。</li>
+      <li><b>需要律師但付不起</b>：法律扶助基金會可申請扶助；全國勞工諮詢專線 <span class="big">1955</span>。</li>
+    </ol>
+    <div class="fact"><span class="mark">✓</span><span>工資債權優先：雇主歇業或清算時，勞工被積欠的工資有最優先受償權；積欠一定期間的工資還可向勞動部申請工資墊償。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞資爭議處理法第 5 條</span><span class="law">第 9 條以下</span><span class="law">勞動基準法第 28 條（工資優先與墊償）</span><span class="law">勞動檢查法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>被欠薪或權益受損，先留證據，再向縣市勞工局申請免費調解；1955 勞工專線與法律扶助是你的後盾。</div>
+  </article>
+
+  <article class="card attach" id="s2-resign-tmpl" data-tags="離職信,辭職信,範本,離職預告,email,自請離職">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>自請離職信範本（Email 主旨內文，可直接複製修改）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>把【】換成資料，主旨寫明<b>最後到職日</b>，並引用第 15、16 條預告與第 19 條請求離職證明；寄出即存證。</div>
+    <p>把【】換成你的資料後寄出；記得副本（cc）給自己另一個信箱存證，並對照年資提前 <span class="big">10／20／30 天</span>。</p>
+    <pre class="tmpl">主旨：【姓名】預告終止勞動契約暨離職日期說明
+
+【公司名稱】 人資部／【直屬主管職稱】 【主管姓名】 　　　您好：
+
+本人【姓名】（員編：【　　】），因【個人生涯規劃／因素】，
+預告自【西元 年 月 日】起終止勞動契約，最後到職日為
+【西元 年 月 日】（自預告日起已滿【10／20／30】日，
+符合勞動基準法第 15 條、第 16 條預告期間）。
+
+離職前我會完成下列交接事項：
+1. 工作進度、文件與資料清單移交予【接山人姓名】；
+2. 客戶／廠商聯絡窗口與未完成案件說明；
+3. 公司設備、識別證、鑰匙、系統權限歸還；
+4. 未請特休明細一併確認，並請依勞基法第 38 條折算發給工資。
+
+另請依勞動基準法第 19 條開立離職（服務）證明書，
+並於離職時完成薪資、特休折算、勞退結算與投保退保手續。
+
+造成團隊不便，敬致歉意，也謝謝期間的照顧。
+
+　　　　　　　　　　　　　　　　　　立書人：【姓名】
+　　　　　　　　　　　　　　　　　　聯絡電話：【　　　】
+　　　　　　　　　　　　　　　　　　日期：【西元 年 月 日】</pre>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 15 條</span><span class="law">第 16 條</span><span class="law">第 19 條</span><span class="law">第 38 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>離職信用寫明最後到職日、交接與證明書請求，寄出即留證據，比當面談不容易被事後翻供。</div>
+  </article>
+
+  <article class="card attach" id="s2-compare" data-tags="自請離職,資遣比較表,預告,資遣費,證明文件,失業給付,非自願離職">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>自請離職 vs 被資遣：一張表看懂差別</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>同樣是離開公司，<b>主動 vs 被動差三筆錢</b>：資遣費、謀職假、失業給付；<span class="hl">簽任何文件前先看是「自請」還是「資遣」</span>。</div>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:20%"><col style="width:40%"><col style="width:40%"></colgroup>
+      <tr><th>項目</th><th>自請離職（你主動）</th><th>被資遣（公司依法終止）</th></tr>
+      <tr><td>預告期間</td><td>按年資提前 <span class="big">10／20／30 日</span>告知公司</td><td>公司按年資提前 <span class="big">10／20／30 日</span>告知你</td></tr>
+      <tr><td>金錢補償</td><td>無法定資遣費；未休特休應折算</td><td>給資遣費（新制 1 年 0.5 個月、上限 6 個月）</td></tr>
+      <tr><td>謀職假</td><td>無謀職假</td><td>預告期間每週可請 2 日謀職假，工資照給</td></tr>
+      <tr><td>證明文件</td><td>離職（服務）證明書（第 19 條）</td><td>離職證明書＋非自願離職證明</td></tr>
+      <tr><td>後續權益</td><td>不符合失業給付</td><td>可申請就保失業給付、職業訓練補助</td></tr>
+      <tr><td>工資計算</td><td>領到最後工作日，結清未休特休</td><td>同左，另加預告工資（未預告時）</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「被資遣簽個自請離職比較好談」→ 幾乎一定吃虧：一簽，資遣費與失業給付都可能消失。簽任何文件前先看清楚寫的是「自請」還是「資遣」。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 15 條</span><span class="law">第 16 條</span><span class="law">第 17 條</span><span class="law">勞工退休金條例第 12 條</span><span class="law">就業保險法第 11 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>同樣是離開公司，主動與被動差的是資遣費、謀職假和失業給付三筆錢；簽字前先對照這張表。</div>
+  </article>
+
+  <article class="card attach" id="s2-injury-flow" data-tags="職災流程,職災處理步驟,公傷,職災認定,勞保職災,補償申請">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>職業災害處理流程（受傷當下照著走）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>六步：<b>就醫 → 存證 → 叫公司通報 → 請公傷假 → 請補償 → 調解</b>；黃金動作是別拖、先留證據。</div>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>就醫並告知</b>就醫時主張為職業傷害，請醫院載明與工作相關。</div>
+      <div class="flow-step"><b><span class="fnum">2</span>留證據</b>現場照片、監視器、打卡紀錄、在場同事、診斷書全部保存。</div>
+      <div class="flow-step"><b><span class="fnum">3</span>通報公司</b>要求公司向勞保／職災保險提出職災認定與給付申請。</div>
+      <div class="flow-step"><b><span class="fnum">4</span>請公傷病假</b>治療休養期間請公傷病假，不得扣全勤、不得資遣。</div>
+      <div class="flow-step"><b><span class="fnum">5</span>請補償</b>醫療費、不能工作期間原領工資，依第 59 條向雇主請求。</div>
+      <div class="flow-step"><b><span class="fnum">6</span>爭議救濟</b>公司不給付，向縣市勞工局申請勞資爭議調解。</div>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞動基準法第 13 條</span><span class="law">第 59 條</span><span class="law">勞工職業災害保險及保護法</span><span class="law">勞資爭議處理法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>職災黃金動作是：就醫、存證、叫公司通報、請公傷假；醫療期間公司不能資遣你。</div>
+  </article>
+
+  <article class="card attach" id="s2-harass-flow" data-tags="性騷擾申訴流程,申訴步驟,性別平等工作法,地方勞工局,申訴窗口">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>職場性騷擾申訴流程</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>六步：<b>存證 → 向公司申訴 → 等 2 個月內結案 → 要求保護 → 向勞工局申訴 → 救濟</b>；公司不動作就直接找地方勞工局。</div>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>保存證據</b>訊息截圖、郵件、錄音、目擊者名單，先別刪。</div>
+      <div class="flow-step"><b><span class="fnum">2</span>向公司申訴</b>以書面或 Email 向公司申訴窗口／人資提出，要求依法調查。</div>
+      <div class="flow-step"><b><span class="fnum">3</span>等待調查</b>公司應於翌日起 2 個月內結案，必要時延長 1 個月並書面通知。</div>
+      <div class="flow-step"><b><span class="fnum">4</span>要求保護</b>可請求隔離措施、調整工作安排，不得被降薪或報復。</div>
+      <div class="flow-step"><b><span class="fnum">5</span>向地方勞工局申訴</b>對象是負責人、公司不處理或不服結果時。</div>
+      <div class="flow-step"><b><span class="fnum">6</span>後續救濟</b>必要時依性別平等工作法請求損害賠償或法律扶助。</div>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">性別平等工作法第 12 條</span><span class="law">第 13 條</span><span class="law">第 27 條</span><span class="law">工作場所性騷擾防治措施申訴及懲戒辦法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>先存證、再向公司正式申訴；公司有 2 個月法定處理期限，公司不動作就直接找地方勞工局。</div>
+  </article>
+</section>
+<section class="stage" id="stage-3" data-title="感情與伴侶">
+  <div class="stage-head">
+    <span class="stage-num">03</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">感情與伴侶：同居與結婚前，先談錢與權</h2>
+      <p class="stage-sub">同居、訂婚、登記結婚、夫妻財產制、婚前協議——以及最不願遇到的家暴與跟騷，法律怎麼保護你</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">民法親屬編</span><span class="chip">家庭暴力防治法</span><span class="chip">跟蹤騷擾防制法</span><span class="chip gold">成年 18 歲即可結婚登記</span>
+  </div>
+
+  <article class="card" id="s3-cohabit" data-tags="同居,未婚同居,分手,不當得利,借名登記,家暴,同居伴侶">
+    <h3><span class="dot"></span>同居：沒有那一張證，法律關係其實很單純</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>同居<b>不會自動變夫妻</b>，住多久都一樣；分手<b>沒有</b>「剩餘財產分配」這套法定機制，錢怎麼算看出資與約定。但受暴一樣能聲請保護令。</div>
+    <p>在台灣，<b>同居不產生身分上的夫妻關係</b>，不論住一起多久、有沒有小孩、有沒有辦婚禮，都不會自動變成「事實上夫妻」或「準夫妻」。</p>
+    <p>雙方就是兩個各自有完全行為能力的成年人，彼此之間適用一般民法（契約、贈與、不當得利、侵權行為），<span class="hl">法律沒有預設你們要互扶養、互繼承、或共享財產</span>。</p>
+    <p>這意味著：同居分手，不像離婚有「剩餘財產差額分配」「贍養費」這套法定機制可以自動主張。錢怎麼算，原則上看當初怎麼約定、發票和匯款紀錄在誰身上。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:24%"><col style="width:44%"><col style="width:32%"></colgroup>
+      <tr><th>狀況</th><th>法律上怎麼處理</th><th>你要準備什麼</th></tr>
+      <tr><td>對方生日送的名牌包、名牌錶</td><td>原則是<b>無償贈與</b>（民法第 406 條），交付後原則不能要回；但若是「以結婚為條件」的大額給付，可類推婚約贈與物請求返還</td><td>留存贈與時的對話、收禮動機</td></tr>
+      <tr><td>一起出錢買車、買家具，登記在一方名下</td><td>出資性質要釐清：是借名登記、借貸，還是合夥出資？分手時依出資比例與約定處理</td><td>轉帳紀錄、約定書、協訊對話</td></tr>
+      <tr><td>生活費、房租長期由一方全付</td><td>一般認屬無償援助或共同生活分擔，事後很難「不當得利」要回；除非有借貸約定</td><td>若想算清楚，當下就白紙黑字</td></tr>
+      <tr><td>幫對方背書、借錢給對方周轉</td><td>那是你的<b>個人債務</b>與個人借貸債權，跟「情分」無關，可依民法借貸規定討回</td><td>借據、本票、匯款紀錄</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>同居關係雖然沒有夫妻身分，但<b>暴力仍然受法律保護</b>：現行家庭暴力防治法已將「現有或曾有同居關係之一方」納為家庭成員，同居伴侶受暴一樣可以聲請保護令、報警，不需要先有結婚登記。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>「住久了就是事實夫妻，分手可以分對方財產」——錯，沒有這條法律。想分共同出資，必須自己舉證出資比例與約定。</li><li>大筆錢透過現金拿給對方、連借據都沒寫——分手時幾乎舉證不能，等同送掉。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 406 條（贈與）</span><span class="law">民法第 179 條（不當得利）</span><span class="law">民法第 474 條（消費借貸）</span><span class="law">家庭暴力防治法第 3 條（家庭成員範圍，含同居關係）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>同居 = 兩個獨立成年人合約生活：感情可以不分你我，大錢和登記在誰名下的東西，一開始就要講清楚、留紀錄。</div>
+  </article>
+
+  <article class="card" id="s3-engagement" data-tags="訂婚,婚約,解除婚約,聘金,餽贈,悔婚,979之1">
+    <h3><span class="dot"></span>訂婚與婚約：可以悔婚，但大禮小禮可能要還</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>婚約<b>不能強迫履行</b>，沒人能被訴請「一定要結婚」；但以結婚為目的給的聘金、戒指，婚約沒成，依 <b>979 條之 1</b> 原則要返還。</div>
+    <p>婚約（訂婚）是一男一女將來要結婚的<b>預約</b>：<b>不能強迫履行</b>——任何人都不能被訴請「一定要結婚」；婚約也不得由他人代訂，必須男女當事人自行訂定。</p>
+    <p>但婚約不是毫無約束：一方無故悔婚，他方可以請求財產上與非財產上的損害賠償。</p>
+    <span class="lbl">法定重點</span>
+    <ul>
+      <li><b>婚約要件</b>：應由男女當事人自行訂定（民法第 972 條）；未成年人訂定婚約仍應得法定代理人同意（第 974 條）。</li>
+      <li><b>法定解除事由</b>（第 976 條）：例如婚約訂定後再與他人訂婚或結婚、故意違婚約期限、生死不明滿 <span class="big">1 年</span>、受徒刑宣告、虐待或重大侮辱、惡意遺棄、有重大不治之病、經法定代理人不同意等。</li>
+      <li><b>贈與物返還</b>：婚約無效、解除或撤銷，或婚姻因結婚無效、撤銷而消滅時，當事人一方得請求他方返還因訂婚而<b>無償給與之財物</b>（聘金、訂婚戒指、大禮小禮等，第 979 條之 1）。</li>
+    </ul>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「收了聘錢又悔婚，聘金不用還」→ 錯。聘金、訂婚戒指等是以結婚為目的的贈與，婚約沒成，依第 979 條之 1 原則要返還。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 972 條（婚約應自行訂定）</span><span class="law">民法第 975 條（婚約不得請求強迫履行）</span><span class="law">民法第 976 條（解除婚約事由）</span><span class="law">民法第 977 條（損害賠償）</span><span class="law">民法第 979 條之 1（贈與物返還）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>訂婚不能綁住任何人結婚，但聘金戒子這些「為了結婚才給的錢」，婚約吹了法律上要算帳。</div>
+  </article>
+
+  <article class="card" id="s3-marriage-reg" data-tags="結婚,結婚登記,982條,證人,戶政,重婚,婚姻無效,撤銷婚姻">
+    <h3><span class="dot"></span>結婚登記：三個條件缺一不可，辦了婚禮不算結婚</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>法律上結婚 = <b>書面 ＋ 2 位證人簽名 ＋ 戶政登記</b>，三者缺一不可；只辦宴客、拍婚紗、同居，<span class="hl">都不算結婚</span>。</div>
+    <p>2008 年起我國結婚改採<b>登記婚主義</b>。法律上婚姻有效成立，必須同時具備三件事：</p>
+    <ol>
+      <li><b>書面</b>：二人簽具結書；</li>
+      <li><b>二位以上證人</b>親自簽名（證人要具行為能力、親眼見聞當事人有結婚真意，不是隨便找來路不明的人背書）；</li>
+      <li><b>向戶政機關辦結婚登記</b>（民法第 982 條）。</li>
+    </ol>
+    <p>只辦宴客、只拍婚紗、只有宗教儀式、只有同居，<b>都不會成立法律上的婚姻</b>。戶政登記完成那一刻，夫妻財產制、繼承、互助扶養等身分與財產效果才開始。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:26%"><col style="width:44%"><col style="width:30%"></colgroup>
+      <tr><th>類型</th><th>情形</th><th>效果</th></tr>
+      <tr><td>婚姻無效</td><td>不具備第 982 條方式（沒登記/缺證人）、違反近親禁婚規定、重婚（第 985 條）</td><td><span class="hl">當然無效</span>，自始不成立婚姻（第 988 條）</td></tr>
+      <tr><td>結婚得撤銷</td><td>未達結婚年齡未經同意、監護人與受監護人結婚未經法院許可、當時心神喪失等</td><td>得向法院請求撤銷，有除斥期間，不會自動無效</td></tr>
+      <tr><td>重婚</td><td>有配偶又與人結婚</td><td>後婚無效（第 988 條），另涉刑法重婚罪；現行戶政連線下已少見</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>結婚年齡現為 <b class="hl">18 歲</b>（與成年年齡一致，112.1.1 施行）。未滿 18 歲結婚仍須法定代理人同意。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 980 條（結婚年齡）</span><span class="law">民法第 982 條（結婚方式）</span><span class="law">民法第 985 條（重婚禁止）</span><span class="law">民法第 988 條（結婚無效）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>婚禮再盛大，沒去戶政事務所登記就不是法律夫妻；證人不能亂找，少一個環節婚姻可能無效。</div>
+  </article>
+
+  <article class="card" id="s3-property" data-tags="夫妻財產制,法定財產制,剩餘財產差額,婚前財產,婚後財產,約定財產制,1030之1">
+    <h3><span class="dot"></span>夫妻財產制：沒特別約定，就自動適用「法定財產制」</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>沒約定就預設<b>法定財產制</b>：婚前各自所有，離婚時把雙方「婚後剩餘」的<span class="hl">差額平分</span>；請求權<b>知悉起 2 年、最長 5 年</b>。</div>
+    <p>結婚後雙方的錢怎麼算？如果你們婚前婚後都<b>沒有特別約定財產制、也沒有去法院登記</b>，法律預設就是「法定財產制」（民法第 1005 條）。它的核心是：</p>
+    <ul>
+      <li><b>婚前財產與婚後財產分開、各自所有</b>（第 1017 條）：結婚前你本來就有的房、車、存款，是你的；婚姻中取得的，是婚後財產。無法證明是婚前或婚後取得者，<b>推定為婚後財產</b>。</li>
+      <li><b>各自管理、使用、處分自己的財產</b>，各自對自己的債務負責。</li>
+      <li><b>剩餘財產差額分配請求權</b>（第 1030 條之 1）：法定財產制關係消滅（離婚、死亡、改約財產制）時，把雙方「婚後財產」減掉婚姻中所負債務，算出各自剩餘，<b>兩邊剩下的差額原則上平均分配</b>。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:30%"><col style="width:70%"></colgroup>
+      <tr><th>重點</th><th>說明</th></tr>
+      <tr><td>不列入分配的財產</td><td>因繼承或其他<b>無償取得</b>之財產（如父母給的、遺產）、慰撫金，不列入剩餘計算（第 1030 條之 1 第 1 項但書）</td></tr>
+      <tr><td>公平調整</td><td>一方對婚姻無貢獻、有惡意減少他方剩餘財產等情事，法院得請求或宣告不為分配或給予差額（第 1030 條之 1 第 2、3 項）</td></tr>
+      <tr><td>請求權時效</td><td>自請求權人<b>知有差額時起 <span class="big">2 年</span></b>間不行使而消滅；自法定財產制關係消滅時起<b>逾 <span class="big">5 年</span></b>者亦同（第 1030 條之 1 第 5 項）</td></tr>
+      <tr><td>約定財產制</td><td>得約定共同財產制或分別財產制（第 1004 條），但須<b>書面並向法院登記處登記</b>，才能對抗第三人（第 1008 條）；未登記，外部第三人可不認</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「離婚就是一人一半所有財產」→ 錯。分的是「婚後財產剩餘的差額」，而且繼承來的、無償拿到的、慰撫金不算；婚前財產本來就是各自的。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>離婚後才發現對方偷偷買了房，要趕在「知悉 2 年內」主張，拖超過 5 年請求權就消滅。</li><li>口頭說好「我們採分別財產制」但沒去法院登記——對銀行、債權人等第三人不生效。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1004 條（約定財產制選擇）</span><span class="law">民法第 1005 條（未約定適用法定財產制）</span><span class="law">民法第 1008 條（財產制登記對抗要件）</span><span class="law">民法第 1017 條（婚前/婚後財產）</span><span class="law">民法第 1030 條之 1（剩餘財產差額分配與時效）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>沒特別約定就預設法定財產制：婚前各自所有，離婚時算「婚後剩餘差額」平分，且知悉 2 年、最長 5 年內一定要主張。</div>
+  </article>
+
+  <article class="card" id="s3-prenup" data-tags="婚前協議,結婚契約,公證,家務分工,剩餘財產特約,效力界線">
+    <h3><span class="dot"></span>婚前協議：可以談錢與分工，但有些事法律不讓你預先放棄</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>婚前協議能把<b>錢與家務分工</b>講清楚；但「不准離婚」「先放棄剩餘財產」這類條款<span class="hl">違反公序良俗、多半無效</span>。</div>
+    <p>婚前協議（結婚契約）是雙方在婚前對婚姻中財務、家務、將來若分開的安排所做的約定。它不是結婚的必要文件，但能把不好意思談的錢講在前面。</p>
+    <span class="lbl">可以約定</span>
+    <ul>
+      <li>各自財產、存款、投資的歸屬與管理方式；</li>
+      <li>家用、房貸、水電、子女教養費用如何分攤；</li>
+      <li>家務、照護責任的分工；</li>
+      <li>要不要辦理約定財產制（共同/分別財產制）並登記；</li>
+      <li>若未來離婚，有關財產分配、贍養、會面交往的<b>協商框架</b>。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+      <tr><th>約定內容</th><th>效力界線</th></tr>
+      <tr><td>財產歸屬、費用分攤、家務分工</td><td>原則有效（契約自由），但仍不得違反強行規定與公序良俗</td></tr>
+      <tr><td>預先「離婚時自動拋棄剩餘財產分配請求權」</td><td><span class="hl">實務上傾向無效</span>——第 1030 條之 1 係為保護婚姻經濟弱方而設，不能在婚就預先概括拋棄</td></tr>
+      <tr><td>預先約定「不得離婚」「一方提離婚就賠一筆錢」</td><td>限制離婚自由、違反公序良俗，多半無效</td></tr>
+      <tr><td>有關未成年子女監護、扶養、會面</td><td>不得預先約定死，日後仍以「子女最佳利益」由法院認定，不能事先剝奪</td></tr>
+    </table>
+    </div>
+    <span class="lbl">實務建議</span>
+    <p>找律師草擬、雙方各自有充分審閱期（不要當天逼簽）、有條件者公證；牽涉不動產或鉅額資產者，一併評估是否辦理約定財產制登記。</p>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 71 條（違反強行規定無效）</span><span class="law">民法第 72 條（違背公序良俗無效）</span><span class="law">民法第 1004 條（約定財產制）</span><span class="law">民法第 1030 條之 1（剩餘財產分配，不得預先拋棄）</span><span class="law">民法第 1055 條之 1（子女最佳利益）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>婚前協議能把錢和分工講清楚，但「不准離婚」「先放棄分財產」這類條款法律多半不認，重點是誠實協商、白紙黑字。</div>
+  </article>
+
+  <article class="card" id="s3-dvo" data-tags="保護令,家暴,通常保護令,暫時保護令,緊急保護令,113,違反保護令罪,聲請">
+    <h3><span class="dot"></span>家暴保護令：不用先離婚、不用花錢，隨時可以聲請</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>保護令<b>免費、不限班時間</b>；通常保護令效期 <b class="big">2 年</b>以下得延長，緊急保護令原則 <b class="big">4 小時</b>內核發；對方違反 = 犯罪，最高 <span class="big">3 年</span>有期徒刑。</div>
+    <p>不論你們是夫妻、前配偶、男女朋友、同居伴侶或前室友，只要遭受現有或曾有親密關係者的身體或精神暴力，都可以聲請保護令。保護令是<b>免費</b>的，不需要先找律師，也不限上班時間。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:22%"><col style="width:48%"><col style="width:30%"></colgroup>
+      <tr><th>種類</th><th>內容與時效</th><th>何時用</th></tr>
+      <tr><td>緊急保護令</td><td>有急迫危險時，檢察官、警察或直轄市縣市主管機關得以言詞、傳真等方式聲請，<b>得於夜間或休息日為之</b>；法院受理後原則應於 <span class="big">4 小時</span>內核發</td><td>正在受暴、生命身體有立即危險</td></tr>
+      <tr><td>暫時保護令</td><td>得不经審理、於審理終結前核發，通常限禁止暴力、騷擾、遷出、遠離等急迫性命令；於核發通常保護令或駁回時失效</td><td>聲請通常保護令期間先擋一下</td></tr>
+      <tr><td>通常保護令</td><td>內容最完整（可命遷出、遠離特定距離、交付子女、扶養費、加害人處遇等），<b>有效期間為 <span class="big">2 年</span>以下</b>，期滿前得聲請延長，每次 2 年以下</td><td>正式、長期的保護</td></tr>
+    </table>
+    </div>
+    <span class="lbl">遇到時這樣做</span>
+    <p>向<b>被害人或相對人住所地、居所地或地方法院</b>以書面聲請；緊急狀況可由警察代為聲請。保護令核發後，警察負責執行（如保護你回家搬東西、要求對方遷出）。</p>
+    <div class="fact"><span class="mark">✓</span><span><b>違反保護令是刑事犯罪</b>：違反保護令中「禁止實施暴力、禁止騷擾接觸跟蹤遷出遠離」等核心裁定，構成「違反保護令罪」，可處 <span class="big">3 年以下有期徒刑、拘役或科或併科新台幣 10 萬元以下罰金</span>（家暴法第 61 條）。對方再靠近、再打電話，直接報警。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>以為「只是情侶吵架、還沒結婚不能聲請」——錯，同居或親密關係受暴同樣可以。</li><li>害怕聲請後對方報復而撤銷——保護令一旦核發，<b>不因你同意對方搬回而自動失效</b>，要撤回或變更需法院為之。</li><li>忘記留存證據：驗傷單、監視器、通訊紀錄、110 報案紀錄都是關鍵。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">家庭暴力防治法第 11 條（聲請主體與夜間聲請）</span><span class="law">家庭暴力防治法第 13 條（通常保護令效期 2 年、得延長）</span><span class="law">家庭暴力防治法第 16 條（緊急/暫時保護令）</span><span class="law">家庭暴力防治法第 61 條（違反保護令罪）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>受暴不用忍、不用先離婚：撥 113 保護專線或 110，保護令免費、可深夜聲請，違反它就是犯罪。</div>
+  </article>
+
+  <article class="card" id="s3-stalking" data-tags="跟蹤騷擾,跟騷法,跟騷保護令,書面告誡,妨害自由,113,跟蹤">
+    <h3><span class="dot"></span>跟蹤騷擾：分手後的糾纏，有專法可管</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>跟騷法 <b>2022/6/1</b> 施行：流程是「先報案拿<b>書面告誡</b> → 2 年內再犯就聲請<b>跟騷保護令</b>」；持續跟蹤、堵人、狂打電話已構成跟騷。</div>
+    <p>戀愛或分手後，對方不斷尾隨守候、反覆電話訊息、在你住處公司堵人、對你的親友散佈不實言論——這些「與性別、情感有關，使人心生畏懼、影響日常生活」的行為，自 <b>2022 年（民國 111 年）6 月 1 日</b>《跟蹤騷擾防制法》施行後，已有專法處理。</p>
+    <span class="lbl">兩步驟</span>
+    <ul>
+      <li><b>行為類型</b>（第 2 條）：跟蹤或定點守候、反覆聯絡通訊、監視觀察、要求約會聯絡、濫用個資、貶抑侮辱、爆力脅迫、送交物品等，達到使被害人不安的程度。</li>
+      <li><b>第一步：警察書面告誡</b>：被害人報案後，警察認有跟騷事實，得對行為人發<b>書面告誡</b>（第 4 條）。</li>
+      <li><b>第二步：跟騷保護令</b>：行為人經書面告誡後<b><span class="big">2 年</span>內再犯</b>跟騷行為者，被害人得向法院聲請<b>跟騷保護令</b>（第 5 條），命其禁止接近、禁止通訊、禁止出入特定場所。</li>
+      <li><b>刑事責任</b>：違反跟騷保護令，有刑罰規定；跟騷行為本身亦可能構成強制罪、妨害自由等。</li>
+    </ul>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「分手後他一直來找我，只是他還愛我，警察不會管」→ 錯。持續跟蹤、堵人、狂打電話已構成跟騷，先報案取得書面告誡，再犯即可声請保護令。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">跟蹤騷擾防制法第 2 條（跟騷行為定義）</span><span class="law">跟蹤騷擾防制法第 4 條（警察書面告誡）</span><span class="law">跟蹤騷擾防制法第 5 條（跟騷保護令）</span><span class="law">刑法第 304 條（強制罪）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>分手後的糾纏不是「還愛你」：保留訊息與畫面、立刻報案拿書面告誡，2 年內再犯就聲請跟騷保護令。</div>
+  </article>
+
+  <article class="card attach" id="s3-prenup-checklist" data-tags="婚前協議清單,結婚前,財務,檢查清單">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>婚前協議討論重點清單（簽字前逐項溝通）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>把這份清單當婚前「財務約會」：重點是<b>各自負債透明、家用分攤寫死、大錢留紀錄</b>；不能事先概括拋棄法定權利。</div>
+    <ul class="checklist">
+      <li>各自現有存款、投資、負債（含學貸、卡債）先誠實揭露</li>
+      <li>各自婚前的房、車、股票，約定是否為各自特有財產</li>
+      <li>家用怎麼分攤：房貸、房租、水電瓦斯、日常開銷的比例或固定金額</li>
+      <li>要不要約定財產制（分別/共同），若要，是否辦理法院登記以對抗第三人</li>
+      <li>一方創業、當負責人或背書時，債務如何切割</li>
+      <li>家務與照護分工：做飯、打掃、日後照顧長輩或小孩的預期</li>
+      <li>要不要約定各自保留的「自主金額」與共同帳戶機制</li>
+      <li>若未來分開，財產與贍養的協商框架（但注意：不能事先概括拋棄法定權利）</li>
+      <li>雙方都有合理審閱期（不要當天簽），必要時由各自律師過目</li>
+      <li>有條件者完成公證，並保留雙方各執一份</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 72 條（公序良俗）</span><span class="law">民法第 1004 條、第 1008 條（約定財產制與登記）</span><span class="law">民法第 1030 條之 1（不得預先拋棄）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>把這張清單當婚前「財務約會」，一項一項談，談不攏的地方比簽下去才後悔好。</div>
+  </article>
+
+  <article class="card attach" id="s3-cohabit-checklist" data-tags="同居清單,同居財務,分手,共同出資,檢查清單">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>同居財務分工與分手處理清單</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>同居最怕「我以為」：<b>共同出資留紀錄、借貸寫借據、錢怎麼分現在寫下來</b>；受暴或被糾纏同樣有保護令、跟騷法可救濟。</div>
+    <ul class="checklist">
+      <li>房租、押金由誰名義簽約？分手時住屋權益怎麼談</li>
+      <li>約定每月固定分攤的項目與金額，用共同帳戶或轉帳註明用途</li>
+      <li>共同採買的家具家電，記下誰出多少、將來歸誰</li>
+      <li>大額共同出資（車、裝潢、貸款）簽簡單協議，寫清出資比例與歸屬</li>
+      <li>幫對方借錢、背書、保證——先想清楚，那是你的個人責任</li>
+      <li>贈與與借貸分清楚：借的錢寫借據，別用「情分」代替證據</li>
+      <li>保留所有轉帳紀錄、訂單、收據與通訊對話</li>
+      <li>分手時逐一清點共同財物，能協商歸還最好，協商不成再循民事途徑</li>
+      <li>若有暴力或糾纏，記得同居關係也能聲請保護令、報案跟騷</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 179 條（不當得利）</span><span class="law">民法第 474 條（消費借貸）</span><span class="law">家庭暴力防治法第 3 條（同居成員保護）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>同居最怕「我以為」：錢怎麼分、東西歸誰，現在寫下來，分手時少吵一大架。</div>
+  </article>
+
+  <article class="card attach" id="s3-dvo-flow" data-tags="保護令流程,聲請保護令,流程,113,家暴,急救包">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>保護令聲請流程（遇到危機時照著走）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>記住三個號碼：<b>110 報警、113 保護專線、地方法院</b>；保護令<b>免費</b>、可深夜聲請，對方違反就逮捕法辦。</div>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>確保安全</b>立即遠離現場，撥 110 報警或 113 保護專線；就醫驗傷、保留監視器與通訊紀錄</div>
+      <div class="flow-step"><b><span class="fnum">2</span>聲請</b>向地方法院聲請保護令（免費）；急迫時由檢察官、警察或縣市主管機關言詞/傳真代聲請，夜間休息日亦可</div>
+      <div class="flow-step"><b><span class="fnum">3</span>核發</b>緊急保護令原則 4 小時內核發；通常保護令經審理後核發，效期 2 年以下、得延長</div>
+      <div class="flow-step"><b><span class="fnum">4</span>執行</b>警察依保護令執行：保護你返回住居、命對方遷出或遠離；金錢給付部分可聲請強制執行</div>
+      <div class="flow-step"><b><span class="fnum">5</span>違反即報警</b>對方違反保護令（暴力、跟騷、接近）構成違反保護令罪，逕行打 110，由警察逮捕偵辦</div>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">家庭暴力防治法第 11 條</span><span class="law">家庭暴力防治法第 13 條</span><span class="law">家庭暴力防治法第 16 條</span><span class="law">家庭暴力防治法第 61 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>記住三個號碼：110 報警、113 保護專線、地方法院；保護令免費、可深夜聲請，違反它就是犯罪。</div>
+  </article>
+</section>
+<section class="stage" id="stage-4" data-title="婚姻與家庭">
+  <div class="stage-head">
+    <span class="stage-num">04</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">婚姻與家庭：關係結束時，把傷害降到最低</h2>
+      <p class="stage-sub">離婚方式、財產分配、孩子歸誰、扶養費、會面交往——把分手對大人與孩子的傷害降到最小</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">民法親屬編</span><span class="chip">家事事件法</span><span class="chip">刑法</span><span class="chip gold">剩餘財產請求權：知悉 2 年 / 消滅 5 年</span>
+  </div>
+
+  <article class="card" id="s4-divorce-type" data-tags="離婚,兩願離婚,裁判離婚,1052,調解離婚,和解離婚,戶政登記">
+    <h3><span class="dot"></span>離婚方式：雙方談得攏用兩願，談不攏才走法院</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>談得攏走<b>兩願離婚</b>（書面＋2 證人＋戶政登記）最快；談不攏才聲請法院調解或裁判。<span class="hl">沒有「分居多久自動離婚」這回事</span>。</div>
+    <p>台灣離婚分兩大路径：雙方都想離、條件也談得攏，走<b>兩願離婚</b>最快；一方不想離或談不攏，才需要向法院請求裁判離婚。</p>
+    <p>無論哪一種，<b>未成年子女的監護、扶養、會面一定要一併處理</b>。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:20%"><col style="width:46%"><col style="width:34%"></colgroup>
+      <tr><th>方式</th><th>條件與程序</th><th>重點</th></tr>
+      <tr><td>兩願離婚（協議離婚）</td><td>夫妻雙方離婚意思一致，應以<b>書面為之</b>、有<b>二人以上證人簽名</b>，並向<b>戶政機關為離婚登記</b>（第 1049、1050 條）</td><td>最快、最便宜，但協議內容（財產、扶養、會面）要自己講清楚</td></tr>
+      <tr><td>裁判離婚</td><td>夫妻之一方有第 1052 條第 1 項各款事由，他方得向法院請求離婚；第 2 項：有前項以外重大事由，難以維持婚姻者，雙方均得請求</td><td>需舉證法定事由，曠日費時</td></tr>
+      <tr><td>調解 / 和解離婚</td><td>於家事法院進行離婚調解，成立後作成調解筆錄，<b>與確定判決有同一效力</b>，再持憑辦戶政登記</td><td>有社工、法官協助，較和緩，常一併解決監護與扶養</td></tr>
+    </table>
+    </div>
+    <span class="lbl">裁判離婚的法定事由</span>
+    <p><b>裁判離婚的法定事由（第 1052 條第 1 項）</b>大致包括：重婚、與人合意姘居、對他方為不堪同居之虐待、對他方直系尊親屬為虐待或受其虐待致不堪共同生活、惡意遺棄繼續中、意圖害他方生命、有不治之惡疾、有重大不治之精神病、生死不明已逾 <span class="big">3 年</span>、被處 <span class="big">3 年</span>以上徒刑或因犯不名譽之罪被處徒刑等；另有第 2 項「難以維持婚姻之重大事由」作為概括条款。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「分居滿多久就自動離婚」→ 錯。台灣沒有「分居多少年自動離婚」制度，分居只是可能構成「難以維持婚姻之重大事由」的參考，仍須兩願登記或法院判決。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1049 條（兩願離婚）</span><span class="law">民法第 1050 條（離婚書面、證人、登記）</span><span class="law">民法第 1052 條（裁判離婚事由）</span><span class="law">家事事件法第 51 條以下（離婚調解）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>談得攏就兩願離婚（書面＋2 證人＋戶政登記），談不攏才舉證走裁判；沒有「自動離婚」這回事。</div>
+  </article>
+
+  <article class="card" id="s4-divorce-prop" data-tags="離婚財產,剩餘財產差額,1030之1,離婚算錢,繼承,時效,死亡">
+    <h3><span class="dot"></span>離婚後財產分配：算的是「婚後剩餘的差額」，不是全部財產</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>分的是<b>婚後財產扣除債務後的剩餘差額</b>、原則平分；<b>繼承來的、慰撫金不算</b>；請求權知悉起 <b>2 年</b>、最長 <b>5 年</b>。</div>
+    <p>在法定財產制下離婚，最核心的錢事就是<b>剩餘財產差額分配請求權</b>（民法第 1030 條之 1）。算法是：把雙方各自的「婚後財產」扣掉婚姻中所負債務，得出各自剩餘，<b>兩邊剩餘的差額，原則上兩人平均分配</b>——也就是把賺比較多、存比較多的那一方的多餘，分一半給他方。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:30%"><col style="width:70%"></colgroup>
+      <tr><th>重點</th><th>說明</th></tr>
+      <tr><td>不列入的財產</td><td>因繼承或其他無償取得之財產（父母給的、遺產）、慰撫金，<b>不列入</b>剩餘計算</td></tr>
+      <tr><td>舉證</td><td>主張之一方對他方剩餘財產負舉證責任；可聲請法院調閱財產資料</td></tr>
+      <tr><td>公平調整</td><td>一方對婚姻無貢獻、或他方因自己過錯減少剩餘財產，法院得減免或追加</td></tr>
+      <tr><td>時效</td><td>自知有差額時起 <span class="big">2 年</span>內行使；自法定財產制關係消滅（離婚登記）時起逾 <span class="big">5 年</span>者，請求權消滅</td></tr>
+    </table>
+    </div>
+    <span class="lbl">離婚 vs 一方死亡</span>
+    <ul>
+      <li><b>離婚</b>：雙方都生存，互相主張剩餘財產差額分配；同時另可依過錯請求<b>贍養費</b>（第 1057 條，限于判決離婚且因離婚陷於生計困難、他方有能力者）與<b>慰撫金</b>（第 1056 條）。</li>
+      <li><b>一方死亡</b>：法定財產制因死亡而消滅，生存配偶仍得行使剩餘財產差額分配請求權，且須<b>先於繼承</b>計算；之後生存配偶另有繼承權。</li>
+    </ul>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>以為「房子是我名字就全是我的」——若是婚姻中購買的婚後財產，仍會列入剩餘計算。</li><li>離婚後怠於查對方財產：務必在知悉 2 年內、最遲離婚登記後 5 年內主張，否則權利消滅。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1030 條之 1（剩餘財產差額分配與時效）</span><span class="law">民法第 1056 條（離婚損害賠償與慰撫金）</span><span class="law">民法第 1057 條（贍養費）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>離婚算的是婚後剩餘差額平分、遺產和慰撫金不算；這項權利知悉 2 年、最長 5 年，過期不候。</div>
+  </article>
+
+  <article class="card" id="s4-custody" data-tags="監護,親權,未成年子女,1055,子女最佳利益,共同親權,主要照顧者,改定親權">
+    <h3><span class="dot"></span>未成年子女親權（監護）：一切以「子女最佳利益」為最高指導</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>孩子歸誰不是比誰有錢，而是看<b>誰照顧最穩定、孩子意願</b>；先由父母協議，不成由法院依<b>子女最佳利益</b>酌定，日後情況變了還能聲請改定。</div>
+    <p>離婚時，未成年子女要由誰來照顧、誰行使權利義務（實務上稱「監護」），原則是：</p>
+    <ol>
+      <li><b>先由父母協議</b>：兩願離婚時就在離婚協議寫明由誰（一方或雙方共同）擔任子女權利義務的行使負擔人（第 1055 條第 1 項）。</li>
+      <li><b>協議不成或不當，聲請法院酌定</b>：法院得依夫妻一方、主管機關、社福機構或利害關係人請求，或依職權酌定（第 1055 條第 2 項）。</li>
+      <li><b>共同親權為原則</b>：法院得為酌定由父母共同行使負擔；一方未盡保護教養義務或有不利子女情事者，他方等得為子女利益請求法院<b>改定</b>（第 1055 條第 3 項）。</li>
+    </ol>
+    <p>法院判斷誰適合，依<b>子女最佳利益</b>（第 1055 條之 1），綜合審酌一切情狀並參考社工人員訪視報告，尤應注意：子女年齡性別與意願、雙方保護教養態度、雙方家庭經濟與生活環境、是否有家暴或其他不利情事等。<span class="hl">不是誰賺比較多就一定贏，主要照顧者穩定性、孩子意願往往更關鍵。</span></p>
+    <div class="fact"><span class="mark">✓</span><span>父母婚姻存續或離婚，<b>對未成年子女的扶養義務不因此免除</b>（第 1116 條之 2）——沒有拿到監護權的一方，還是要負擔扶養費，也仍有會面交往的權利。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1055 條（協議、法院酌定、改定親權）</span><span class="law">民法第 1055 條之 1（子女最佳利益審酌）</span><span class="law">民法第 1055 條之 2（改定與會面交往之請求）</span><span class="law">民法第 1116 條之 2（離婚不影響扶養義務）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>孩子歸誰不是比誰有錢，而是看誰照顧最穩定、孩子意願與最佳利益；事後照顧情形變了，還能聲請改定。</div>
+  </article>
+
+  <article class="card" id="s4-support" data-tags="扶養費,兒童扶養,1114,1119,強制執行,遺棄,月消費支出">
+    <h3><span class="dot"></span>扶養費：父母對未成年子女的義務，離婚也跑不掉</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>扶養費是<b>對孩子的義務</b>，不是給對方的；金額參考主計處每人月消費支出、按雙方收入比例分攤。最好拿<b>法院調解或公證</b>的執行名義，免得跳票。</div>
+    <p>直系血親相互間互負扶養義務（第 1114 條第 1 款），父母對未成年子女的扶養，<b>不因結婚撤銷或離婚而受影響</b>（第 1116 條之 2）。沒有同住、沒拿到監護權的一方，仍然要按月分擔孩子的生活、教育、醫療費用。</p>
+    <span class="lbl">金額怎麼算</span>
+    <p>法院依第 1119 條，衡量「受扶養者的需要」與「負擔者的經濟能力及身分」決定。實務常見作法：以<b>行政院主計處公布的當地區域平均每人每月消費支出</b>作為孩子基本生活費的基準，再依雙方所得、資力按比例分擔。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:26%"><col style="width:74%"></colgroup>
+      <tr><th>項目</th><th>說明</th></tr>
+      <tr><td>給付方式</td><td>多約定按月定期匯入專戶；亦得約定按學期、或於特定條件下一次給付</td></tr>
+      <tr><td>教育/醫療費</td><td>學費、才藝、醫療等龐大支出，常約定在基本月費之外按比例另行分攤</td></tr>
+      <tr><td>可執行名義</td><td>經法院判决或調解成立、或經公證得強制執行之債權憑證，可直接聲請強制執行</td></tr>
+      <tr><td>拒不給付</td><td>先聲請強制執行（扣薪、扣押財產）；若有應填能填而惡意不盡扶養、情節重大，另涉刑法遺棄罪（第 294 條），惟須符合法定構成要件，非單純積欠即成立</td></tr>
+    </table>
+    </div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>兩願離婚協議寫了扶養費卻沒經公證或法院，對方跳票時還要再打官司才能強制執行——最好讓法院調解或公證取得執行名義。</li><li>「他不讓我看小孩，我就不給扶養費」——探視與扶養是兩件事，不能互相對抗，不給扶養費仍會被強制執行。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1114 條（扶養義務親屬）</span><span class="law">民法第 1116 條之 2（離婚不影響對子女扶養）</span><span class="law">民法第 1117 條（扶養程度與方法）</span><span class="law">民法第 1119 條（扶養程度之衡量）</span><span class="law">刑法第 294 條（遺棄罪）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>扶養費是對孩子的義務，不是給對方的；數目參考主計處每人月消費支出、按能力分攤，最好拿法院或公證的執行名義。</div>
+  </article>
+
+  <article class="card" id="s4-visitation" data-tags="會面交往,探視權,1055,探視,阻撓會面,交接地點">
+    <h3><span class="dot"></span>會面交往（探視權）：不是施捨，是孩子與父母的權利</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>看孩子<span class="hl">不是監護方說了算</span>：按約定/裁定的方式來；對方刻意阻撓可聲請強制執行，情節重大還能做為<b>改定親權</b>理由。</div>
+    <p>法院或父母協議定出由一方監護後，他方對未成年子女有<b>會面交往的權利義務</b>（第 1055 條第 5 項）。會面方式應依子女最佳利益決定，不能由監護一方任意剝奪。實務常設計為：</p>
+    <ul>
+      <li><b>平日</b>：隔週週末，或固定一星期某個下午/晚餐時段；</li>
+      <li><b>寒暑假</b>：連續數日共同生活、過年輪流；</li>
+      <li><b>交接細節</b>：交接地點、時間、由誰接送、不得在孩子面前爭吵、不得對孩子批評另一方。</li>
+    </ul>
+    <div class="fact"><span class="mark">✓</span><span>但會面交往不是無條件的：若會面對子女有<b>顯著不利</b>（如該方有家暴、酒癮、帶離孩子之虞），法院得依請求<b>限制或禁止</b>會面，或命為有監控的會面（第 1055 條之 1、之 2）。</span></div>
+    <span class="lbl">對方刻意阻撓怎麼辦</span>
+    <p>先保存對方拒絕、失聯、帶孩子避不見面的紀錄；可依確定之會面交往裁判或調解內容聲請強制執行，或向法院聲請請求對方履行、酌定變更會面方式；情節重大者亦得作為聲請<b>改定親權</b>的理由。</p>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1055 條第 5 項（會面交往）</span><span class="law">民法第 1055 條之 1（不利會面之限制）</span><span class="law">民法第 1055 條之 2（請求法院酌定會面）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>看孩子不是監護方說了算：按約定/裁定的方式來，對方阻撓可聲請強制執行或改定親權。</div>
+  </article>
+
+  <article class="card" id="s4-filiation" data-tags="婚生推定,否認之訴,認領,非婚生子女,1063,1065,血緣">
+    <h3><span class="dot"></span>婚生推定與認領：孩子的法律上父母是誰</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>婚姻中出生的孩子<b>先推定是先生的</b>；要翻案靠否認之訴，限<b>知悉後 2 年內</b>。未婚生子須經生父<b>認領</b>，才發生法律上父子關係。</div>
+    <p><b>婚生推定</b>（第 1063 條）：妻之受胎係在婚姻關係存續中者，推定其所生子女為夫之婚生子女。也就是說，婚姻中出生或受胎的孩子，法律上預設就是先生的。</p>
+    <ul>
+      <li><b>婚生否認之訴</b>：若夫妻一方或子女能證明妻非自夫受胎（例如 DNA 鑑定），得提起否認之訴推翻推定；此訴訟有法定不變期間，<b>應於知悉子女出生（或知悉非出自於夫）後 <span class="big">2 年</span>內為之</b>（第 1063 條之 1，期間以現行法為準）。</li>
+      <li><b>非婚生子女</b>：未結婚生下的子女，<b>非經生父認領，法律上不與生父發生父子/父女關係</b>（第 1065 條）。</li>
+      <li><b>認領方式</b>：生父自願認領（任意認領）；生父不認領時，非婚生子女或其母得提起<b>認領之訴</b>（第 1067 條）。認領後，子女視為婚生子女，溯及出生時取得身分，並連帶產生扶養與繼承關係。</li>
+    </ul>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「孩子不是我的，但我一直扶養，不用打官司也甩不掉」→ 反過來說，若確認非出自於你，應及時提起婚生否認之訴；超過法定 2 年期間，身分與扶養、繼承關係就難以推翻。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1063 條（婚生推定）</span><span class="law">民法第 1063 條之 1（否認之訴期間）</span><span class="law">民法第 1065 條（認領）</span><span class="law">民法第 1067 條（認領之訴）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>婚姻中出生的孩子先推定是老公的，要翻案靠否認之訴且有 2 年時限；未婚生子要靠生父認領，才發生法律上父子關係。</div>
+  </article>
+
+  <article class="card" id="s4-surname" data-tags="改姓,子女姓氏,1059,戶政,離婚改姓,從父姓從母姓">
+    <h3><span class="dot"></span>戶籍與未成年子女改姓：不是想改就能改</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>孩子姓什麼：出生前父母書面約定；未成年時書面改<b>一次為限</b>。離婚後想改姓，要為子女利益<b>聲請法院宣告</b>，監護方不能單方決定。</div>
+    <p>孩子從誰的姓，規則如下（民法第 1059 條）：</p>
+    <ul>
+      <li><b>出生登記前</b>：由父母以書面約定子女從父姓或母姓；未約定或約定不成，由戶政事務所抽籤決定。</li>
+      <li><b>出生登記後、未成年前</b>：得由父母以書面約定變更為父姓或母姓，<b>各以<span class="big">一次</span>為限</b>；成年後子女得自行申請變更。</li>
+      <li><b>離婚等情形聲請法院宣告改姓</b>：父母離婚、一方死亡、一方生死不明滿 <span class="big">3 年</span>，或父母之一方顯有未盡保護教養義務之情事者，<b>為子女之利益</b>，父母、未成年子女（透過代理人）得請求法院宣告變更子女姓氏為父姓或母姓（第 1059 條之 1）。</li>
+    </ul>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「離婚後我拿到監護權，就能自己帶小孩去改回母姓」→ 錯。單方不能逕自改姓，要嘛父母書面約定（一次為限），要嘛為子女利益聲請法院宣告。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1059 條（子女姓氏之約定與變更）</span><span class="law">民法第 1059 條之 1（離婚等情形聲請法院宣告改姓）</span><span class="law">戶籍法（出生與姓名變更登記）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>孩子姓什麼：出生前父母約定，未成年時書面改一次為限；離婚後想改姓，要為子女利益聲請法院，不能單方決定。</div>
+  </article>
+
+  <article class="card attach" id="s4-divorce-flow" data-tags="離婚流程,兩願離婚,裁判離婚,流程圖,戶政,調解">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>離婚程序流程圖：兩願 vs 裁判</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>能談就走<b>兩願</b>（書面＋2 證人＋戶政登記），談不攏先聲請法院<b>調解</b>；兩條路都要把扶養費、監護、會面一次處理好。</div>
+    <p><b>路徑 A：兩願離婚（雙方合意）</b></p>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>協商條件</b>談妥財產分配、扶養費、監護與會面方式</div>
+      <div class="flow-step"><b><span class="fnum">2</span>寫離婚協議書</b>書面記明上述約定，找二位以上證人簽名</div>
+      <div class="flow-step"><b><span class="fnum">3</span>戶政登記</b>雙方親自至戶政事務所辦離婚登記，完成後婚姻消滅</div>
+      <div class="flow-step"><b><span class="fnum">4</span>取得執行名義</b>扶養費等給付最好另經法院調解或公證，避免日後跳票</div>
+    </div>
+    <p><b>路徑 B：裁判 / 調解離婚（一方不同意或談不攏）</b></p>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>聲請調解</b>向家事法院聲請離婚調解，一併處理監護扶養</div>
+      <div class="flow-step"><b><span class="fnum">2</span>調解成立</b>成立者作成筆錄，與確定判決同效力；不成立進入訴訟</div>
+      <div class="flow-step"><b><span class="fnum">3</span>舉證法定事由</b>主張第 1052 條事由或難以維持婚姻之重大事由</div>
+      <div class="flow-step"><b><span class="fnum">4</span>判決確定</b>持確定判決至戶政辦離婚登記，並依判決內容履行</div>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1049 條</span><span class="law">民法第 1050 條</span><span class="law">民法第 1052 條</span><span class="law">家事事件法（家事調解程序）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>能談就走兩願（書面＋2 證人＋戶政登記），談不攏先走法院調解；記得扶養費要拿到可執行名義。</div>
+  </article>
+
+  <article class="card attach" id="s4-agreement" data-tags="離婚協議書,離婚約定,檢查清單,扶養,會面,財產">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>離婚協議書重點清單（兩願離婚逐項寫清楚）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>協議寫越細日後越省事；最容易跳票的是<b>扶養費與會面</b>——最好讓法院調解或公證，拿到可強制執行的效力。</div>
+    <ul class="checklist">
+      <li>離婚原因與雙方自願離婚之意思</li>
+      <li>未成年子女數、姓名、出生年月日</li>
+      <li>未成年子女權利義務由誰行使負擔（一方或共同親權）</li>
+      <li>扶養費金額、給付方式（按月金額、匯款帳戶）、給付到子女成年或完成學業</li>
+      <li>教育費、醫療費、保險費等額外支出如何分攤</li>
+      <li>會面交往方式：週末、寒暑假、過年、交接地點與時間</li>
+      <li>剩餘財產差額如何計算與給付（或明確拋棄，注意其效力）</li>
+      <li>不動產、車輛、貸款、存款、股票的歸屬與過戶時點</li>
+      <li>剩餘債務（房貸、卡債、私人借款）由誰清償</li>
+      <li>遷戶籍、未成年子女姓氏是否變更</li>
+      <li>違反協議（如不給扶養費、阻撓會面）之處理方式</li>
+      <li>是否送法院調解或公證，以取得強制執行名義</li>
+      <li>二位以上證人簽名，並預約戶政離婚登記</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1050 條（離婚書面與登記）</span><span class="law">民法第 1055 條（親權）</span><span class="law">民法第 1030 條之 1（財產分配）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>離婚協議寫越細，日後越省事；牽涉錢與孩子的條款，最好讓法院或公證幫你加上「可執行」效力。</div>
+  </article>
+
+  <article class="card attach" id="s4-support-table" data-tags="扶養費試算,扶養費計算,月消費支出,分攤比例,範例">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>扶養費計算說明（兩階段酌定方式）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>算法就兩步：<b>先抓孩子每月基本需要</b>（主計處每人月消費支出），<b>再按雙方收入比例分攤</b>；下表數字為說明範例。</div>
+    <p>實務上法院多採「兩階段」：先決定孩子每月基本需要，再依雙方經濟能力比例分攤。下表為<b>說明性範例</b>，金額僅供理解算法，實際以主計處當年度區域消費支出與法院個案認定為準。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:26%"><col style="width:37%"><col style="width:37%"></colgroup>
+      <tr><th>步驟</th><th>作法</th><th>範例（假設數字）</th></tr>
+      <tr><td>1. 認定子女每月基本需要</td><td>參考行政院主計處「平均每人每月消費支出」，依居住縣市調整</td><td>假設每人每月消費支出約 1.3 萬元 → 孩子月需要約 1.3 萬元</td></tr>
+      <tr><td>2. 估算雙方可用收入</td><td>扣除必要負擔後，計算雙方每月可支配所得</td><td>父月收 6 萬、母月收 4 萬，合計 10 萬</td></tr>
+      <tr><td>3. 按比例分攤</td><td>各自依所得比例負擔子女費用</td><td>父 60%＝7,800 元；母 40%＝5,200 元</td></tr>
+      <tr><td>4. 考量主要照顧者</td><td>同住一方已支出食衣住行，他方常以現金補足其分攤部分</td><td>若母為主要照顧者，父每月給付約 7,800 元</td></tr>
+      <tr><td>5. 額外支出另計</td><td>學費、才藝、重大醫療不併入月費，另行約定比例分攤</td><td>按 60/40 或另行約定</td></tr>
+    </table>
+    </div>
+    <p class="cap">註：以上為算法示範，非實際裁定金額；正確基準請查閱主計處最新「家庭收支調查」平均每人每月消費支出，並以法院或雙方協議為準。</p>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1116 條之 2（離婚不影響扶養）</span><span class="law">民法第 1119 條（扶養程度衡量）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>扶養費不是對方開天價：先抓孩子每月基本需要，再按雙方收入比例分，數字透明才談得下去。</div>
+  </article>
+
+  <article class="card attach" id="s4-visitation-table" data-tags="會面交往範例,探視方案,寒暑假,交接,範本">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>會面交往方案範例（可寫進協議或請法院酌定）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>把會面<b>時間、地點、交接細節</b>寫成一張表：隔週末、寒暑假各數日、過年輪流，不在孩子面前吵架。</div>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:22%"><col style="width:48%"><col style="width:30%"></colgroup>
+      <tr><th>時段</th><th>建議安排</th><th>配套約定</th></tr>
+      <tr><td>一般週末</td><td>隔週週六上午 10 點至週日下午 6 點，由非監護方接回</td><td>交接地點固定（如監護方住處或便利商店）</td></tr>
+      <tr><td>平日</td><td>每週三傍晚晚餐時段，或視課表彈性</td><td>不影響孩子作息與課業</td></tr>
+      <tr><td>寒假 / 暑假</td><td>各排一次連續 5–7 天共同生活</td><td>前一年底協調日期，避免撞期</td></tr>
+      <tr><td>過年/節日</td><td>除夕、初一輪流，或拆成半天</td><td>跨年輪替表先寫好</td></tr>
+      <tr><td>生日/畢業典禮</td><td>雙方皆得參加，不得拒絕另一方到場</td><td>以孩子感受優先</td></tr>
+      <tr><td>交接紀律</td><td>不在孩子面前爭吵、不對孩子批評另一方</td><td>違者得作為酌減或改定會面事由</td></tr>
+    </table>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1055 條第 5 項（會面交往）</span><span class="law">民法第 1055 條之 2（請求法院酌定）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>把會面時間、地點、交接細節寫成一張表，孩子才不會變成大人角力的籌碼。</div>
+  </article>
+</section>
+<section class="stage" id="stage-5" data-title="買房置產">
+  <div class="stage-head">
+    <span class="stage-num">05</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">買房置產：人生最大一筆交易的每一步</h2>
+      <p class="stage-sub">從看屋、斡旋、簽約、貸款到驗屋交屋——把錢怎麼走、要什麼文件、踩到雷怎麼救，一次講清楚</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">民法債編買賣</span><span class="chip">不動產經紀業管理條例</span><span class="chip">消費者保護法</span><span class="chip">平均地權條例（實價登錄）</span><span class="chip gold">定金罰則：買方沒收 / 賣方加倍返還</span><span class="chip gold">瑕疵通知後 6 個月、交付後 5 年</span>
+  </div>
+
+  <article class="card" id="s5-prepare" data-tags="買房前置,自備款,實價登錄,謄本,土地使用分區,貸款能力">
+    <h3><span class="dot"></span>買房前置：先算自己的錢，再查屋子的底</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>出價前做三件功課：<b>自備款除頭期外再留價金 5%–10%</b> 給稅費修繕；上實價登錄查「實際成交」而非掛牌價；調閱謄本確認產權乾淨、分區可住。</div>
+    <p>看中房子之前，先盤點三件事：自己能出多少、這間屋子實際成交行情多少、產權乾不乾淨。沒做這三步就下斡旋，等於盲签。</p>
+    <span class="lbl">出價前逐項做</span>
+    <ol>
+      <li><b>自備款要留足「價金以外」的錢。</b>除了頭期款，還要準備契稅、印花稅、登記規費、地政士（代書）費、仲介服務費，以及交屋後的修繕預算——這些加起來通常又是成交價的 <span class="big">5%–10%</span>。</li>
+      <li><b>用「寬限期滿後」的月付試算。</b>銀行核貸常用還款人月收入的一定倍數、或房貸月付金不超過月收入約三分之一來估算；自己一定要用寬限期結束、開始攤還本金後的真實月付來試算，不要被頭幾年的低月付騙了。</li>
+      <li><b>查實價登錄，不要只看掛牌價。</b>到「內政部不動產交易實價查詢服務網」查該社區、該路段近期「實際成交」行情（實價登錄 2.0），作為出價底線。</li>
+      <li><b>產權與屋況調查。</b>申請土地及建物登記（簿）謄本、地籍圖謄本，確認所有權人是誰、有無抵押權、有無被查封、有無長期租約（買賣不破租賃，租戶可能繼續住）。</li>
+      <li><b>確認土地使用分區。</b>申請都市計畫土地使用分區證明，看是住幾類、可否住家用、容積率與高度限制，是否位於工業區或特定專用區——買錯分區，以後貸款、換約、都會卡關。</li>
+    </ol>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:26%"><col style="width:44%"><col style="width:30%"></colgroup>
+      <tr><th>項目</th><th>說明</th><th>約略占成交價</th></tr>
+      <tr><td>頭期款（自備）</td><td>成交價減銀行貸款額度，成數越低要自備越多</td><td class="num">約 <span class="big">20%–40%</span></td></tr>
+      <tr><td>契稅</td><td>買方繳，依房屋現值與税率計算</td><td class="num">約 1.5%–6%</td></tr>
+      <tr><td>印花稅、登記費、地政士費</td><td>規費＋代書酬勞</td><td class="num">合計約 1%–2%</td></tr>
+      <tr><td>仲介服務費</td><td>買賣雙方合計不得超過成交價 6%</td><td class="num">依約定分攤</td></tr>
+      <tr><td>修繕與家具預備金</td><td>交屋後整理，中古屋尤其要留</td><td class="num">視屋況</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>銀行是用「自己的鑑價」決定貸款額度，通常<span class="hl">低於你買賣的價</span>；鑑價不足的差額，要你用自備款補——這是「貸款過不了、差頭款」最常見的原因。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>只看寬限期月付：寬限期只繳息，期滿後本金平均攤還，月付會瞬間增加一大截。</li><li>被「今天不下斡旋明天就沒了」催：實價登錄查一查、謄本謄一謄，不需要在現場急著刷錢。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 348 條（出賣人移轉所有權義務）</span><span class="law">平均地權條例第 47 條之 1 以下（實價登錄）</span><span class="law">土地法</span><span class="law">內政部不動產交易實價查詢服務網</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>出價前先做三件功課：算清楚「價金外加」的費用、查實際成交行情、看謄本確認產權——這三步做了，踩雷機率砍半。</div>
+  </article>
+
+  <article class="card" id="s5-negotiate" data-tags="斡旋金,要約書,定金,轉定,議價,斡旋">
+    <h3><span class="dot"></span>斡旋與要約：斡旋金、要約書、定金，法律效果完全不同</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b><b>斡旋金在「賣方簽收轉定」前可無息退；轉定之後才受定金罰則。</b>付錢前一定要拿到寫明價格條件、且註明「未轉定無息退還」的收據。</div>
+    <p>仲介請你付「斡旋金」出價時，很多人以為「付了就不能退」，其實不然。關鍵是錢有沒有「轉定」成賣方已簽收的定金。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:20%"><col style="width:40%"><col style="width:40%"></colgroup>
+      <tr><th></th><th>斡旋金</th><th>要約書簽收後轉定金</th></tr>
+      <tr><td>性質</td><td>買方表達出價誠意、請仲介代向賣方議價</td><td>買方正式出價、賣方在要約書簽章同意條件</td></tr>
+      <tr><td>契約狀態</td><td>賣方未同意前，買賣契約尚未成立</td><td><span class="hl">定金交付，依民法第 248 條推定契約成立</span></td></tr>
+      <tr><td>可否取回</td><td>賣方未接受條件、未轉定前，原則無息退還買方</td><td>買方反悔→賣方沒收；賣方反悔→加倍返還</td></tr>
+      <tr><td>金額</td><td>無法定上限，實務常約成交價 2% 上下</td><td>由雙方約定，常見數萬至數十萬元</td></tr>
+    </table>
+    </div>
+    <span class="lbl">轉定前這樣做</span>
+    <p><b>轉定時點：</b>賣方在你的要約書上簽章，同意價格與條件，斡旋金才「轉定」為定金。從轉定那一刻起才受定金罰則拘束；轉定之前，你都可以撤回出價。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「付了斡旋金就一定要買、不能退」→錯。賣方尚未同意你的條件、尚未轉定前，買賣契約根本還沒成立，斡旋金應無息退還；只有轉定成定金後，才適用定金罰則。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>只給收據、不給你看要約書條件，就催你刷卡——沒有白紙黑字的價格與條件，不要付錢。</li><li>收據未寫明「未轉定前無息退還」，日後爭議時舉證困難。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 248 條（定金交付推定契約成立）</span><span class="law">民法第 249 條（定金效力）</span><span class="law">不動產經紀業管理條例第 22 條（要約書、定金收據應經紀人簽章）</span><span class="law">內政部不動產委託銷售契約書附要約書範本</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>斡旋金在「賣方簽收轉定」前可無息退；轉定之後才受定金罰則——所以一定要在收據寫清楚轉定條件。</div>
+  </article>
+
+  <article class="card" id="s5-sign" data-tags="簽約,不動產說明書,契約審閱期,買賣契約,付款分期,稅費分擔">
+    <h3><span class="dot"></span>簽約：審閱期、四期付款、稅費分擔，逐字看再簽</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>跟建商買預售屋／新成屋有 <span class="big">5 日</span>審閱期；但中古屋直接跟非營業屋主簽約<span class="hl">原則沒有審閱期</span>，簽了就要履約。四期付款每期時點、稅費分擔全部寫死。</div>
+    <p>簽買賣契約書才是這筆交易真正的法律開端。透過仲介交易時，依不動產經紀業管理條例，不動產說明書與買賣契約書都要由「經紀人」簽章。</p>
+    <span class="lbl">簽約前逐條確認</span>
+    <ul>
+      <li><b>審閱期：</b>跟建商買預售屋／新成屋，以及跟仲介簽斡旋、要約、委售契約，屬企業經營者對消費者的定型化契約，依法應給合理審閱期（實務上預售屋／買賣定型化契約約定至少 <span class="big">5 日</span>，以內政部最新公告為準）。<span class="hl">但中古屋直接跟非以賣房為營業的屋主簽買賣契約，原則沒有法定審閱期</span>，簽了就要履約，更要自己看仔細。</li>
+      <li><b>付款分期：</b>中古屋常分「簽約款→用印款→完稅款→交屋款」四期，每期的給付時點與前提都要寫死（例如完稅款於契稅單核繳前給付）。</li>
+      <li><b>稅費分擔：</b>土地增值稅、遲延的地價稅通常歸賣方；契稅、印花稅、登記費通常歸買方；房屋稅、地價稅按「持有日」比例分算。全部寫清楚，不要用「依規定」帶過。</li>
+      <li><b>必載事項：</b>成交總價、交屋日、現況附帶哪些設備留櫃、有無租約、戶籍應於何日遷出、貸款如何代償、違約罰則、是否附保留款。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:20%"><col style="width:30%"><col style="width:50%"></colgroup>
+      <tr><th>期別</th><th>約略時點</th><th>為什麼在這個點給</th></tr>
+      <tr><td>簽約款</td><td>簽買賣契約時</td><td>即定金，拘束雙方（民法第 248 條）</td></tr>
+      <tr><td>用印款</td><td>雙方用印、準備對保/送件</td><td>賣方備齊印鑑證明、戶籍謄本等</td></tr>
+      <tr><td>完稅款</td><td>契稅、土地增值稅單核繳前</td><td>作為完稅資金</td></tr>
+      <tr><td>交屋款</td><td>驗屋點交完畢、所有權移轉登記後</td><td><span class="hl">最後一道；保留尾數保障點交</span></td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>簽約前主動要求仲介先交付「不動產說明書」讓你帶回看：依條例第 23 條，經紀人員應以說明書向交易相對人解說，且說明書在解說前應經委託人簽章。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>當場被「大家都簽了就等你」催著簽，不讓你把契約帶回家——你有權利帶回去看；預售、新成屋更有法定審閱期。</li><li>契約只寫總價，不寫每期款條件與交屋日，日後爭議無憑。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">不動產經紀業管理條例第 22 條（六類文件應經紀人簽章）</span><span class="law">同條例第 23 條（不動產說明書解說義務）</span><span class="law">同條例第 21 條（廣告銷售應與事實相符）</span><span class="law">消費者保護法第 11 條之 1（定型化契約審閱期）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>簽約不是簽名，是把「多少錢、分幾次、何時交屋、稅誰付」全部白紙黑字；有審閱期就用，沒有就自己當審閱者。</div>
+  </article>
+
+  <article class="card" id="s5-escrow" data-tags="履約保證,價金信託,價金履約保證,第三方專戶,代書">
+    <h3><span class="dot"></span>履約保證：大額價金不要直接匯給賣方個人</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>幾百萬頭期款<b>先進第三方專戶</b>，所有權過到你名下、房子點交完成，賣方才能領錢——這是交易安全第一道鎖。</div>
+    <p>交易最慘的下場不是房子爛，而是「錢付了、戶籍沒清掉、房子被別的債權人查封」。履約保證就是把錢放進第三方專戶，確認所有權過到你名下、房子點交完成，賣方才能領錢。</p>
+    <ul>
+      <li><b>價金信託：</b>買價金交付信託公司或銀行設專戶控管，按交易進度撥付。</li>
+      <li><b>不動產買賣價金履約保證：</b>由建經公司出具履約保證書，協助銀行控管價金。</li>
+      <li><b>對買方的保障：</b>避免先拿你的錢去幫賣方償還原貸款、卻遭挪用，導致抵押權塗銷不成、房子被查封；也確保賣方在過戶點交完成前不會先拿到全額。</li>
+      <li><b>費用：</b>通常由買賣雙方依約分擔，金額不高（約價金萬分之幾或數千元，依承作機構），契約務必寫明由誰負擔、用哪一家機構。</li>
+    </ul>
+    <div class="fact"><span class="mark">✓</span><span>預售屋的履約保證自 <span class="big">108 年</span>起為法定應記載事項，常見四種機制：價金信託、不動產開發信託、不動產仲介經紀業公會連帶保證、價金返還保證——買預售屋一定要確認建商採哪一種。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>仲介說「先把頭期款匯到我們公司帳戶代償」——沒有專戶、沒有保證機構前，<span class="hl">不要把大額價金匯入任何私人或公司帳戶</span>。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">內政部預售屋買賣定型化契約應記載及不得記載事項（108.5.2 公告）</span><span class="law">信託業法（價金信託）</span><span class="law">不動產經紀業管理條例</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>幾百萬的頭期款，先進第三方專戶，過戶點交完成才讓賣方領——這是買房交易安全的第一道鎖。</div>
+  </article>
+
+  <article class="card" id="s5-loan" data-tags="房貸,銀行鑑價,貸款成數,寬限期,提前還款違約金,聯徵,選擇性信用管制">
+    <h3><span class="dot"></span>貸款：銀行鑑價、成數政策與寬限期</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>銀行依「自己的鑑價」貸款，不是依開價。首購約 <span class="big">8 成</span>、第二戶 <span class="big">6 成</span>、第三戶以上 <span class="big">3 成</span>；<b>買賣契約一定要加「貸款不過得無條件解約」</b>。</div>
+    <p>銀行不是依你開的價貸款，是依「銀行自己的鑑價」與「你的還款能力」貸款。送件前先搞懂現行成數管制。</p>
+    <span class="lbl">送件前先確認</span>
+    <ul>
+      <li><b>鑑價與核貸：</b>銀行會自行估價，通常低於市場買賣價；成數與利率取決於聯徵分數、收入證明、既有負債、房齡與地點。</li>
+      <li><b>寬限期：</b>常見前 1–3 年只繳息，之後本金平均攤還，月付會明顯上升；依現行信用管制，<span class="hl">第二戶以上購屋貸款不得有寬限期</span>。</li>
+      <li><b>提前還款違約金：</b>約定於貸放後 2–3 年內提前清償者，銀行常收違約金（約為償還金額一定比例或數個月利息，以銀行貸放契約為準）；日後想轉貸降息，要先把這筆算進去。</li>
+      <li><b>聯徵：</b>向金融聯合徵信中心申請個人聯徵報本，確認無異常貸款、信用卡循環額度過高；短時間內不要向多家銀行同時送件，查詢次數過多反而扣分。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:34%"><col style="width:33%"><col style="width:33%"></colgroup>
+      <tr><th>對象（自然人購屋）</th><th>最高貸款成數</th><th>寬限期</th></tr>
+      <tr><td>首購第一戶</td><td>約 <span class="big">8 成</span></td><td>依銀行及現行公告</td></tr>
+      <tr><td>全國第二戶</td><td>約 <span class="big">6 成</span>（115.3.20 起由 5 成放寬）</td><td>不得有寬限期</td></tr>
+      <tr><td>第三戶以上</td><td>約 <span class="big">3 成</span></td><td>不得有寬限期</td></tr>
+      <tr><td>高價住宅（各縣市門檻不同）</td><td>約 <span class="big">3 成</span></td><td>不得有寬限期</td></tr>
+    </table>
+    </div>
+    <p class="cap">表列成數為央行選擇性信用管制之基準，實際成數仍由銀行依個案核定；最新管制內容以央行、金管會公告為準。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「房仲或銀行業務說一定過 8 成」→銀行才是最後決定者。若買賣契約沒有加註「銀行未核貸或核貸不足得無條件解約退還價金」的貸款條件，貸款沒過你可能仍要賠定金。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">銀行法</span><span class="law">央行對本國銀行購屋貸款選擇性信用管制措施（以最新公告為準）</span><span class="law">金融聯合徵信中心業務規範</span><span class="law">個人資料保護法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>貸款成數與寬限期是央行管的、不是仲介說了算；買賣契約一定要加「貸款過得了才成交」的解除條款。</div>
+  </article>
+
+  <article class="card" id="s5-inspect" data-tags="驗屋,交屋,點交,保留款,漏水,戶籍遷出">
+    <h3><span class="dot"></span>驗屋與交屋：錢過去之前，先把房子看清楚</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>驗屋在<b>交屋款支付前</b>做；契約保留 <span class="big">10 萬至數十萬元</span>保留款，等戶籍遷出、水電管理費結清、設備點交完成再給。</div>
+    <p>驗屋最好在「交屋款支付前」做，並在契約保留一小筆保留款。交屋當天逐項點交、拍照存證。</p>
+    <span class="lbl">驗屋當天逐項做</span>
+    <ul>
+      <li><b>時機：</b>交屋日前 1–2 天會同賣方、仲介現場驗屋；中古屋可自備工具或另請專業驗屋公司。</li>
+      <li><b>重點：</b>漏水（窗際、天花板、廚衛上方、地下室）、壁癌、磁磚空鼓、水電開關與插座、馬桶與給排水、鋁門窗與對外窗、外牆與屋頂、管線機電，以及冷氣、熱水器等附屬設備是否正常運作。</li>
+      <li><b>點交程序：</b>當場抄錄水電、瓦斯、管理費、第四台/網路餘額並約定結清日；清點鑰匙、門禁卡、車位權狀；確認前戶租約終止、戶籍已遷出。</li>
+      <li><b>保留款：</b>契約保留新台幣十萬至數十萬元「交屋保留款」，於戶籍遷出、水電管理費結清、設備點交完成後才給賣方。</li>
+      <li><b>交屋後才發現問題：</b>若是交屋前已存在的隱藏瑕疵，於發現後 <span class="big">6 個月</span>內依物之瑕疵擔保主張（詳下張卡片）；屬於當場看得出的外觀耗損，很難再怪賣方。</li>
+    </ul>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>沒留保留款，交屋款全數給清後，賣方對漏水、戶籍未遷出就不再積極處理。</li><li>交屋當天沒抄水電表度數，事後前戶帳單算不清。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 348 條（出賣人交付義務）</span><span class="law">民法第 356 條（從速檢查並通知瑕疵）</span><span class="law">民法第 365 條（瑕疵權利行使期間）</span><span class="law">內政部不動產說明書應記載事項</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>交屋款分兩步給：絕大多數點交完才付，留一筆保留款等戶籍遷出、費用結清再給。</div>
+  </article>
+
+  <article class="card" id="s5-warranty" data-tags="物之瑕疵擔保,瑕疵,漏水,壁癌,解除契約,減少價金,現況交屋">
+    <h3><span class="dot"></span>物之瑕疵擔保：交屋後才發現的問題，6 個月內要主張</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>發現隱藏瑕疵<b>立刻以存證信函通知賣方</b>；<span class="big">通知後 6 個月</span>內主張減價或解約，<span class="big">自交付起 5 年</span>為最長期限，過期權利消滅。</div>
+    <p>交屋後才發現的隱藏問題（壁癌、漏水、海砂屋、結構瑕疵），法律有一條救濟路，但期限很短，拖過就失效。</p>
+    <ul>
+      <li><b>第 354 條：</b>出賣人應擔保房屋交付時，無滅失或減少價值、通常或契約預定效用之瑕疵。</li>
+      <li><b>第 356 條：</b>買受人應按物之性質依通常程序從速檢查，發現瑕疵應「立即通知」出賣人。</li>
+      <li><b>第 359 條：</b>出賣人應負瑕疵擔保責任時，買受人得選擇「解除契約」或「請求減少價金」；瑕疵輕微、解除顯失公平者，僅能請求減價。</li>
+      <li><b>第 360 條：</b>缺少出賣人所保證之品質，或出賣人故意不告知瑕疵者，買受人得請求不履行之損害賠償。</li>
+    </ul>
+    <span class="lbl">時效</span>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:38%"><col style="width:62%"></colgroup>
+      <tr><th>期間</th><th>意思</th></tr>
+      <tr><td>交屋後從速</td><td>依第 356 條檢查並立即通知賣方，最好用存證信函</td></tr>
+      <tr><td>通知後 <span class="big">6 個月</span></td><td>第 365 條：6 個月內不行使解除或減價權，權利即消滅</td></tr>
+      <tr><td>自房屋交付起 <span class="big">5 年</span></td><td>第 365 條：最長除斥期間，屆期無論是否發現都消滅</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「契約寫『現況交屋、售出不論』，就不能再主張瑕疵」→不完全對。現況交屋只能免除你當場看得出的外觀問題；若賣方<span class="hl">故意隱瞞瑕疵，或曾保證品質（第 360 條）</span>，免責條款不能免責。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 354 條</span><span class="law">民法第 356 條</span><span class="law">民法第 359 條</span><span class="law">民法第 360 條</span><span class="law">民法第 365 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>交屋後發現問題，立刻以存證信函通知賣方，6 個月內主張減價或解約；最長 5 年，過期權利消滅。</div>
+  </article>
+
+  <article class="card" id="s5-death" data-tags="凶宅,非自然死亡,說明義務,隱匿,詐欺,撤銷,內政部不動產說明書">
+    <h3><span class="dot"></span>凶宅：賣方與仲介有說明義務，隱匿可撤銷契約</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>凶宅是<b>法定應記載事項</b>：賣方持有期間戶內發生兇殺、自殺等非自然死亡都要寫進說明書。賣方故意隱匿構成詐欺，你可依民法第 92 條<span class="hl">撤銷契約、把房子退回去</span>。</div>
+    <p>凶宅不是「你覺得毛毛的」才算數。法律上它是影響交易意願與價格的重大事項，賣方與仲介都負有說明義務。</p>
+    <ul>
+      <li><b>認定：</b>依內政部「不動產說明書應記載及不得記載事項」，建物專有部分於賣方持有期間，是否曾發生兇殺、自殺、一氧化碳中毒或其他非自然死亡，應記載於說明書。自然病逝、老邁辭世原則不構成凶宅。</li>
+      <li><b>說明義務：</b>賣方應主動告知；經紀人員應依條例第 23 條，以不動產說明書向交易相對人解說。</li>
+      <li><b>隱匿的責任：</b>賣方故意隱瞞凶宅構成詐欺，買受人得依民法第 92 條撤銷意思請求、請求回復原狀；仲介未盡查證與說明義務者，負損害賠償責任。</li>
+    </ul>
+    <span class="lbl">自保做法</span>
+    <p>直接要求賣方於買賣契約註記「本戶於持有期間無兇殺、自殺等非自然死亡情形」並簽章；同時查民間凶宅資訊、向鄰里打聽。</p>
+    <div class="fact"><span class="mark">✓</span><span>實務見解認為：凶宅雖不減損房屋物理結構，但影響一般購屋者交易意願與價格，屬於交易重大事項，出賣人負有告知義務。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>「三樓內」爭議：發生在專有部分（戶內）才是典型凶宅；在公共廊道、社區大門外發生者，實務認定不一——口頭說不算，要求寫進契約。</li><li>只問仲介有沒有凶宅，沒要求寫進說明書或契約——口頭保證事後難舉證。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 92 條（被詐欺之意思表示得撤銷）</span><span class="law">民法第 88 條（錯誤）</span><span class="law">不動產經紀業管理條例第 22 條（說明書應簽章）</span><span class="law">同條例第 23 條（解說義務）</span><span class="law">內政部不動產說明書應記載及不得記載事項</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>凶宅資訊要寫進契約才算數；賣方故意隱匿，你事後可以依詐欺撤銷契約、把房子退回去。</div>
+  </article>
+
+  <article class="card" id="s5-breach" data-tags="違約,沒收定金,加倍返還,違約金酌減,解除契約,回復原狀">
+    <h3><span class="dot"></span>違約處理：定金沒收與加倍返還，過高違約金可請法院砍</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b><b>誰違約誰吞定金：</b>買方不買→賣方沒收定金；賣方不賣→<span class="big">加倍返還</span>。約定違約金太高，可依第 252 條請法院酌減。</div>
+    <p>交易破局時錢怎麼算，民法第 249 條有一套定金罰則；但約定的違約金太高，法院可以酌減。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:34%"><col style="width:66%"></colgroup>
+      <tr><th>情形</th><th>法律效果</th></tr>
+      <tr><td>契約正常履行</td><td>定金返還買方，或作為價金之一部（第 249 條第 1 款）</td></tr>
+      <tr><td>可歸責買方（買方不買）</td><td><span class="hl">賣方得沒收定金</span>（第 249 條第 2 款）</td></tr>
+      <tr><td>可歸責賣方（賣方不賣）</td><td><span class="hl">賣方應加倍返還定金</span>（第 249 條第 3 款）</td></tr>
+      <tr><td>不可歸責雙方（如約定貸款過不了而解約）</td><td>定金返還（第 249 條第 4 款）</td></tr>
+    </table>
+    </div>
+    <ul>
+      <li><b>違約金酌減：</b>約定違約金額過高者，法院得因當事人聲請，減至相當數額（第 252 條）。契約常見的「沒收成交價 15%」一類高額罰則，不是簽了就不能談。</li>
+      <li><b>解除契約後：</b>依第 259 條雙方回復原狀，已付款項返還、受領者應加計利息；一方有過足並致他方損害者，仍得請求賠償（第 260 條）。</li>
+    </ul>
+    <div class="myth ok-myth"><span class="mark">✓</span><span>「賣方反悔，把定金原數退回就好」→錯。可歸責賣方時，依第 249 條第 3 款應「<span class="hl">加倍返還</span>」定金，不是原數退回。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 249 條（定金之效力）</span><span class="law">民法第 250 條（違約金）</span><span class="law">民法第 252 條（違約金額過高之酌減）</span><span class="law">民法第 259 條（解除後回復原狀）</span><span class="law">民法第 260 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>誰違約誰吞定金：買方不買被沒收、賣方不賣加倍返還；罰則太高，法院可以幫你砍到合理。</div>
+  </article>
+
+  <article class="card" id="s5-rentbuy" data-tags="租賃vs購買,租金補貼,押金,租賃定型化契約,持有成本,買房決策">
+    <h3><span class="dot"></span>租賃 vs 購買：先算清持有成本，再決定要不要買</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>先把「房貸月付＋房屋稅地價稅＋管理費＋修繕」試算出來，跟同區租金與<b>租金補貼</b>比一比；租屋押金上限 <span class="big">2 個月</span>。</div>
+    <p>買房不是人生必經選項。把每月持有成本與租金、租金補貼放在一起比較，再決定。</p>
+    <ul>
+      <li><b>租屋的法定底線：</b>押金不得超過 2 個月租金（租賃住宅市場發展及管理條例第 7 條）、不得約定禁止遷入戶籍或申請租金補貼、修繕原則由房東負責（詳階段 01）。</li>
+      <li><b>租金補貼：</b>內政部住宅租金補貼，符合資格者每月補貼，申請資格與額度以內政部當年度公告為準。</li>
+      <li><b>持有成本：</b>房貸利息、房屋稅、地價稅、管理費、修繕、火災及地震險——合計起來每月常高於同區租金，換算「彈性＋租金補貼」未必吃虧。</li>
+    </ul>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:22%"><col style="width:39%"><col style="width:39%"></colgroup>
+      <tr><th>面向</th><th>租</th><th>買</th></tr>
+      <tr><td>搬遷彈性</td><td>高，租期到即可換</td><td>低，賣屋有時間與成本</td></tr>
+      <tr><td>每月現金壓力</td><td>租金＋押金（上限 <span class="big">2 個月</span>）</td><td>頭期款＋月付＋稅費管理費修繕</td></tr>
+      <tr><td>財產累積</td><td>無</td><td>房屋持分，但背負貸款與折舊</td></tr>
+      <tr><td>政策保障</td><td>租賃定型化契約、租金補貼</td><td>貸款成數與利率管制、青年安心成家貸款</td></tr>
+    </table>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">租賃住宅市場發展及管理條例第 7 條（押金上限）</span><span class="law">土地法第 99 條</span><span class="law">民法第 423 條、第 429 條（修繕）</span><span class="law">住宅法（租金補貼）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>先把「每月要繳的房貸＋稅＋管理費＋修繕」試算出來，再跟同區租金和租金補貼比一比，再決定要不要上車。</div>
+  </article>
+
+  <article class="card attach" id="s5-flow" data-tags="買房流程,流程圖,看屋,交屋,可直接使用">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>買房一張圖：從看屋到交屋的八個節點</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>八個節點照順序走，記住一句：<b>錢永遠走第三方專戶，不過私人帳戶</b>；中古屋從斡旋到交屋常約 30–60 天。</div>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>看屋</b>比對實價登錄、謄本、使用分區</div>
+      <div class="flow-step"><b><span class="fnum">2</span>斡旋／要約</b>付斡旋金出價，未轉定可退</div>
+      <div class="flow-step"><b><span class="fnum">3</span>轉定＋簽約</b>賣方簽收要約、簽買賣契約書</div>
+      <div class="flow-step"><b><span class="fnum">4</span>履約保證</b>價金信託或履約保證開專戶</div>
+      <div class="flow-step"><b><span class="fnum">5</span>銀行貸款</b>估價、對保、核定成數與利率</div>
+      <div class="flow-step"><b><span class="fnum">6</span>用印／完稅</b>繳契稅、土地增值稅</div>
+      <div class="flow-step"><b><span class="fnum">7</span>移轉登記</b>地政士辦所有權過戶與抵押權設定</div>
+      <div class="flow-step"><b><span class="fnum">8</span>驗屋交屋</b>點交、留保留款、水電結清</div>
+    </div>
+    <p class="cap">時程僅供參考：中古屋從斡旋到交屋常約 30–60 天，預售屋則依建案進度。</p>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">不動產經紀業管理條例第 22 條、第 23 條</span><span class="law">民法第 248 條、第 348 條</span><span class="law">土地登記規則</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>把這八個節點存在手機，每完成一步打勾，錢永遠走第三方專戶、不過私人戶頭。</div>
+  </article>
+
+  <article class="card attach" id="s5-sign-docs" data-tags="簽約文件清單,checklist,印鑑,謄本,說明書,可直接使用">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>簽約前文件準備清單（逐項打勾）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>每一項文件沒備齊、沒看過，就先不要簽名；最容易漏掉的是<b>說明書簽章</b>與<b>貸款解約條款</b>。</div>
+    <ul class="checklist">
+      <li>近期土地、建物登記（簿）謄本與地籍圖謄本（確認所有權人、抵押權、查封）</li>
+      <li>不動產說明書（經紀人簽章、賣方簽章），內容含凶宅與重大事項</li>
+      <li>買賣契約書乙式數份，逐條看過：總價、四期付款、交屋日、稅費分擔、違約罰則</li>
+      <li>賣方印鑑證明、戶籍謄本（確認有無成年、有無監護宣告、同戶籍人口）</li>
+      <li>買方身分證、印章（或印鑑）、收入證明（供銀行貸款用）</li>
+      <li>都市計畫土地使用分區證明、建物使用執照（確認用途合法）</li>
+      <li>實價登錄查詢結果（該區段近期成交）作為出價參考</li>
+      <li>已約定履約保證機制（價金信託／履約保證）並寫明費用分擔</li>
+      <li>契約加註「銀行未核貸或核貸不足得無條件解約退還價金」</li>
+      <li>預售／新成屋：確認契約審閱期與履約保證機制類型</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">不動產經紀業管理條例第 22 條（文件經紀人簽章）</span><span class="law">消費者保護法第 11 條之 1（審閱期）</span><span class="law">內政部不動產買賣契約書範本</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>把這張清單印出來帶到簽約現場，每一項文件沒備齊、沒看過，就先不要簽名。</div>
+  </article>
+
+  <article class="card attach" id="s5-inspect-check" data-tags="驗屋檢查表,checklist,漏水,壁癌,設備,可直接使用">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>交屋驗屋檢查表（現場逐項打勾）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>驗屋當天慢一點、拍多一點；<b>交屋後才發現的隱藏瑕疵，6 個月內一定要書面通知賣方</b>。</div>
+    <ul class="checklist">
+      <li>漏水：窗際外側、天花板、廚衛正上方、地下室、屋頂平台</li>
+      <li>壁癌、油漆剝落、磁磚空鼓（用手敲聽聲音）</li>
+      <li>水電：全部開關、插座、燈具實際測試；馬桶、水龍頭、排水</li>
+      <li>鋁門窗、對外窗開關順暢、密封條完整、不飄雨</li>
+      <li>冷氣、熱水器、抽油煙機、网络電視等附屬設備實際運作</li>
+      <li>管理費、水電、瓦斯第四台餘額結清，並抄錶度數</li>
+      <li>鑰匙、門禁卡、信箱鑰匙、車位權狀點交齊全</li>
+      <li>前戶租約已終止、戶籍已全部遷出（查戶籍謄本）</li>
+      <li>現場拍照錄影存證（牆面、設備、水電錶）</li>
+      <li>保留款於上列全部完成後再給付賣方</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 356 條（從速檢查通知）</span><span class="law">民法第 365 條（6 個月、5 年）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>驗屋當天慢一點、拍多一點照片；交屋後才發現的隱藏瑕疵，6 個月內一定要以書面通知賣方。</div>
+  </article>
+
+  <article class="card attach" id="s5-checksources" data-tags="凶宅查詢,產權查詢,實價登錄,查詢管道,可直接使用">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>凶宅與產權查詢管道（出價前自己查一輪）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>官方謄本＋實價登錄是<b>主證據</b>，民間凶宅網與鄰里消息是旁證；最後一定要賣方在契約上親筆保證。</div>
+    <ul>
+      <li><b>實際成交行情：</b>內政部「不動產交易實價查詢服務網」（實價登錄 2.0），查該路段、社區近期實登價格。</li>
+      <li><b>產權現況：</b>至地政事務所申請土地、建物登記（簿）謄本與地籍圖謄本，或申請免憑證臨時密碼線上申請。</li>
+      <li><b>使用分區：</b>直轄市／縣市政府都市計畫（城鄉發展）單位申請土地使用分區證明。</li>
+      <li><b>凶宅資訊：</b>要求仲介出示經紀人簽章的「不動產說明書」（法定應記載非自然死亡）；民間凶宅資訊站僅供參考，不得做為唯一依據。</li>
+      <li><b>社區查訪：</b>詢問管理員、鄰居、里長，觀察有無當期相關傳聞；並要求賣方於契約簽章保證「持有期間無凶宅」。</li>
+      <li><b>信用與貸款：</b>向財團法人金融聯合徵信中心申請個人聯徵報本，確認自己的信用紀錄。</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">平均地權條例第 47 條之 1 以下（實價登錄）</span><span class="law">不動產經紀業管理條例第 22 條、第 23 條</span><span class="law">內政部不動產說明書應記載及不得記載事項</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>官方謄本＋實價登錄是主證據，民間凶宅網與鄰里消息是旁證；最後一定要賣方在契約上親筆保證。</div>
+  </article>
+</section>
+<section class="stage" id="stage-6" data-title="投資理財">
+  <div class="stage-head">
+    <span class="stage-num">06</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">投資理財：守得住，才談得上賺</h2>
+      <p class="stage-sub">簽約前留審閱期、認清風險與費用、被詐騙立刻停損——理財的第一道防線不是報酬率，是法律</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">消費者保護法</span><span class="chip">保險法</span><span class="chip">金融消費者保護法</span><span class="chip">刑法詐欺罪</span><span class="chip gold">165 反詐騙專線</span>
+  </div>
+
+  <article class="card" id="s6-contract-review" data-tags="定型化契約,契約審閱期,消保法11條之1,金融商品,風險揭露,費用,解約金">
+    <h3><span class="dot"></span>契約審閱：簽名前先把「費用、解約、風險」三件事讀完</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>被推銷時做三件事：<b>① 帶回家過一晚</b>（法定審閱期 <span class="big">30 日以內</span>）<b>② 問清手續費、解約金、最大可能虧損</b> <b>③ 業務講「保證獲利」直接拒絕</b>——這是詐騙紅線。</div>
+    <p>不論是基金、保單、銀行結構型商品或儲蓄險，金融機構用預先擬定好的定型化契約跟你簽約時，依消費者保護法第 11 條之 1，<b>應在訂約前給你 30 日以內的合理期間審閱全部條款</b>；中央主管機關（金管會）並可針對個別行業公告最短審閱期間。業務員當場催你「今天簽才有優惠」，本身就是紅字。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:22%"><col style="width:48%"><col style="width:30%"></colgroup>
+      <tr><th>必看重點</th><th>具體要問什麼</th><th>法規依據</th></tr>
+      <tr><td>費用</td><td>手續費、經理費、保管費、贖回費、提前解約違約金各是多少？內扣還是另外收？</td><td>消保法第 11 條之 1；金融服務業適用消費者保護法注意事項</td></tr>
+      <tr><td>解約</td><td>幾年之內解約會賠錢？保本保證在第幾年？中間急用錢能不能貸款解約？</td><td>金融消費者保護法第 8 條（充分說明義務）</td></tr>
+      <tr><td>風險揭露</td><td>這檔商品是「保本」還是「非保本」？連結標的是什麼？過去績效不代表未來，最大可能虧損是多少？</td><td>金融消費者保護法第 10 條（充分瞭解原則）</td></tr>
+      <tr><td>審閱期</td><td>要求業務員先給契約文本，不要當場簽；訂約後 7 日保險契約有「保單審閱期／撤銷權」可無條件退件。</td><td>保險法施行細則第 35 條（保單審閱期）</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「業務說保證獲利、不會虧」→ 錯。保證獲利、穩賺不賠、內線消息本身就是投資詐騙的典型話術；合法金融商品不得為獲利保證（銀行法、證券交易法相關廣告規範）。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>把「儲蓄險／結構型商品」當定存介紹，不主動講解約金與匯率風險。</li><li>叫你「先簽再回去慢慢看」，簽了之後審閱期權利形同虛設。</li><li>定型化契約中排除企業經營者責任、加重消費者責任的條款，依消保法第 12 條應屬無效。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">消費者保護法第 11 條之 1</span><span class="law">第 12 條</span><span class="law">金融消費者保護法第 8 條</span><span class="law">第 10 條</span><span class="law">保險法施行細則第 35 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>任何金融商品，先帶回家過一晚；當場被催著簽的合約，日後幾乎都會後悔。</div>
+  </article>
+
+  <article class="card" id="s6-anti-scam" data-tags="投資詐騙,保證獲利,假APP,虛擬貨幣,釣魚,165,警示帳戶,報案,匯款後補救">
+    <h3><span class="dot"></span>詐騙防範：常見手法、165 通報與匯款後的黃金 30 分鐘</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>被騙當下<b>立刻停止一切後續匯款</b>，打 <span class="big">165</span> 反詐騙專線或 110 報案；對方再叫你「匯一筆保證金解凍」就是<b>二次詐騙</b>。</div>
+    <p>投資詐騙占台灣詐欺案最大宗。常見手法：<b>假投資 LINE 群</b>（假老師、假抱牌、假獲利截圖）、<b>假投資 APP</b>（假冒元大、國泰等券商圖示）、<b>虛擬貨幣與權證期貨假平台</b>、<b>釣魚簡訊</b>（假冒銀行、郵局、超商繳費連結）。共同點都是：叫你脫離官方管道、用個人帳戶或 USDT 匯款。</p>
+    <span class="lbl">遇到時這樣做</span>
+    <ol>
+      <li><b>察覺被騙當下立刻停止任何後續匯款</b>，不要再聽信對方「再匯一筆保證金就能解凍」的說詞。</li>
+      <li><b>打 165 反詐騙專線</b>（警政署）或撥 110 報案，告知對方帳號、匯款時間、金額；警方可對該帳戶啟動「警示帳戶」凍結機制。</li>
+      <li>持<b>畫面截圖、LINE 對話紀錄、匯款單、對方帳號與網址</b>到所在地派出所做筆錄；若匯款當日發現，銀行可依「快速凍結機制」試圖攔截。</li>
+      <li>向你轉出款項的銀行申請「爭議交易／詐騙通報」，並向金管會銀行局、電信公司檢舉假網域與門號。</li>
+    </ol>
+    <div class="fact"><span class="mark">✓</span><span>「警示帳戶」是警檢調申請凍結涉嫌詐欺帳戶的機制；一旦你的帳戶被掛警示，提款、轉帳都會被暫停，必須親自到案說明才能解除。出借帳戶、門號、帳密給別人，最容易變成人頭戶。</span></div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「我帳戶被凍結，一定是我犯法了」→ 不一定。詐騙集團常把贓款轉進不知情者的帳戶洗錢，民眾被列為警示帳戶很常見，應立即攜帶身分證、存摺、印鑑到原申請機關與警方說明，不要避不露面。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>對方要求你「去超商買遊戲點數／加密貨幣 USDT」繳交，100% 是詐騙。</li><li>「檢察官／公安說你涉及洗錢，要把錢匯到監管帳戶」是假冒公務員詐騙，司法機關不會要求匯款。</li><li>已匯款後對方還叫你「再匯一筆解保證金」——第二筆只會繼續掉。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">刑法第 339 條（詐欺罪）</span><span class="law">第 339 條之 4（三人以上共同犯詐欺，加重）</span><span class="law">洗钱防制法</span><span class="law">金融機構對資產風險管理辦法（警示帳戶機制）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>凡叫你脫離官方管道、保證獲利、匯款到「監管／安全帳戶」的，一律先掛斷、打 165 求證。</div>
+  </article>
+
+  <article class="card" id="s6-insurance" data-tags="保險,要保人,被保險人,受益人,告知義務,第64條,2年不可抗辯,除外責任,理賠時效,第65條,保單審閱期">
+    <h3><span class="dot"></span>保險權益：告知義務、2 年解除權與 2 年理賠時效</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>三件事決定你的保單有沒有價值：<b>① 健康告知據實填</b>（只答書面問到的）<b>② 保單送達 <span class="big">10 日</span>內可無條件撤約</b> <b>③ 出險後 <span class="big">2 年</span>內一定要申請理賠</b>。</div>
+    <p>保險契約三角：<b>要保人</b>（繳保費的人）、<b>被保險人</b>（風險主體）、<b>受益人</b>（領保險金的人）。訂約時要保人對書面詢問之事項應據實說明（告知義務）；故意隱匿、過失遺漏或不實說明，保險人得解除契約。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:24%"><col style="width:46%"><col style="width:30%"></colgroup>
+      <tr><th>議題</th><th>重點</th><th>條文</th></tr>
+      <tr><td>告知義務</td><td>僅限「保險書面詢問」之事項；未書面詢問者，縱未主動告知亦不違反。</td><td>保險法第 64 條第 1 項</td></tr>
+      <tr><td>解除權期限</td><td>保險人解除權，自其知有解除原因後經過 1 年不行使而消滅；<span class="big">契約訂立後經過 2 年者，不得解除</span>（「2 年不可抗辯」）。</td><td>保險法第 64 條第 2、3 項</td></tr>
+      <tr><td>理賠請求權時效</td><td>由保險契約所生之權利，<span class="big">自得為請求之日起，經過 2 年不行使而消滅</span>。</td><td>保險法第 65 條</td></tr>
+      <tr><td>保單審閱期</td><td>人壽保險契約訂立後，要保人可於保單送達後翌日起 10 日（以保險公司公告為準）內撤約，無條件退還保費。</td><td>保險法施行細則第 35 條</td></tr>
+      <tr><td>除外責任</td><td>契約載明之除外責任（如自殺、犯罪、戰爭、特定職業）不理賠，簽約前要看「不保什麼」。</td><td>保險法第 109 條（自殺）、第 110 條以下</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「買滿 2 年就算隱瞞病史也一定會賠」→ 錯。2 年不可抗辯只是限制保險人「解除契約」；若事故發生在訂約後 2 年內、且屬故意詐領，實務上仍可能被拒賠或追究刑事責任。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>業務員叫你「健康告知全部勾『否』比較好過」——這是把告知義務風險轉嫁給你。</li><li>身故受益人指定不明或未指定，保險金會變成遺產，要被扣遺產稅並由全體繼承人協議。</li><li>理賠被拖延：保險人應於要保人補齊證明後約定期限內核定（一般 15 日），可主張依法索賠。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">保險法第 64 條</span><span class="law">第 65 條</span><span class="law">第 109 條</span><span class="law">保險法施行細則第 35 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>健康告知據實填、把握 10 日審閱期、出險後 2 年內一定要提出理賠，三個期限決定你的權益。</div>
+  </article>
+
+  <article class="card" id="s6-financial-dispute" data-tags="金融消費爭議,金融消費評議中心,評議,申訴,先向業者申訴,法院核可">
+    <h3><span class="dot"></span>金融消費爭議：先向業者申訴，再走評議中心</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>救濟順序固定：<b>先向金融機構申訴 → 等 <span class="big">30 日</span> → 不滿再走評議中心（免費）</b>；評議成立後 <span class="big">90 日</span>內可聲請法院核可，取得執行力。</div>
+    <p>跟銀行、證券、保險、投信等金融機構吵架（理賠爭議、不當推銷、隱瞞風險），依金融消費者保護法，救濟順序是：<b>先向金融機構申訴 → 30 日內未獲回覆或不滿結果 → 向財團法人金融消費評議中心申請評議</b>。評議不收取費用，評議書經雙方同意或法院核可後，具有與判決同一效力。</p>
+    <div class="flow">
+      <div class="flow-step"><b><span class="fnum">1</span>向業者申訴</b>備齐契約、DM、錄音、理賠函，寫明事實與求償。</div>
+      <div class="flow-step"><b><span class="fnum">2</span>等待 30 日</b>業者應於期限內回覆；逾期或不滿即下一關。</div>
+      <div class="flow-step"><b><span class="fnum">3</span>評議中心申請</b>填具申請書並檢附證據，免費。</div>
+      <div class="flow-step"><b><span class="fnum">4</span>評議成立</b>於 90 日不變期間內聲請法院核可，取得執行力。</div>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">金融消費者保護法第 13 條（申訴）</span><span class="law">第 26 條（評議之申請）</span><span class="law">第 30 條（評議書聲請法院核可）</span><span class="law">消費者保護法第 43 條（消費爭議申訴）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>金融爭議不要直接告銀行，先留 30 日申訴期、再走免費的評議中心，CP 值最高。</div>
+  </article>
+
+  <article class="card attach" id="s6-invest-checklist" data-tags="投資前檢查清單,自我評估,風險,費用,解約,存證,打勾">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>簽任何金融商品前的 10 項檢查清單</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>被推銷時先做三個動作：<b>要求帶回契約文本</b>、<b>不點 LINE 簡訊連結</b>、<b>任何要你轉去「個人帳戶、USDT、監管帳戶」一律拒絕</b>。</div>
+    <ul class="checklist">
+      <li>要求先給完整契約文本，沒有當場簽，至少留 1 個晚上</li>
+      <li>確認商品是保本、部分保本或非保本，最大可能虧損幾成</li>
+      <li>把手續費、經理費、贖回費、解約金全部問到並寫下數字</li>
+      <li>確認這筆錢 5 年內不會動用；會動用的不要買長期儲蓄險</li>
+      <li>業務員的「保證獲利、內線、稳賺」話術錄音或截圖存證</li>
+      <li>官方 APP 只從官網或原廠商店下載，不點 LINE 簡訊連結</li>
+      <li>任何要你轉帳到「個人帳戶、USDT、監管帳戶」的，一律拒絕</li>
+      <li>保單簽回後 10 日內仔細看條款，不滿意在審閱期內撤約</li>
+      <li>健康告知逐題照實回答，不為了過件而全勾「否」</li>
+      <li>已匯款後發現有異常：24 小時內打 165 並到派出所報案</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">消費者保護法第 11 條之 1</span><span class="law">金融消費者保護法第 10 條</span><span class="law">保險法第 64 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>這張清單存在手機，每次被推銷時拿出來對，比事後打官司省幾年。</div>
+  </article>
+</section>
+<section class="stage" id="stage-7" data-title="退休與老年">
+  <div class="stage-head">
+    <span class="stage-num">07</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">退休與老年：為不能自己決定時做好準備</h2>
+      <p class="stage-sub">退休金怎麼請、老了失智誰替你決定醫療、錢交給誰管——趁健康時白紙黑字寫好，是給自己也給家人的保障</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">勞工退休金條例</span><span class="chip">勞動基準法</span><span class="chip">勞工保險條例</span><span class="chip">民法（意定監護）</span><span class="chip">病人自主權利法</span><span class="chip">信託法</span><span class="chip gold">60 歲請領年齡</span>
+  </div>
+
+  <article class="card" id="s7-pension" data-tags="退休金,勞退新制,勞退舊制,勞保老年給付,老年年金,一次金,展延年金,減額年金,60歲,6%提撥">
+    <h3><span class="dot"></span>退休金：新制、舊制、勞保老年給付三筆分清楚</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>退休有<b>三筆獨立的錢</b>：勞退新制（雇主提 <span class="big">6%</span>、年滿 60 歲請領）、勞退舊制（同一事業單位年資）、勞保老年給付（年資滿 15 年可領年金）；退前到勞保局<b>三筆都要試算</b>。</div>
+    <p>勞工退休後可能有<b>三筆</b>不同來源的錢，分別由不同法律規定，不要混在一起：勞退新制（個人專戶）、勞退舊制（一次退休金）、勞保老年給付（老年年金或一次金）。</p>
+    <div class="tbl-wrap">
+    <table class="tbl tbl-wide">
+      <colgroup><col style="width:18%"><col style="width:30%"><col style="width:32%"><col style="width:20%"></colgroup>
+      <tr><th>制度</th><th>提撥／基礎</th><th>請領條件與方式</th><th>法源</th></tr>
+      <tr><td>勞退新制</td><td>雇主每月提繳不低於工資 <span class="big">6%</span> 入個人專戶；勞工得在 6% 範圍內自願提繳（可抵稅）</td><td>年滿 <span class="big">60 歲</span>得請領；年資未滿 15 年請一次退休金，滿 15 年得選月退休金或一次金</td><td>勞工退休金條例第 14、16、24 條</td></tr>
+      <tr><td>勞退舊制</td><td>同一事業單位工作年資；每滿 1 年給 2 個基數，最高 45 個基數</td><td>自請退休：10 年以上滿 60 歲、15 年以上滿 55 歲、工作 25 年以上；強制退休：滿 65 歲或失能</td><td>勞動基準法第 53、54、55 條</td></tr>
+      <tr><td>勞保老年給付</td><td>平均月投保薪資 × 保險年資</td><td>年滿 60 歲、保險年資滿 15 年：老年年金（公式：平均月投保薪資 × 年資 × 1.55%，另有 3,000 元最低保障）；未滿 15 年：老年一次金。請領年齡自 107 年起逐步提高至 65 歲，可展延（延後加給）或減額（提前請領）</td><td>勞工保險條例第 59、60 條</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「公司倒了，我的勞退新制就沒了」→ 錯。新制採個人專戶制，雇主提繳的錢存入你自己在勞保局的專戶，與公司是否存續無關；舊制才是向公司請領，公司倒了確實可能領不到。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>只知道勞保老年年金，忘記勞退新制專戶要另外申請，兩邊都要主動辦。</li><li>新舊制銜接年資：94 年 7 月 1 日後到職者一律新制；之前的年資可選擇保留舊制或併計。</li><li>勞保年金請領年齡逐年延後，2026 年應請領年齡以勞動部公告為準，別以為 60 歲一定能請。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">勞工退休金條例第 14 條</span><span class="law">第 16 條</span><span class="law">第 24 條</span><span class="law">勞動基準法第 53 條</span><span class="law">第 55 條</span><span class="law">勞工保險條例第 59 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>退休前先到勞保局「勞保個人試算系統」把新制、舊制、勞保年金三筆試算一次，再決定幾歲退。</div>
+  </article>
+
+  <article class="card" id="s7-ward" data-tags="意定監護,監護宣告,民法1113條之2,受任人,公證,失智,無人繼承,預防性法律">
+    <h3><span class="dot"></span>意定監護：趁清醒時指定「失智後替你決定的人」</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>趁完全清醒時<b>公證一份意定監護契約</b>，指定未來失智時的監護人；否則一旦被監護宣告，法院可能選定你不想要的親人。</div>
+    <p>一旦陷入失智或重度心智缺陷，法律上會被聲請<b>監護宣告</b>，由法院選定監護人；若你事前沒有安排，監護人可能是你不希望的親屬，甚至法院就遠親或公益團體指定。意定監護就是<b>預先用契約指定受任人</b>，於將來受監護宣告時擔任你的監護人。</p>
+    <span class="lbl">遇到時這樣做</span>
+    <ol>
+      <li><b>本人須完全行為能力時訂立</b>：明定受任人、監護事務範圍（財產管理、醫療同意、住居所決定）。</li>
+      <li><b>應由公證人作成公證書</b>：本人與受任人當場向公證人表明合意；公證人通知本人住所地法院。</li>
+      <li><b>發動時機</b>：將來法院為監護宣告時，依民法第 1113 條之 4，<b>應即以意定監護契約所定之受任人為監護人</b>，同時指定會同開具財產清冊之人。</li>
+      <li>得與「安養信託」搭配：意定監護管身分與醫療，信託管錢，兩者互補。</li>
+    </ol>
+    <div class="fact"><span class="mark">✓</span><span>意定監護 ≠ 監護宣告。前者是你清醒時主動簽的契約；後者是你已經無法為自己決定時，法院依職權或聲請宣告的狀態。意定監護是預先「卡位」受任人。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1113 條之 2（意定監護契約之定義）</span><span class="law">第 1113 條之 3（公證要件）</span><span class="law">第 1113 條之 4（監護宣告時優先適用）</span><span class="law">民法第 1111 條以下（監護人選定）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>獨居、單身、與親生子女理念分歧者，意定監護公證書是老後最關鍵的一張紙。</div>
+  </article>
+
+  <article class="card" id="s7-medical" data-tags="病人自主權利法,預立醫療決定,AD,ACP,預立醫療照護諮商,醫療委任代理人,拒絕醫療權,安寧緩和,DNR">
+    <h3><span class="dot"></span>醫療決定：預立醫療決定（AD）與醫療委任代理人</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>趁意識清楚時做 <b>ACP 諮商 → 簽 AD → 指定醫療代理人</b>；將來符合法定臨床條件時，你簽的「拒絕維生醫療」才會被執行，不會由親屬代你決定插不插管。</div>
+    <p>病人自主權利法在 2019 年 1 月 6 日施行，讓你在完全意識清楚時，預先簽署<b>預立醫療決定書（AD）</b>：將來符合「臨床條件」（如極重度失智、不可逆昏迷等五類）時，得選擇<b>拒絕或選擇維生醫療、人工營養及流體餵養</b>。</p>
+    <ol>
+      <li><b>先做預立醫療照護諮商（ACP）</b>：至衛生福利部認可的醫療機構，與醫師、親屬、心理諮商師面談一次。</li>
+      <li><b>指定醫療委任代理人</b>：20 歲以上、完全行為能力人；不得為受遺贈人、遺體器官受贈人或其他因你死亡獲利之人。</li>
+      <li><b>兩名見證人到場</b>，並至醫療機構完成公證或簽署，意願將登錄於衛生福利部「預立醫療決定登錄系統」。</li>
+      <li>安寧緩和醫療條例則更早：末期病人得預立意願書，<b>拒絕心肺復甦術（DNR）</b>，不施以延長死亡過程的積極救治。</li>
+    </ol>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「預立醫療決定 = 放棄急救、安樂死」→ 錯。它只在你已符合法定臨床條件、無法表達意願時才生效；日常醫療、一般住院、手術仍然照常接受治療，且台灣法律不承諾安樂死。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">病人自主權利法第 2 條（預立醫療決定）</span><span class="law">第 6 條（醫療委任代理人）</span><span class="law">第 14 條（拒絕醫療權）</span><span class="law">安寧緩和醫療條例第 3 條</span><span class="law">第 12 條（不施行心肺復甦術）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>趁能清楚表達時做 ACP、簽 AD、指定醫療代理人，才不會在加護病房由親屬為你「決定」插管多久。</div>
+  </article>
+
+  <article class="card" id="s7-trust" data-tags="安養信託,自益信託,信託法,信託財產獨立,信託監察人,不動產信託,有價證券信託">
+    <h3><span class="dot"></span>安養信託：把錢交給受託銀行，按你的條件按月給自己</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>怕被詐騙、被親友借錢、怕失智管不住錢 → 把現金／不動產／股票<b>信託給銀行</b>，約定按月給生活費；信託財產<b>獨立於債務與破產</b>。</div>
+    <p>高齡者常見痛點：怕被詐騙、怕被親友借錢、怕失智後無法管錢。<b>安養信託</b>就是你（委託人）把現金、不動產、有價證券移轉給受託銀行（受託人），約定在你存活期間（自益信託）由銀行依你的指示給付生活費、醫療費、安養機構費用；身故後再依約定交付受益人。</p>
+    <ul>
+      <li><b>信託財產獨立</b>：不屬於委託人、受託人或受益人的破產財團，也不會被債務人強制執行（信託法第 10 條）。</li>
+      <li><b>可指定信託監察人</b>：監督受託銀行有無依約給付，對銀行申訴或訴訟時代表受益人（信託法第 24、52 條）。</li>
+      <li><b>與意定監護搭配</b>：意定監護人管身分與醫療決定，信託管錢，兩者不衝突。</li>
+      <li>常見商品：現金信託、不動產管理信託、有價證券信託；銀行會收取信託管理費、簽約費，比較各家。</li>
+    </ul>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>把全部財產一次信託後，急要用錢時受託人可能不準你隨意解約——契約要寫明緊急用途的提領條件。</li><li>不動產信託涉及移轉登記、土地增值稅、契稅，先算成本再簽約。</li><li>信託不是免稅天堂：身故後信託財產仍可能計入遺產課稅。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">信託法第 1 條（信託定義）</span><span class="law">第 10 條（信託財產獨立）</span><span class="law">第 24 條（受託人義務）</span><span class="law">第 52 條（信託監察人）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>安養信託是「錢還在你名下、但你一時糊塗也拿不走亂花」的機制，適合怕被詐騙或失智的高齡者。</div>
+  </article>
+
+  <article class="card" id="s7-elderly-protect" data-tags="老人保護,老人福利法,通報,受虐,忽視,家屬,48小時,113,安置">
+    <h3><span class="dot"></span>老人保護：發現長輩被虐或被忽視，你有通報義務</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>發現長輩有不明傷、被鎖在家、沒人餵食，<b>撥 <span class="big">113</span> 保護專線或 110</b>；醫護、社工、機構人員是法定通報人，<span class="big">48 小時</span>內要完成訪視。</div>
+    <p>老人福利法規定，老人因為無人扶養、受虐、疏忽、遭遺棄或其他原因，致其生命、身體、健康或自由有現急切危難者，直轄市、縣（市）主管機關應予緊急保護、安置或其他必要處置。任何人發現上述情事，皆可通報。</p>
+    <ul>
+      <li><b>通報窗口</b>：113 保護專線（24 小時）、各縣市老人保護中心、社會局；緊急危難可撥 110。</li>
+      <li><b>處置流程</b>：主管機關原則應於 48 小時內完成訪視評估，必要時啟動緊急安置、連結醫療、申請急難救助。</li>
+      <li><b>保護性服務</b>：居家服務、日間照顧、餐飲服務、長期照顧（長照 2.0）、安養機構安置。</li>
+      <li>家屬不當對待：疏於餵食、不給就醫、侵奪財產、肢體或精神虐待，都在保護範圍。</li>
+    </ul>
+    <div class="fact"><span class="mark">✓</span><span>醫事人員、社工人員、老人福利機構工作人員為<b>法定通報責任人</b>，發現應通報而未通報者，依老人福利法可罰；一般民眾通報則無罰則，但發現緊急危難仍應協助。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">老人福利法第 41 條（保護措施）</span><span class="law">第 48 條（通報與 48 小時訪視）</span><span class="law">第 49 條（罰則）</span><span class="law">長期照顧服務法</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>鄰居、外傭、司機發現長輩身上有不明傷、被鎖在家、沒人餵食，撥 113 就是救命。</div>
+  </article>
+
+  <article class="card attach" id="s7-checklist" data-tags="老後安排清單,意定監護,安養信託,AD,ACP,保險,遺囑,打勾">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>60 歲前完成的「老後法律安排」檢查清單</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>十件事先做最關鍵的五件：<b>試算三筆退休金、意定監護公證、簽 AD、立遺囑、把重要文件集中放一處</b>。</div>
+    <ul class="checklist">
+      <li>到勞保局網站試算勞退新制、舊制年資與勞保老年年金，確定預估請領年齡</li>
+      <li>核對自己的保單：要保人、被保險人、受益人是否正確指定</li>
+      <li>找公證人預立「意定監護契約」，指名受任人、監護範圍</li>
+      <li>至認可醫療機構完成 ACP 諮商，簽署預立醫療決定（AD）並完成登錄</li>
+      <li>指定醫療委任代理人，並告知其聯絡方式與存放位置</li>
+      <li>評估是否辦理安養信託，至少將緊急生活費與不動產安排妥當</li>
+      <li>自書或公證遺囑，處理不動產、存款、保險受益人分配</li>
+      <li>把重要文件（保單、遺囑、AD、意定監護）集中放一處，並告知可信賴的人位置</li>
+      <li>更新緊急聯絡人、醫療过敏史、用藥清單，貼在冰箱或手機鎖屏</li>
+      <li>每年定期檢視一次上述安排，有變更即重新公證或修訂</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1113 條之 2</span><span class="law">病人自主權利法第 2 條</span><span class="law">勞工退休金條例第 24 條</span><span class="law">信託法第 10 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>這十項做完，老後不論是錢、醫療、身分決定都有人依法替你把關。</div>
+  </article>
+</section>
+<section class="stage" id="stage-8" data-title="身後事">
+  <div class="stage-head">
+    <span class="stage-num">08</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">身後事：把想說的交代清楚</h2>
+      <p class="stage-sub">遺囑怎麼寫才有效、繼承人有誰、要不要限定或拋棄繼承、遺產稅怎麼算——這些趁你在場時先想清楚</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">民法繼承編</span><span class="chip">遺產及贈與稅法</span><span class="chip">遺產清冊</span><span class="chip">拋棄繼承</span><span class="chip gold">3 個月法定申報期</span>
+  </div>
+
+  <article class="card" id="s8-will" data-tags="遺囑,自書遺囑,公證遺囑,密封遺囑,代筆遺囑,口授遺囑,見證人,第1189條,第1198條,第1219條">
+    <h3><span class="dot"></span>遺囑：五種法定方式，要件不符整張無效</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>自書遺囑<b>一定要全程親筆</b>（列印後簽名無效）；見證人<b>不能找繼承人、受遺贈人或其配偶直系血親</b>；財產越多越建議走公證遺囑。</div>
+    <p>民法第 1189 條列舉五種遺囑方式，<b>非依這五種方式之一作成者無效</b>。一般人最常用「自書遺囑」，但要件最易出錯（電腦打字、列印後簽名，依法無效）。</p>
+    <div class="tbl-wrap">
+    <table class="tbl tbl-wide">
+      <colgroup><col style="width:16%"><col style="width:44%"><col style="width:22%"><col style="width:18%"></colgroup>
+      <tr><th>方式</th><th>法定要件</th><th>見證人</th><th>條號</th></tr>
+      <tr><td>自書遺囑</td><td>全文<b>親筆</b>書寫，記載年月日並<b>親自簽名</b>；增刪處要另行簽名註記年月日</td><td>不需</td><td>第 1190 條</td></tr>
+      <tr><td>公證遺囑</td><td>指定見證人，在公證人面前口述遺囑意旨，由公證人筆記、宣讀講解，經遺囑人認可後簽名</td><td>2 人以上</td><td>第 1191 條</td></tr>
+      <tr><td>密封遺囑</td><td>在自書或他人筆記的遺囑上簽名，密封後於封口處簽名，指定見證 2 人＋公證人</td><td>2 人以上</td><td>第 1192 條</td></tr>
+      <tr><td>代筆遺囑</td><td>由遺囑人口述，見證人中 1 人筆記，宣讀講解經遺囑人認可，全體簽名並註明年月日</td><td>2 人以上</td><td>第 1194 條</td></tr>
+      <tr><td>口授遺囑</td><td>危急（生命危急、隔絕）時才能用；口述由見證 1 人筆記，製作筆記本並簽名；危急解除後 6 個月失效</td><td>2 人以上</td><td>第 1195、1196 條</td></tr>
+    </table>
+    </div>
+    <p><b>見證人資格限制（第 1198 條）</b>：未成年人、受監護或受輔助宣告之人、繼承人及其配偶或直系血親、受遺贈人及其配偶或直系血親、公證人或代筆人的同居人、助理或受僱人，都不得為見證人。</p>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「印好遺囑，親筆簽名、按指印就有效」→ 錯。自書遺囑要求「全文自書」；列印、打字後簽名不符第 1190 條，實務上常被法院判無效。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>找自己子女當見證人——子女是法定繼承人，依第 1198 條不得擔任，遺囑無效。</li><li>遺囑寫「遺產全部給某子女」而未留特留分給其他繼承人——其他繼承人得依第 1225 條行使特留分扣減權。</li><li>遺囑人得隨時依遺囑方式撤回全部或一部（第 1219 條），舊遺囑未銷毀會被新舊併存。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1189 條</span><span class="law">第 1190 條</span><span class="law">第 1191 條</span><span class="law">第 1194 條</span><span class="law">第 1195 條</span><span class="law">第 1198 條</span><span class="law">第 1219 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>財產越多越該走公證遺囑；自書遺囑一定要全程親筆，見證人絕對不能找繼承人。</div>
+  </article>
+
+  <article class="card" id="s8-heir" data-tags="繼承人,應繼分,1138條,1144條,配偶,直系血親卑親屬,父母,兄弟姊妹,祖父母,四順位">
+    <h3><span class="dot"></span>繼承順位與應繼分：法定繼承人是誰、比例怎麼分</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b><b>配偶是當然繼承人</b>：有子女就跟子女均分；沒子女才輪父母、兄弟姊妹、祖父母；什麼血親都沒有，<b>配偶全包</b>。</div>
+    <p><b>配偶為當然繼承人</b>，與血親按第 1138 條四順位共同繼承；前一順位有人繼承，後一順位就不繼承。</p>
+    <div class="tbl-wrap">
+    <table class="tbl tbl-wide">
+      <colgroup><col style="width:14%"><col style="width:32%"><col style="width:34%"><col style="width:20%"></colgroup>
+      <tr><th>順位</th><th>血親繼承人</th><th>配偶應繼分（第 1144 條）</th><th>條號</th></tr>
+      <tr><td>第一順位</td><td>直系血親卑親屬（子女、孫子女），按人數平均</td><td>與他繼承人<b>平均</b>（例如配偶＋1 子：各 1/2）</td><td>1138 ①、1144 ①</td></tr>
+      <tr><td>第二順位</td><td>父母</td><td><span class="big">1/2</span>；其他繼承人平均</td><td>1138 ②、1144 ②</td></tr>
+      <tr><td>第三順位</td><td>兄弟姊妹</td><td><span class="big">1/2</span>；其他繼承人平均</td><td>1138 ③、1144 ②</td></tr>
+      <tr><td>第四順位</td><td>祖父母</td><td><span class="big">2/3</span>；其他繼承人平均</td><td>1138 ④、1144 ③</td></tr>
+      <tr><td>無血親</td><td>—</td><td>配偶繼承<b>遺產全部</b></td><td>1144 ④</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>配偶不論對方有無血親，都是當然繼承人；非婚生子女經生父認領，視同婚生子女，具第一順位繼承權。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1138 條</span><span class="law">第 1139 條（代位繼承）</span><span class="law">第 1144 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>有子女配偶就跟子女均分；沒子女才輪到父母、兄弟姊妹；什麼血親都沒有，配偶全包。</div>
+  </article>
+
+  <article class="card" id="s8-reserve" data-tags="特留分,1223條,扣減權,遺囑自由,兄弟姊妹特留分修法,2026">
+    <h3><span class="dot"></span>特留分：遺囑再自由，也不能砍到法定最低比例</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>遺囑可以偏心，但<b>配偶、子女、父母至少留應繼分的 1/2</b>；兄弟姊妹、祖父母原為 1/3（2026 年 7 月立院已三讀刪除兄弟姊妹之特留分，待公布）。</div>
+    <p>遺囑人得自由處分遺產，但繼承人依法有「特留分」保障——遺贈、生前贈與侵害特留分時，特留分繼承人得按不足額（第 1225 條）向受遺贈人或受贈人請求扣減。</p>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:34%"><col style="width:33%"><col style="width:33%"></colgroup>
+      <tr><th>繼承人</th><th>特留分（現行條文）</th><th>計算基礎</th></tr>
+      <tr><td>配偶</td><td>應繼分 <span class="big">1/2</span></td><td>第 1223 條第 1 款</td></tr>
+      <tr><td>直系血親卑親屬</td><td>應繼分 <span class="big">1/2</span></td><td>第 1223 條第 2 款</td></tr>
+      <tr><td>父母</td><td>應繼分 <span class="big">1/2</span></td><td>第 1223 條第 3 款</td></tr>
+      <tr><td>兄弟姊妹</td><td>應繼分 1/3（2026 年 7 月立法院已三讀通過刪除，後續以總統公布及施行日為準）</td><td>第 1223 條第 4 款（待修正）</td></tr>
+      <tr><td>祖父母</td><td>應繼分 1/3</td><td>第 1223 條第 5 款</td></tr>
+    </table>
+    </div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「我寫遺囑要把錢全給外勞／朋友，子女一毛都拿不到」→ 錯。子女是特留分權利人，至少可主張應繼分的 1/2；超過部分才是你能自由處分的範圍。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1223 條</span><span class="law">第 1224 條（特留分計算基礎）</span><span class="law">第 1225 條（扣減權）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>遺囑可以偏心，但不能偏心到連法定最低保障都剝奪；配偶、子女、父母的「半數底線」動不了。</div>
+  </article>
+
+  <article class="card" id="s8-limited" data-tags="限定繼承,遺產清冊,1156條,1148條,法定限定責任,父債子還,陳報法院,3個月">
+    <h3><span class="dot"></span>限定繼承：以遺產為限還債，不幫亡親倒貼</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>人走後 <span class="big">3 個月</span>內開遺產清冊陳報法院，才能「以遺產為限」還債；<b>隱匿遺產或虛報清冊</b>會被改負無限責任。</div>
+    <p>2009 年 6 月 13 日起，民法繼承編修正，<b>繼承人原則上當然「法定限定責任」</b>：對於被繼承人之債務，只以因繼承所得遺產為限負清償責任（第 1148 條第 2 項），不再有「父債子還」。但你仍應盡速開具遺產清冊陳報法院，以免被主張「隱匿遺產、致債權人受損害」而改負無限責任。</p>
+    <span class="lbl">時效</span>
+    <ol>
+      <li><b>3 個月內開具遺產清冊</b>：將被繼承人之不動產、存款、股票、保單、債權、債務全數列清，向被繼承人逝世時住所地之地方法院陳報（第 1156 條）。</li>
+      <li>逾期或不清償：法院得依債權人或利害關係人聲請，命你於一定期間內補報；<b>若有隱匿遺產清冊、在清冊中為虛偽記載</b>，不得主張限定利益，對債權人負無限責任（第 1163 條）。</li>
+      <li>依清冊依序清償：先費用、下一順序債權人，再遺贈；未依程序清償致債權人受損，應負賠償責任。</li>
+    </ol>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>以為「法定限定」就免辦理——很多人沒在 3 個月內陳報遺產清冊，後來被銀行聲請，被迫清償超出遺產的債務。</li><li>繼承人中有人隱匿存款：其他繼承人可要求法院另為清算。</li><li>不動產有抵押或稅捐欠繳，一併列入清冊，不要漏報。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1148 條（限定責任）</span><span class="law">第 1156 條（遺產清冊陳報）</span><span class="law">第 1156 條之 1（法院命提出清冊）</span><span class="law">第 1163 條（喪失限定利益）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>人走後 3 個月內開遺產清冊陳報法院，是把自己擋在「無限還債」之外的護身符。</div>
+  </article>
+
+  <article class="card" id="s8-renounce" data-tags="拋棄繼承,1174條,3個月,書面,法院備查,繼續人,通知,棄產">
+    <h3><span class="dot"></span>拋棄繼承：債務遠大於遺產時，書面向法院說不要</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>被繼承人留下的幾乎全是債務時，於<span class="big">知悉得繼承起 3 個月</span>內寫書面向法院拋棄，<b>自始不為繼承人</b>；千萬不要以為「不辦就不算繼承」。</div>
+    <p>若被繼承人留下的幾乎全是債務（卡債、私債、醫療費），即使法定限定責任，仍可能讓你奔波數年。<b>拋棄繼承</b>就是自始不為繼承人，由「因為你拋棄而應為繼承之人」（通常是你的共同繼承人或其直系血親卑親屬）接手。</p>
+    <span class="lbl">時效</span>
+    <ol>
+      <li><b>知悉得繼承之時起 3 個月內</b>，以書面向法院為之（第 1174 條）。</li>
+      <li>書面並應通知因其拋棄而應為繼承之人；不能通知者不在此限。</li>
+      <li>法院為拋棄繼承之備查後，依職權以公告方法通知已知及可得而知之債權人。</li>
+      <li>拋棄後，你對被繼承人遺產已無權利義務；但對自己父輩的喪葬費用、祭祀安排仍可能依習俗分擔。</li>
+    </ol>
+    <div class="fact"><span class="mark">✓</span><span>「知悉得繼承之時」是從你真正知道親人過世、且知道自己是繼承人起算，不是從被繼承人過戶登記日起算；但實務上越早辦越好，必要時聲請法院延展期限。</span></div>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>以為「沒去辦理遺產分割就不算繼承」——錯，你不辦也依法當然繼承，債權人照樣找你。</li><li>拋棄繼承後才發現遺產裡有隱藏存款，不能回頭撤銷。</li><li>共同繼承人中有人沒拋棄，他會繼承全部；若全體都拋棄，將進入無人繼承程序（第 1177 條以下）。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1174 條（拋棄繼承）</span><span class="law">第 1175 條（拋棄之方式）</span><span class="law">第 1176 條（拋棄後之繼續人）</span><span class="law">第 1176 條之 1（拋棄後財產管理）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>聽到親人過世、發現留的是債務，3 個月內寫份拋棄繼承狀遞法院，比幫他還一輩子卡債實在。</div>
+  </article>
+
+  <article class="card" id="s8-estate-tax" data-tags="遺產稅,遺產及贈與稅法,免稅額1333萬,扣除額,稅率10/15/20,6個月申報,死亡日,累進">
+    <h3><span class="dot"></span>遺產稅：死亡後 6 個月內申報，免稅額與三級稅率</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>死亡日起 <span class="big">6 個月</span>內要報遺產稅；免稅額 <span class="big">1,333 萬</span>，淨額 5,000 萬以下 10%、5,000 萬～1 億 15%、逾 1 億 20%。</div>
+    <p>被繼承人死亡時遺留的「總遺產」減免稅額、扣除額後的「課稅遺產淨額」，按三級累進稅率課徵。<b>應於被繼承人死亡日起 6 個月內</b>向戶籍所在地國稅局申報；不能如期可申請延期 3 個月（第 23 條）。</p>
+    <span class="lbl">時效</span>
+    <div class="tbl-wrap">
+    <table class="tbl">
+      <colgroup><col style="width:30%"><col style="width:40%"><col style="width:30%"></colgroup>
+      <tr><th>項目</th><th>金額／率</th><th>依據</th></tr>
+      <tr><td>遺產稅免稅額</td><td><span class="big">1,333 萬元</span>（113 年起適用，後續年度以財政部公告物價調整為準）</td><td>遺產及贈與稅法第 9 條</td></tr>
+      <tr><td>配偶扣除額</td><td>445 萬元（以公告為準）</td><td>第 17 條</td></tr>
+      <tr><td>直系血親卑親屬扣除</td><td>每人 45 萬元（以公告為準）</td><td>第 17 條</td></tr>
+      <tr><td>喪葬費用扣除</td><td>123 萬元（定額，以公告為準）</td><td>第 17 條</td></tr>
+      <tr><td>稅率（淨額）</td><td>5,000 萬以下：<span class="big">10%</span>；逾 5,000 萬至 1 億：500 萬＋逾 5,000 萬部分 <span class="big">15%</span>；逾 1 億：1,250 萬＋逾 1 億部分 <span class="big">20%</span></td><td>第 13 條</td></tr>
+      <tr><td>申報期限</td><td>死亡日起 <span class="big">6 個月</span>內；因故得申請延期 3 個月</td><td>第 23 條</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>死亡前 2 年內贈與配偶、直系血親卑親屬等之財產，<b>視同遺產</b>併計課稅（第 15 條）；生前節稅要更早規劃。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">遺產及贈與稅法第 9 條</span><span class="law">第 13 條（稅率）</span><span class="law">第 15 條（擬制遺產）</span><span class="law">第 17 條（扣除額）</span><span class="law">第 23 條（申報期限）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>人走後 6 個月內一定要報遺產稅；免稅額 1,333 萬和各項扣除額先扣，剩下的淨額才套 10／15／20%。</div>
+  </article>
+
+  <article class="card" id="s8-gift-tax" data-tags="贈與稅,244萬,每年免稅額,30日申報,夫妻贈與不課稅,遺贈稅法第20條,第22條">
+    <h3><span class="dot"></span>贈與稅：每年 244 萬免稅額，30 日內申報</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>每年免稅額 <span class="big">244 萬</span>，贈與後 <span class="big">30 日</span>內要申報；<b>夫妻間贈與不課稅</b>，但過世前 2 年內的贈與會被併入遺產稅。</div>
+    <p>生前把財產無償給別人（現金、不動產、股票），除法律規定不計入贈與總額者外，都要課贈與稅。<b>贈與人每年有 244 萬元免稅額</b>（以財政部當年度公告為準），超過部分才課稅。</p>
+    <span class="lbl">時效</span>
+    <ul>
+      <li><b>申報期限</b>：贈與行為發生後 <span class="big">30 日</span>內，向贈與人戶籍所在地國稅局申報（遺贈稅法第 24 條）。</li>
+      <li><b>夫妻間贈與不計入贈與總額</b>（第 20 條第 1 項第 6 款）——但要留意不動產移轉仍有土地增值稅、契稅。</li>
+      <li><b>稅率結構與遺產稅相同</b>：10／15／20% 三級（第 22 條）。</li>
+      <li>父母對子女的資金壓力、出國留學生活費，若一次大額匯入仍可能被認定贈與，保留資金往來用途證明。</li>
+    </ul>
+    <div class="trap"><b class="tag">常見陷阱</b><ul><li>以為「一年內分多筆小額贈與就不會被查到」——稅捐機關會透過金流、不動產登記通盤查核。</li><li>不動產「半價買賣」給子女，差額會被按贈與課稅。</li><li>過世前 2 年內的贈與，還是會被併入遺產稅課（第 15 條）。</li></ul></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">遺產及贈與稅法第 20 條（不計入贈與總額）</span><span class="law">第 22 條（贈與稅率）</span><span class="law">第 24 條（申報期限）</span><span class="law">第 24 條之 1（每年免稅額）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>每年 244 萬免稅額是合法節稅，但要在贈與後 30 日內主動申報，夫妻互贈免稅。</div>
+  </article>
+
+  <article class="card" id="s8-executor" data-tags="遺囑執行人,1215條,遺產管理人,1177條,無人繼承,清冊,遺產分割,遺產清算">
+    <h3><span class="dot"></span>遺囑執行人與遺產管理人：誰來執行你的遺願</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>在遺囑中<b>指定一個你信任、懂法律的遺囑執行人</b>，比讓親屬會議或法院選人可靠；無人繼承時法院會選遺產管理人，剩餘遺產歸國庫。</div>
+    <p>你可以在遺囑中指定「遺囑執行人」（第 1215 條），他的職務包括：編製遺產清冊（第 1218 條）、管理遺產並為執行上必要行為（第 1217 條）、排除繼承人或其他人對遺產的妨害。未指定者，由親屬會議選定；有爭議時法院選定。</p>
+    <p>若<b>繼承人全部不存在</b>（無人繼承），法院依親屬會議、利害關係人或檢察官聲請，選定遺產管理人（第 1177 條），由管理人依第 1178 條以下程序：公示催告被繼承人之債權人及受遺贈人報明權利、清償債務、交付遺贈，剩餘遺產歸屬國庫（第 1185 條）。</p>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1215 條（遺囑執行人之指定）</span><span class="law">第 1217 條（職務）</span><span class="law">第 1218 條（遺產清冊）</span><span class="law">第 1177 條（遺產管理人）</span><span class="law">第 1178 條（公示催告）</span><span class="law">第 1185 條（剩餘歸國庫）</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>在遺囑中指定可信賴、懂法律的遺囑執行人，比讓親屬會議或法院「代你喬事」可靠得多。</div>
+  </article>
+
+  <article class="card attach" id="s8-checklist" data-tags="身後事清單,遺囑,遺產清冊,拋棄繼承,遺產稅,保單受益人,銀行帳戶,打勾">
+    <span class="atag">附件 · 可直接使用</span>
+    <h3><span class="dot"></span>喪親後 30 日／3 個月／6 個月行動清單</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>時間軸記牢：<b><span class="big">30 日</span>內找文件、<span class="big">3 個月</span>內決定限定或拋棄、<span class="big">6 個月</span>內報遺產稅</b>。</div>
+    <p><b>身故後 30 日內</b>：</p>
+    <ul class="checklist">
+      <li>向戶政事務所辦理死亡登記，取得戶籍謄本、除戶謄本</li>
+      <li>向當地衛生局申請死亡證明書（若在家中過世）</li>
+      <li>檢查遺囑是否存在、內容、是否已公證；如有遺囑執行人立即通知</li>
+      <li>向所有往來銀行、證券、保險公司申請遺產歸戶與終止利息</li>
+      <li>保險受益人於事故發生後儘快申請身故保險金（保險法第 65 條 2 年時效）</li>
+    </ul>
+    <p><b>3 個月內</b>：</p>
+    <ul class="checklist">
+      <li>開具遺產清冊：不動產、存款、股票、保單、車輛、債務</li>
+      <li>若判斷要限定責任：向被繼承人住所地法院陳報遺產清冊（第 1156 條）</li>
+      <li>若決定拋棄繼承：3 個月內書面向法院為之，並通知應為繼承之人（第 1174 條）</li>
+      <li>全體繼承人協議遺產分割，或聲請法院調解／裁判分割</li>
+    </ul>
+    <p><b>6 個月內</b>：</p>
+    <ul class="checklist">
+      <li>向戶籍所在地國稅局申報遺產稅（死亡日起 6 個月內）</li>
+      <li>繳清遺產稅後，取得稅務簽發的「遺產稅繳清證明」或「同意移轉證明」</li>
+      <li>向地政機關辦理不動產繼承移轉登記（繼產登記）</li>
+      <li>公告被繼承人之債權人，避免事後被主張權利</li>
+    </ul>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 1156 條</span><span class="law">第 1174 條</span><span class="law">遺產及贈與稅法第 23 條</span><span class="law">保險法第 65 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>時間軸先記牢：30 日內找文件、3 個月內決定要不要拋棄、6 個月內報遺產稅。</div>
+  </article>
+</section>
+<section class="stage" id="stage-9" data-title="附錄">
+  <div class="stage-head">
+    <span class="stage-num">09</span>
+    <div class="stage-txt">
+      <h2 class="stage-title">附錄：權利時效總表與實用查詢</h2>
+      <p class="stage-sub">時效會消滅權利；記牢每一項請求權的期限與起算點，比贏官司更重要——先別過期</p>
+    </div>
+  </div>
+  <div class="stage-meta">
+    <span class="chip">民法</span><span class="chip">保險法</span><span class="chip">勞工保險條例</span><span class="chip">遺產及贈與稅法</span><span class="chip">家庭暴力防治法</span><span class="chip gold">時效一表通</span>
+  </div>
+
+  <article class="card" id="s9-limitation" data-tags="時效總表,消滅時效,15年,5年,2年,10年,6個月,3個月,6個月,30日,保險2年,侵權,剩餘財產,瑕疵,保護令,遺產稅,拋棄繼承,限定繼承">
+    <h3><span class="dot"></span>權利時效／申報期限總表（跨全站整理）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>先記三個數字：<span class="big">15 年</span>（一般債權）、<span class="big">2 年</span>（侵權、保險、勞工報酬）、<span class="big">3 個月</span>（限定／拋棄繼承）；時效過了對方可拒絕給付，千萬不要在時效完成後簽還款計畫。</div>
+    <p>下表為本站最常引用的時效與法定申報期限，<b>期間經過後權利可能消滅、失权或被罰鍰</b>。訴訟上得拒絕給付（時效抗辯，民法第 144 條第 1 項）。</p>
+    <div class="tbl-wrap">
+    <table class="tbl tbl-wide">
+      <colgroup><col style="width:30%"><col style="width:18%"><col style="width:30%"><col style="width:22%"></colgroup>
+      <tr><th>權利／事項</th><th>期間</th><th>起算點</th><th>法條依據</th></tr>
+      <tr><td>一般民事請求權（買賣價金、借款、價款等未列明者）</td><td><span class="big">15 年</span></td><td>請求權可行使時</td><td>民法第 125 條</td></tr>
+      <tr><td>利息、租金、贍養費、紅利及其他一年或不及一年的定期給付</td><td><span class="big">5 年</span></td><td>各期給付請求權可行使時</td><td>民法第 126 條</td></tr>
+      <tr><td>旅館、飲食、住宿、運送費；律師、會計師、公證人、醫師、藥師、看護之費；技師承攬報酬；教職、工人、幫傭報酬</td><td><span class="big">2 年</span></td><td>各該請求權可行使時</td><td>民法第 127 條</td></tr>
+      <tr><td>侵權行為損害賠償</td><td><span class="big">2 年</span>（知悉）／<span class="big">10 年</span>（自行為時）</td><td>自知悉有損害及賠償義務人時起 2 年；自行為時起 10 年</td><td>民法第 197 條</td></tr>
+      <tr><td>不當得利返還請求權</td><td>15 年</td><td>受利益時起</td><td>民法第 125 條</td></tr>
+      <tr><td>工資（定期給付性質）</td><td>5 年</td><td>各期給付到期日</td><td>勞動基準法第 27 條；民法第 126 條</td></tr>
+      <tr><td>特別休假日數未休折算工資</td><td>5 年（實務）</td><td>年度終了翌日起</td><td>勞動基準法第 38 條</td></tr>
+      <tr><td>夫妻剩餘財產差額分配請求權</td><td><span class="big">2 年</span>（知悉）／<span class="big">5 年</span>（事件發生）</td><td>自婚姻關係消滅時起，知悉後 2 年；事件發生後 5 年</td><td>民法第 1030 條之 1</td></tr>
+      <tr><td>保險給付（身故、醫療、滿期、解約金等）</td><td><span class="big">2 年</span></td><td>自得為請求之日起</td><td>保險法第 65 條</td></tr>
+      <tr><td>保險人因違反告知義務之解除權</td><td>1 年（知悉）／2 年（訂約）</td><td>自知有解除原因後 1 年；訂約後 2 年不得解除</td><td>保險法第 64 條第 2、3 項</td></tr>
+      <tr><td>勞工保險各項給付請求權</td><td>2 年（老年、殘廢、死亡給付，以條例規定為準）</td><td>自原因發生之日起</td><td>勞工保險條例第 30 條</td></tr>
+      <tr><td>買賣標的物瑕疵擔保（減價、解除契約）</td><td><span class="big">6 個月</span>（通知後）／<span class="big">5 年</span>（自交付）</td><td>買受人通知後 6 個月不行使消滅；自交付起 5 年</td><td>民法第 365 條</td></tr>
+      <tr><td>租賃押金返還</td><td>15 年（一般時效）</td><td>租約終止、返還租賃物時起</td><td>民法第 125 條；土地法第 99 條</td></tr>
+      <tr><td>一般租金（定期給付）</td><td>5 年</td><td>各期租金到期日</td><td>民法第 126 條</td></tr>
+      <tr><td>通常保護令有效期間</td><td>2 年（得延長）</td><td>法院核發時起</td><td>家庭暴力防治法第 14 條</td></tr>
+      <tr><td>遺產稅申報（非時效，為申報期限）</td><td><span class="big">6 個月</span></td><td>被繼承人死亡日起（得申請延期 3 個月）</td><td>遺產及贈與稅法第 23 條</td></tr>
+      <tr><td>贈與稅申報（非時效，為申報期限）</td><td><span class="big">30 日</span></td><td>贈與行為發生時起</td><td>遺產及贈與稅法第 24 條</td></tr>
+      <tr><td>限定繼承（遺產清冊陳報法院）</td><td><span class="big">3 個月</span></td><td>知悉得繼承時起</td><td>民法第 1156 條</td></tr>
+      <tr><td>拋棄繼承</td><td><span class="big">3 個月</span></td><td>知悉得繼承時起</td><td>民法第 1174 條</td></tr>
+      <tr><td>定型化契約審閱期（消保法定下限）</td><td>30 日以內合理期間</td><td>訂約前</td><td>消費者保護法第 11 條之 1</td></tr>
+      <tr><td>金融消費評議成立後聲請法院核可</td><td>90 日（不變期間）</td><td>評議成立之日起</td><td>金融消費者保護法第 30 條</td></tr>
+    </table>
+    </div>
+    <div class="fact"><span class="mark">✓</span><span>時效完成後，債務人可以「拒絕給付」，但債權不會自動消滅；如果債務人不知時效完成而繼續付款，日後不能請求返還（民法第 144 條第 2 項）。</span></div>
+    <div class="myth no-myth"><span class="mark">✕</span><span>「時效過了銀行還是可以催討」→ 不完全對。時效完成後銀行仍可寄發催討函，但你主張時效抗辯後，法院不得為你不利之判決；千萬不要在時效完成後簽還款計畫（會視為承認債務，時效重新起算）。</span></div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">民法第 125 條</span><span class="law">第 126 條</span><span class="law">第 127 條</span><span class="law">第 144 條</span><span class="law">第 197 條</span><span class="law">第 365 條</span><span class="law">第 1030 條之 1</span><span class="law">保險法第 65 條</span><span class="law">遺產及贈與稅法第 23、24 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>看到這張表先筆記：任何你以後要主張的權利，先把時效期限寫進行事曆，才不會權利睡著。</div>
+  </article>
+
+  <article class="card" id="s9-resources" data-tags="查詢管道,全國法規資料庫,司法院,勞動部,財政部,165,法律扶助,113,1950,1966,金融消費評議,官方網站">
+    <h3><span class="dot"></span>常用官方查詢管道一覽（網址、專線、用途）</h3>
+    <div class="keybox"><b class="ktag">重點摘要</b>三支免付費專線先存進手機：<span class="big">165</span> 反詐騙、<span class="big">113</span> 保護專線、<span class="big">1950</span> 消費者服務；法條原文一律先查全國法規資料庫 <b>law.moj.gov.tw</b>。</div>
+    <div class="tbl-wrap">
+    <table class="tbl tbl-wide">
+      <colgroup><col style="width:24%"><col style="width:34%"><col style="width:26%"><col style="width:16%"></colgroup>
+      <tr><th>機關／工具</th><th>用途</th><th>網址</th><th>電話</th></tr>
+      <tr><td>全國法規資料庫（法務部）</td><td>查所有法律、命令、條文最新版本與立法沿革</td><td>law.moj.gov.tw</td><td>—</td></tr>
+      <tr><td>司法院法學資料檢索系統</td><td>查判決、判例、解释、大法官會議解釋</td><td>judicial.gov.tw（法學資料檢索）</td><td>—</td></tr>
+      <tr><td>勞動部</td><td>勞動條件、基本工資、性別工作平等、職災、申訴管道</td><td>mol.gov.tw</td><td>（02）8590-2566</td></tr>
+      <tr><td>勞動部勞工保險局</td><td>勞保、勞退新制專戶、老年年金試算、請領申辦</td><td>bli.gov.tw</td><td>412-6660</td></tr>
+      <tr><td>內政部不動產交易平台</td><td>實價登錄、租賃住宅定型化契約應記載事項</td><td>lvr.land.moi.gov.tw</td><td>—</td></tr>
+      <tr><td>財政部財政資訊中心／電子申報繳稅服務</td><td>綜合所得稅、遺產稅、贈與稅線上申報、稅率級距查詢</td><td>etax.nat.gov.tw</td><td>—</td></tr>
+      <tr><td>財政部各地國稅局</td><td>遺產稅、贈與稅申報、案件補徵、稅務諮詢</td><td>（各地國稅局分站）</td><td>0800-000-321</td></tr>
+      <tr><td>財團法人金融消費評議中心</td><td>銀行、證券、保險、投信等金融消費爭議之評議</td><td>foodc.org.tw</td><td>0800-785-885</td></tr>
+      <tr><td>165 反詐騙專線（警政署）</td><td>檢舉投資詐騙、假冒公務員、假網購、假援交</td><td>—</td><td>165</td></tr>
+      <tr><td>110 報案系統</td><td>緊急危難、詐騙當下攔阻、警示帳戶凍結、家暴現場</td><td>—</td><td>110</td></tr>
+      <tr><td>法律扶助基金會</td><td>資力較弱民眾的訴訟扶助、法律諮詢、分義務律師</td><td>laf.org.tw</td><td>412-8518</td></tr>
+      <tr><td>113 全國保護專線</td><td>家庭暴力、兒少保護、老人保護、性侵害被害人服務</td><td>—</td><td>113</td></tr>
+      <tr><td>衛生福利部</td><td>病人自主權利法（AD 登錄）、安寧緩和、長照 2.0</td><td>mohw.gov.tw</td><td>1966 長照專線</td></tr>
+      <tr><td>1950 消費者服務專線</td><td>消費爭議申訴、消保官窗口、定型化契約申訴</td><td>—</td><td>1950</td></tr>
+    </table>
+    </div>
+    <div class="law-note"><span class="ltag">法條依據</span><span class="law">各機關組織法</span><span class="law">金融消費者保護法第 26 條</span><span class="law">法律扶助法</span><span class="law">老人福利法第 48 條</span></div>
+    <div class="takeaway"><b class="tag">一句話帶走</b>把這張表格印出來或存書籤；遇到法律問題，先查全國法規資料庫與 165／1950／113 三支免付費專線。</div>
+  </article>
+</section>
+
+<!-- ===== 總結與免責 ===== -->
+<div class="summary-box" id="summary">
+  <h2>一句話帶走全站</h2>
+  <ul>
+    <li><b>18 歲是分水嶺</b>：成年以前契約要父母允許，成年以後自己負責（民法第 12 條）。</li>
+    <li><b>勞工權益不分正職兼職</b>：基本工資、投保、加班費是法定底線，不是雇主施捨（勞動基準法）。</li>
+    <li><b>重大契約先審閱再簽</b>：租屋、買房、婚前協議、保險——簽名前留足審閱期，白紙黑字。</li>
+    <li><b>家事與人身安全案件</b>：保護令、離婚、監護有法院與社福資源，別一個人硬扛。</li>
+    <li><b>身後與老後安排</b>：遺囑、意定監護、醫療決定趁健康時做好，是給家人最好的禮物。</li>
+    <li><b>時效會殺人</b>：請求權有時效，拖過期限權利就消滅；附錄 09 有時效總表。</li>
+  </ul>
+</div>
+
+<div class="disclaimer" id="disclaimer">
+  <h2>免責聲明</h2>
+  <p>本知識庫內容僅供<b>一般性參考</b>，不構成法律意見、稅務意見或任何專業建議；每個個案事實不同，同一法條在不同情境下可能有不同解釋。</p>
+  <p>本站法條引用與數字（金額、費率、期限）已儘量核對官方或可靠來源，惟法規、解釋函令與主管機關公告隨時可能修正或更新，若與現行規定不一致，<b>一律以主管機關（法務部、勞動部、內政部、財政部、司法院等）現行公告為準</b>；內容中標示「待確認」「以公告為準」之處尤須查證。</p>
+  <p>涉及重大法律事務（離婚、繼承、買賣、訴訟、大額契約等），請務必諮詢執業律師或專業人士後再行動。資料整理至 2026 年 9 月。</p>
+</div>
+
+<footer>
+  <span>© 2026 人生階段台灣法務知識庫 · 僅供參考，非法律意見</span>
+  <span>法條查詢：全國法規資料庫 law.moj.gov.tw</span>
+  <span>官方來源：法務部・勞動部・內政部・財政部・司法院</span>
+</footer>
+</main>
+
+<!-- ===== 右側目錄 ===== -->
+<aside class="toc-rail" id="tocRail">
+  <h4>本節目錄</h4>
+</aside>
+
+</div>
+
+<!-- ===== 筆記抽屜 ===== -->
+<div class="notes-drawer" id="notesDrawer">
+  <h3>重點／筆記<span><button class="nd-close" type="button" aria-label="關閉">×</button></span></h3>
+  <textarea id="gnote" placeholder="寫下全站通用的重點、待辦或待查事項……&#10;&#10;內容會自動儲存在本機瀏覽器，可隨「匯出備份」一起帶走。"></textarea>
+  <div class="nd-foot">自動儲存於本機（localStorage）· 換裝置請用「匯出／匯入備份」</div>
+</div>
+
+<button class="backtop" id="backtop" type="button" aria-label="回到頂端">↑</button>
+<input type="file" id="importFile" accept=".json,application/json" hidden>
+
+<script>
+(function(){
+'use strict';
+var LS_KEY='taiwanLegalLifeV1';
+var state={done:{},notes:{},gnote:'',unseen:false};
+function load(){try{var d=JSON.parse(localStorage.getItem(LS_KEY)||'{}');if(d&&typeof d==='object'){state.done=d.done||{};state.notes=d.notes||{};state.gnote=d.gnote||'';state.unseen=!!d.unseen;}}catch(e){}}
+function save(){try{localStorage.setItem(LS_KEY,JSON.stringify(state));}catch(e){}}
+function $(s,r){return (r||document).querySelector(s);}
+function $$(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));}
+
+var cards=$$('.card');
+cards.forEach(function(c){
+  var id=c.id||'card-'+Math.random().toString(36).slice(2,8);
+  c.id=id;
+  if(!$('.learn-toggle',c)){
+    var lab=document.createElement('label');
+    lab.className='learn-toggle';
+    lab.innerHTML='<input type="checkbox" class="learn-ck"><span>學會</span>';
+    c.appendChild(lab);
+  }
+  if(!$('.card-note',c)){
+    var det=document.createElement('details');
+    det.className='card-note';
+    det.innerHTML='<summary>＋ 筆記</summary><textarea class="card-note-ta" placeholder="把這一段的重點或待辦記下來…"></textarea>';
+    c.appendChild(det);
+  }
+});
+
+function syncCard(c){
+  var id=c.id, lab=$('.learn-toggle',c), ck=$('.learn-ck',c), det=$('.card-note',c), ta=det?$('textarea',det):null;
+  if(ck){ck.checked=!!state.done[id];lab.classList.toggle('checked',!!state.done[id]);c.classList.toggle('learned',!!state.done[id]);}
+  if(ta && ta.value!==(state.notes[id]||'')){ta.value=state.notes[id]||'';}
+}
+cards.forEach(syncCard);
+
+document.addEventListener('change',function(e){
+  var t=e.target;
+  if(t.classList.contains('learn-ck')){
+    var c=t.closest('.card');
+    state.done[c.id]=t.checked;
+    c.classList.toggle('learned',t.checked);
+    t.closest('.learn-toggle').classList.toggle('checked',t.checked);
+    save();renderProg();applyFilters();
+  }
+});
+document.addEventListener('input',function(e){
+  var t=e.target;
+  if(t.classList.contains('card-note-ta')){var c=t.closest('.card');state.notes[c.id]=t.value;save();}
+  else if(t.id==='kw'){clearTimeout(window._st);window._st=setTimeout(applyFilters,150);}
+  else if(t.id==='gnote'){state.gnote=t.value;save();}
+});
+
+function stageCards(st){return $$('.card',st);}
+function renderProg(){
+  var total=cards.length,done=0;
+  cards.forEach(function(c){if(state.done[c.id])done++;});
+  $('#globalBar').style.width=(total?(done/total*100):0)+'%';
+  $('#progTxt').textContent='已學會 '+done+' / '+total;
+  $$('.stage').forEach(function(st){
+    var sc=stageCards(st),n=0;
+    sc.forEach(function(c){if(state.done[c.id])n++;});
+    var bar=$('.stage-prog i',st);
+    if(bar)bar.style.width=(sc.length?(n/sc.length*100):0)+'%';
+  });
+}
+
+function applyFilters(){
+  var q=($('#kw').value||'').trim().toLowerCase();
+  var found=0;
+  $$('.stage').forEach(function(st){
+    var vis=0;
+    stageCards(st).forEach(function(c){
+      var hay=(c.textContent+' '+(c.getAttribute('data-tags')||'')+' '+(c.getAttribute('data-title')||'')).toLowerCase();
+      var okC=!q||hay.indexOf(q)>=0;
+      var okU=!state.unseen||!state.done[c.id];
+      var show=okC&&okU;
+      c.style.display=show?'':'none';
+      if(show)vis++;
+    });
+    var any=vis>0;
+    st.classList.toggle('hidden',!any);
+    if(any)found+=vis;
+  });
+  var info=$('#searchInfo');
+  if(info){
+    if(q||state.unseen){info.textContent=((q?('「'+$('#kw').value+'」'):'')+(state.unseen?' 只看未學會':'')+' → 符合 '+found+' 張卡片');}
+    else{info.textContent='';}
+  }
+}
+
+/* ---- 右側目錄 ---- */
+var railLinks=[];
+function buildRail(){
+  var html='<h4>章節目錄</h4>';
+  $$('.stage').forEach(function(st){
+    var sn=$('.stage-num',st);var num=sn?sn.textContent.replace(/\s/g,''):'';
+    stageCards(st).forEach(function(c){
+      var h=$('h3',c);if(!h)return;
+      var id=c.id+'-h';
+      h.id=id;
+      var t=h.textContent.replace(/\s+/g,' ').trim();
+      html+='<a href="#'+id+'" data-h="#'+id+'"><span class="rail-num">'+num+'</span>'+t.slice(0,20)+(t.length>20?'…':'')+'</a>';
+    });
+  });
+  $('#tocRail').innerHTML=html;
+  railLinks=$$('#tocRail a');
+}
+buildRail();
+
+/* ---- 卷動監測 ---- */
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(en){
+    if(en.isIntersecting){
+      var h=en.target.id;
+      if(en.target.classList.contains('stage')){
+        $$('.side-nav a').forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+h);});
+      }else{
+        railLinks.forEach(function(a){a.classList.toggle('active',a.getAttribute('data-h')==='#'+h);});
+      }
+    }
+  });
+},{rootMargin:'-18% 0px -72% 0px'});
+$$('.stage').forEach(function(st){io.observe(st);});
+$$('.card h3').forEach(function(h){io.observe(h);});
+
+/* ---- 全選本節 ---- */
+$$('.stage').forEach(function(st){
+  var head=$('.stage-head',st);
+  if(!head||$('.stage-check-all',st))return;
+  var wrap=document.createElement('div');
+  wrap.className='stage-actions';
+  var btn=document.createElement('button');
+  btn.type='button';btn.className='btn stage-check-all';btn.textContent='✓ 全選本節';
+  wrap.appendChild(btn);
+  head.appendChild(wrap);
+});
+document.addEventListener('click',function(e){
+  var t=e.target;
+  if(t.classList.contains('stage-check-all')){
+    var st=t.closest('.stage'),sc=stageCards(st);
+    var allDone=sc.every(function(c){return state.done[c.id];});
+    sc.forEach(function(c){state.done[c.id]=!allDone;});
+    sc.forEach(syncCard);
+    save();renderProg();applyFilters();
+    return;
+  }
+  if(t.id==='notesBtn'){$('#notesDrawer').classList.toggle('open');return;}
+  if(t.classList.contains('nd-close')){$('#notesDrawer').classList.remove('open');return;}
+  if(t.id==='backtop'){window.scrollTo({top:0,behavior:'smooth'});return;}
+  if(t.id==='exportBtn'){
+    var data={app:'taiwan-legal-life-guide',version:1,exportedAt:new Date().toISOString(),done:state.done,notes:state.notes,gnote:state.gnote};
+    var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    a.href=url;a.download='人生階段法務知識庫-備份-'+new Date().getFullYear()+'-'+(new Date().getMonth()+1)+'-'+new Date().getDate()+'.json';
+    document.body.appendChild(a);a.click();document.body.removeChild(a);
+    setTimeout(function(){URL.revokeObjectURL(url);},2000);
+    return;
+  }
+  if(t.id==='importBtn'){$('#importFile').click();return;}
+  if(t.id==='resetBtn'){
+    if(!confirm('確定清除所有「學會」與筆記記錄？此操作無法復原。'))return;
+    state.done={};state.notes={};state.gnote='';
+    cards.forEach(syncCard);
+    $('#gnote').value='';
+    save();renderProg();applyFilters();
+    return;
+  }
+});
+$('#importFile').addEventListener('change',function(){
+  var f=this.files[0];if(!f)return;
+  var rd=new FileReader();
+  rd.onload=function(){
+    try{
+      var d=JSON.parse(rd.result);
+      if(d&&d.app==='taiwan-legal-life-guide'&&d.done){
+        state.done=d.done;state.notes=d.notes||{};state.gnote=d.gnote||'';
+        cards.forEach(syncCard);
+        $('#gnote').value=state.gnote||'';
+        save();renderProg();applyFilters();
+        alert('匯入成功：進度與筆記已還原。');
+      }else{alert('匯入失敗：檔案格式不符。');}
+    }catch(err){alert('匯入失敗：無法解析檔案。');}
+  };
+  rd.readAsText(f,'utf-8');
+  this.value='';
+});
+$('#unseenCk').addEventListener('change',function(){
+  state.unseen=this.checked;
+  save();applyFilters();
+});
+window.addEventListener('scroll',function(){
+  $('#backtop').classList.toggle('show',window.scrollY>700);
+});
+
+load();
+$('#unseenCk').checked=!!state.unseen;
+$('#gnote').value=state.gnote||'';
+renderProg();
+applyFilters();
+})();
+</script>
+</body>
+</html>
